@@ -4,9 +4,9 @@
 ```HTML
 <input type='text' required placeholder='text'>
 ```
-*placeholder* is text that appears in your text field before your user has inputted anything
+**placeholder** is text that appears in your text field before your user has inputted anything
 
-*required* will require the user to input text into your filed before submitting
+**required** will require the user to input text into your filed before submitting
 
 
 ### Anchor element:
