@@ -80,6 +80,6 @@
 ```
 **Font Awesome** is a library of icons stored in .svg file format
 
-**<i>** is used to add the icon to the button
+**`<i>`** is used to add the icon to the button
 
 Example classes for `<i>` element to get Font Awesome icons are: `fa-thumbs-up`, `fa-trash`, `fa-info-circle`, and `fa-paper-plane`
