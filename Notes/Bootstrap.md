@@ -30,4 +30,4 @@
 ```HTML
 <button class='btn btn-block btn-primary'>Text</button>
 ```
-**btn-property** is a Bootstrap class which highlights an action you wish the user to take
+**btn-primary** is a Bootstrap class which highlights an action you wish the user to take
