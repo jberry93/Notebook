@@ -23,6 +23,4 @@ You want to skip: `dan ran pan`
 
 How do we do this? We use `[]` to specify exactly which characters we want to choose:
 
-```Regular Expression
-[cmf]
-```
+`[cmf]`
