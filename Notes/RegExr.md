@@ -13,9 +13,7 @@ The `.` matches any single character whether it be a letter, digit, whitespace, 
 ### Specificity
 Say you had this list of text:
 
-```
-can man fan dan ran pan
-```
+`can man fan dan ran pan`
 
 You want to match: `can man fan`
 
