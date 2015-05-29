@@ -1,5 +1,7 @@
 # RegExr Practice
 
+Use [RegExr](http://www.regexr.com/) to solve
+
 ### Problem 1
 Matching scientific or decimal number
 
