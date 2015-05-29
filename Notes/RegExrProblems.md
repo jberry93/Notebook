@@ -82,8 +82,48 @@ Match:
 ### Problem 5
 Matching specific filenames
 
+Match:
+
+```
+img0912.jpg
+updated_img0912.png
+favicon.gif
+```
+
+Skip:
+
+```
+.bash_profile
+workspace.doc
+documentation.html
+img0912.jpg.tmp
+access.lock
+```
+
+Capture:
+
+```
+imp0912, jpg
+updated_imp0912, png
+favicon, gif
+```
+
 ### Problem 6
 Trimming whitespace from start and end of line
+
+Match:
+
+```
+			The quick brown fox...
+jumped over the lazy dog.
+```
+
+Capture:
+
+```
+The quick brown fox...
+jumped over the lazy dog.
+```
 
 ### Answers:
 
@@ -95,6 +135,6 @@ Trimming whitespace from start and end of line
 
 **Problem 4** = `<(\w+)\>?\s?\w+\=?\W\S+\s?\w\s?\w+\<?\>?\/?\a?>` to capture the tag content: `<(\w+)`, to capture attribute values: `>([\w\s]*)<` or even `='([\w://.]*)`
 
-**Problem 5** = 
+**Problem 5** = `(\w+)\.(jpg|png|gif)$`
 
-**Problem 6** = 
+**Problem 6** = `(\S+\s\w+\s\w+\s\w+\s?\w+\.+)`
