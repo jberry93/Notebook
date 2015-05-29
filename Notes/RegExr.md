@@ -22,3 +22,63 @@ You want to skip: `dan ran pan`
 How do we do this? We use `[]` to specify exactly which characters we want to choose:
 
 `[cmf]`
+
+We use `[^abc]` to match any single character *except* for the letters `abc`
+
+### Ranges
+Use bracket notation with a dash to specify your range of characters in either bracket notation:
+
+`[2-6]` matches any digit from 2~6
+`[^a-e]` matches any character except letters from a~e
+
+### Repetitions
+What is a good way to match character repetition? Use `{}` notation:
+
+`a{1,3}` will match the character `a` for no more than 3 times but no less than 1 time
+
+'f{1,}' will match 1 or more characters of `f`
+
+`z{2,4}` will match the character `z` for no more than 4 times but no less than 2 times 
+
+### Kleen Star v Kleene Plus
+`\d*` will match any number of digits 
+
+`\d+` will ensure that there is at least 1 digits
+
+More examples:
+
+`a+` will match 1 or more `a` characters
+
+`[abc]+` will match 1 or more of any characters `abc`
+
+`.*` will match 0 or more of any character
+
+How would we match all the text here?:
+
+`aaaabcc aabbbbc aacc`
+
+`a+b*c+` will match all the characters there!
+
+### Optional
+`ab?c` will match either the `abc` or `ac` since `b` is made optional with the `?` next to it
+
+`\?` will match a plain question mark character
+
+### Whitespace
+`_` accounts for spaces
+
+`\t` accounts for tabs
+
+`\n` accounts for a new line
+
+`\r` accounts for carriage return which is mostly used in Windows
+
+`\s` will match any of the specific whitespaces noted above
+
+### More Specificity
+Define a pattern that describes both the start and the end of the line by using `^` at the beginning and `$` at the end
+
+Example:
+
+`^successful$` will match exactly a line that contains only the word `successful` and not `unsuccessful`
+
