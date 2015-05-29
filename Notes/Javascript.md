@@ -1,8 +1,10 @@
 # Javascript Notes
 
+### Reverse a String
+
 ```Javascript
-console.log('str');
-x = 2;
-y = 3;
-console.log(x+y);
+function reverseString(str){
+	return str;
+};
+reverseString('hello');
 ```
