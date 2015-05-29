@@ -82,3 +82,23 @@ Example:
 
 `^successful$` will match exactly a line that contains only the word `successful` and not `unsuccessful`
 
+### Grouping
+Say you had these files:
+
+```
+file_a_record_file.pdf
+file_yesterday.pdf
+testfile_fake.pdf.tmp
+```
+
+You have to capture:
+
+```
+file_a_record_file
+file_yesterday
+```
+
+How would we do that? Use `()` to campture the text. Since `\w` accounts for all words and we need to ensure that there is at least 1 word given what we need capture, our answer to this problem is:
+
+`^(\w+).pdf$` which will capture the all text up to the file extension and ensure that `.pdf` are the only characters present
+
