@@ -98,7 +98,7 @@ file_a_record_file
 file_yesterday
 ```
 
-How would we do that? Use `()` to campture the text. Since `\w` accounts for all words and we need to ensure that there is at least 1 word given what we need capture, our answer to this problem is:
+How would we do that? Use `()` to capture the text. Since `\w` accounts for all words and we need to ensure that there is at least 1 word, given what we need capture. Our answer to this problem is:
 
 `^(\w+).pdf$` which will capture the all text up to the file extension and ensure that `.pdf` are the only characters present
 
