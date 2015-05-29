@@ -100,5 +100,79 @@ file_yesterday
 
 How would we do that? Use `()` to capture the text. Since `\w` accounts for all words and we need to ensure that there is at least 1 word, given what we need capture. Our answer to this problem is:
 
-`^(\w+).pdf$` which will capture all the text up to the file extension and ensure that `.pdf` are the only characters present
+`^(\w+).pdf$` which will capture all alphanumeric text up to the file extension and ensure that `.pdf` are the only characters present
 
+`\w` will capture all alphanumeric characters which match: `[a-zA-Z0-9_]` so basically; all lower and upper-case letters as well as numbers and spaces are fair game
+
+Here's another problem:
+
+```
+Jan 1987
+May 1969
+Aug 2011
+```
+
+Capture this text:
+
+```
+Jan 1987, 1987
+May 1969, 1969
+Aug 2011, 2011
+```
+
+Basically, we need to capture both the full data as well as the year which will require a nested capture:
+
+`(\w+ (\d+))` will satisfy both constraints since we have more than 1 character and more than 1 digit we are capturing
+
+Another problem:
+
+```
+1280x720
+1920x1600
+1024x768
+```
+
+We want to capture:
+
+```
+1280, 720
+1920, 1600
+1024, 768
+```
+
+We need to capture 2 groups of digits:
+
+`(\d+)x(\d+)`
+
+### Conditional
+We use `|` to specify x 'or' y:
+
+Example:
+
+```
+I love cats
+I love dogs
+I love logs
+```
+
+Match `I love cats I love dogs`
+Skip `I love logs`
+
+Use `|`:
+
+`I love (cats|dogs)`
+
+### Special characters
+`\b` will match the boundary between a word and a non-word character. It's most useful when paired with `\w` like so: `\w+\b`
+
+`\D` matches any non-digit character
+
+`\S` matches any non-whitespace character
+
+`\W` matches any non-alphanumeric character like punctuation
+
+`\0` will allow you to reference your captured groups (full matched text)
+
+`\1` matches group 1
+
+`\2` matches group 2 and etc..
