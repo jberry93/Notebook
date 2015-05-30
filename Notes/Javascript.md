@@ -62,3 +62,23 @@ function palindrome(str){
 }
 palindrome('eye');
 ```
+
+We can refer to the **Reverse a String** section above to reverse our word:
+
+```Javascript
+str.split('').reverse().join('')
+```
+
+Which will take a string, split up each letter, reverse the order of the letters, and join them back together (in that order). Let's insert that into what's given:
+
+```Javascript
+function plaindrome(str){
+	//create algorithm here:
+	if(str.split('').reverse().join('')===str){
+		return true;
+	}else{
+	return false;
+	}
+}
+palindrome('eye');
+```
