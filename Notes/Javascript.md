@@ -72,7 +72,7 @@ str.split('').reverse().join('')
 Which will take a string, split up each letter, reverse the order of the letters, and join them back together (in that order). Let's insert that into what's given:
 
 ```Javascript
-function plaindrome(str){
+function palindrome(str){
 	//create algorithm here:
 	if(str.split('').reverse().join('')===str){
 		return true;
