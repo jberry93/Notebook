@@ -32,3 +32,20 @@ factorialize(5);
 A factorial is when a number is multiplied by all numbers between 1 and that number. An example can be: `5!`
 
 This means: `5 * 4 * 3 * 2 * 1`
+
+Therefore we need to take the number given and subtract 1 from it each time before multiplying to the number given:
+
+```Javascript
+function factorialize(num){
+	if(num===0){
+	return 0;
+	}if(num===1){
+	return 1;
+	}if(num>1){
+	//algorithm goes here:
+	return num * factorialize(num-1);
+	}
+	return num;
+}
+factorialize(5) //will return 120
+```
