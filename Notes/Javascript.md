@@ -82,3 +82,5 @@ function plaindrome(str){
 }
 palindrome('eye');
 ```
+
+Well `palindrome(str)` works only if the `str` is a single word and if `str` is not a plaindrome but we need it to work for everything that is a plaindrome which can include sentences (with spaces and/or punctuation) like: 'never odd or even' or 'race car' or 'a man, a plan, a canal.'
