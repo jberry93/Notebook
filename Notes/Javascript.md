@@ -23,6 +23,7 @@ Create an algorithm that will return the factorial of any number given to it:
 
 ```Javascript
 function factorialize(num){
+	//insert algorithm here
 	return num;
 }
 factorialize(5);
