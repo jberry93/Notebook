@@ -49,3 +49,16 @@ function factorialize(num){
 }
 factorialize(5) //will return 120
 ```
+
+### Palindromes
+Let's make an algorithm that will check if a given string is a plaindrome. If it's a palindrome, return 'true', if not, return 'false'. A palindrome is a word or sentence that's spelled the same way forwards and backwards while ignoring punctuation, upper/lower case, and spacing.
+
+Here's what's given:
+
+```Javascript
+function palindrome(str){
+	//create algorithm here:
+	return true;
+}
+palindrome('eye');
+```
