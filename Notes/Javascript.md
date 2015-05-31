@@ -57,8 +57,7 @@ Here's what's given:
 
 ```Javascript
 function palindrome(str){
-	//create algorithm here:
-	return true;
+	//make an algorithm
 }
 palindrome('eye');
 ```
@@ -73,7 +72,6 @@ Which will take a string, split up each letter, reverse the order of the letters
 
 ```Javascript
 function palindrome(str){
-	//create algorithm here:
 	if(str.split('').reverse().join('')===str){
 		return true;
 	}else{
