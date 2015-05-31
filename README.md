@@ -1,4 +1,10 @@
 # Notebook
-Random pieces of code that don't make any sense...yet..
 
-Also all my notes that I make while learning
+This 'Notebook' will be chock-full of markdown (and some HTML) files detailing what I'm currently learning. Some of that includes:
+
+- HTML
+- Javascript
+- Algorithms (w/Javascript)
+- Bootstrap
+- Regular Expressions
+- (More to come)
