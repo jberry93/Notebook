@@ -99,7 +99,6 @@ We can utilize this RegExp to `.replace()` the spaces and punctuation with nothi
 
 ```Javascript
 function palindrome(str){
-	//create algorithm here:
 	if(str.toLowerCase().replace(/\W/g,'').split('').reverse().join('')===str.toLowerCase().replace(/\W/g,'')){
 		return true;
 	}else{
