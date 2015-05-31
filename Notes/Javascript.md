@@ -83,4 +83,31 @@ function palindrome(str){
 palindrome('eye');
 ```
 
-Well `palindrome(str)` works only if the `str` is a single word and if `str` is not a plaindrome but we need it to work for everything that is a plaindrome which can include sentences (with spaces and/or punctuation) like: 'never odd or even' or 'race car' or 'a man, a plan, a canal.'
+Well `palindrome(str)` works only if the `str` is a single word or if `str` is not a plaindrome but we need it to work for everything that is a plaindrome which can include sentences (with spaces and/or punctuation) like: 'never odd or even' or 'race car' or 'A man, a plan, a canal. Panama'
+
+Regular Expression: \w\s?\,?\s? = Will match everything in:
+
+```
+never odd or even
+race car
+a man, a plan, a canal.
+```
+
+Regular Expression: \W = Will match all spaces and punctuation which is exactly what we want to select!
+
+We can utilize this RegExp to `.replace()` the spaces and punctuation with nothing at all so that all the characters in the string are smashed into one long string. Apply `.toLowerCase()` to make sure all characters are of one case and then split/reverse/join:
+
+```Javascript
+function palindrome(str){
+	//create algorithm here:
+	if(str.toLowerCase().replace(/\W/g,'').split('').reverse().join('')===str.toLowerCase().replace(/\W/g,'')){
+		return true;
+	}else{
+		return false;
+	}
+}
+palindrome('eye');
+```
+
+To explain `.replace()` we need to input 2 things: 1) What we want to select and 2) What we want to replace what we selected. We select characters via RegExp: `/(insert RegExp here)/g` and then replace it with nothing: `.replace(/\W/g,'')` which means take all the spaces and punctuation and replace it with absolutely nothing since we didn't specify anything within `''`
+
