@@ -111,3 +111,14 @@ palindrome('eye');
 
 To explain `.replace()` we need to input 2 things: 1) What we want to select and 2) What we want to replace what we selected. We select characters via RegExp: `/(insert RegExp here)/g` and then replace it with nothing: `.replace(/\W/g,'')` which means take all the spaces and punctuation and replace it with absolutely nothing since we didn't specify anything within `''`
 
+### Finding the Longest Word
+
+Let's make an algorithm that will take in a string and return the length of the longest word within that string. Here is what we have to start with:
+
+```Javascript
+function findLongestWord(str){
+	return str.length;
+}
+findLongestWord('The quick brown fox jumped over the lazy dog');
+```
+
