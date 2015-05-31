@@ -124,9 +124,9 @@ findLongestWord('The quick brown fox jumped over the lazy dog');
 
 We can utilize the `.split()` method to separate our string into an array and then test each string within the array to see which one is the longest in length. We will need to create 2 variables for this to be successful:
 
-`var arrayOfstrings` will be a placeholder for our array of strings after using `.split()`
+`arrayOfstrings` will be a placeholder for our array of strings after using `.split()`
 
-`var longestWordlength` will initially equal zero since we need to set it equal to the length of the longest string within the array
+`longestWordlength` will initially equal zero since we need to set it equal to the length of the longest string within the array
 
 Using a for loop combined with an if statement will help sift through every string within the array (for loop) and take out the string that is longest in length (if statement)
 
@@ -146,3 +146,12 @@ function findLongestWord(str){
 findLongestWord('The quick brown fox jumped over the lazy dog');
 ```
 
+`var arrayOfstrings = str.split(/\s/g);` = We need to use a regular expression to separate the strings into an array based on a separator. In this case `/\s/g` will specify that we separate the inputted string based on spaces. If there is a space then the following characters will be put into an array like so:
+
+`['The','quick','brown','fox'...]`
+
+**for loop explanation** = Iterate through the array `arrayOfstrings` and stop at the value of the length of the array
+
+**if statement explanation** = If the length of the element within 'arrayOfstrings' is greater than the value of the current 'longestWordlength' then set 'longestWordlength' equal to the length of the element
+
+Since the 'if statement' is nested within the 'for loop', the 'if statement' will keep running until the length of the element within 'arrayOfstrings' is no longer greater than the value of 'longestWordlength'. At that point, we have successfully found the length of the longest string within a given string
