@@ -85,7 +85,7 @@ palindrome('eye');
 
 Well `palindrome(str)` works only if the `str` is a single word or if `str` is not a plaindrome but we need it to work for everything that is a plaindrome which can include sentences (with spaces and/or punctuation) like: 'never odd or even' or 'race car' or 'A man, a plan, a canal. Panama'
 
-Regular Expression: \w\s?\,?\s? = Will match everything in:
+Regular Expression: `\w\s?\,?\s?` = Will match everything in:
 
 ```
 never odd or even
@@ -93,7 +93,7 @@ race car
 a man, a plan, a canal.
 ```
 
-Regular Expression: \W = Will match all spaces and punctuation which is exactly what we want to select!
+Regular Expression: `\W` = Will match all spaces and punctuation which is exactly what we want to select!
 
 We can utilize this RegExp to `.replace()` the spaces and punctuation with nothing at all so that all the characters in the string are smashed into one long string. Apply `.toLowerCase()` to make sure all characters are of one case and then split/reverse/join:
 
