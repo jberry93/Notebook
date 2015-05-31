@@ -117,7 +117,7 @@ Let's make an algorithm that will take in a string and return the length of the 
 
 ```Javascript
 function findLongestWord(str){
-	return str.length;
+	//make an algorithm
 }
 findLongestWord('The quick brown fox jumped over the lazy dog');
 ```
