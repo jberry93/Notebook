@@ -152,6 +152,6 @@ findLongestWord('The quick brown fox jumped over the lazy dog');
 
 **for loop explanation** = Iterate through the array `arrayOfstrings` and stop at the value of the length of the array
 
-**if statement explanation** = If the length of the element within 'arrayOfstrings' is greater than the value of the current 'longestWordlength' then set 'longestWordlength' equal to the length of the element
+**if statement explanation** = If the length of the element within `arrayOfstrings` is greater than the value of the current `longestWordlength` then set `longestWordlength` equal to the length of the element
 
-Since the 'if statement' is nested within the 'for loop', the 'if statement' will keep running until the length of the element within 'arrayOfstrings' is no longer greater than the value of 'longestWordlength'. At that point, we have successfully found the length of the longest string within a given string
+Since the 'if statement' is nested within the 'for loop', the 'if statement' will keep running until the length of the element within `arrayOfstrings` is no longer greater than the value of `longestWordlength`. At that point, we have successfully found the length of the longest string within a given string
