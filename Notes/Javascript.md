@@ -122,3 +122,27 @@ function findLongestWord(str){
 findLongestWord('The quick brown fox jumped over the lazy dog');
 ```
 
+We can utilize the `.split()` method to separate our string into an array and then test each string within the array to see which one is the longest in length. We will need to create 2 variables for this to be successful:
+
+`var arrayOfstrings` will be a placeholder for our array of strings after using `.split()`
+
+`var longestWordlength` will initially equal zero since we need to set it equal to the length of the longest string within the array
+
+Using a for loop combined with an if statement will help sift through every string within the array (for loop) and take out the string that is longest in length (if statement)
+
+Let's bring everything together now:
+
+```Javascript
+function findLongestWord(str){
+	var arrayOfstrings = str.split(/\s/g);
+	var longestWordlength = 0;
+	for(var i=0; i<arrayOfstrings.length; i++){
+		if(arrayOfstrings[i].length>longestWordlength){
+			longestWordlength = arrayOfstrings[i].length;
+		}
+	}
+	return longestWordlength;
+}
+findLongestWord('The quick brown fox jumped over the lazy dog');
+```
+
