@@ -42,4 +42,8 @@ function titleCase(str){
 titleCase('I'm a little tea pot');
 ```
 
+`.substring()` = Will output everything after a given index
+
+`.charAt()` = Will choose a character at an indicated index
+
 And we are done! Output should be: `I'm A Little Tea Pot`
