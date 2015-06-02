@@ -59,7 +59,7 @@ echo $[$x*$y]
 echo $[$x/$y]
 ```
 
-If you wish to be more accurate with your answers such as rounding to the nth decimal, we can utilize `printf "%.#f"` to round an expression to the nearest `#` decimal:
+If you wish to be more accurate with your answers such as rounding to the nth decimal, we can utilize `printf "%.#f"` to round an expression to the nearest `#`th decimal:
 
 ```BASH
 read input
