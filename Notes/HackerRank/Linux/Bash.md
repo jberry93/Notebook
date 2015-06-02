@@ -46,3 +46,17 @@ echo "Welcome $name"
 ```
 
 This will take an input from you and assign that input value to `name`. You call `name` within `echo` using `$name` and it will print `Welcome (your input)`. Cool right?
+
+### Math
+Let's do some math by `read`ing in 2 numbers given by a user and then add, subtract, multiply, and divide those 2 numbers together and print out those results. This can be done in 1 of 3 ways:
+
+```BASH
+read x
+read y
+echo $(($x+$y))
+echo `expr "$x" - "$y"`
+echo $[$x*$y]
+echo $[$x/$y]
+```
+
+If you are lazy like me, I would urge the bracket notation since it takes less key strokes but if you like to make everything complicated then use the `expr` or expression notation. The choice is yours! 
