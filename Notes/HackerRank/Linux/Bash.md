@@ -60,3 +60,24 @@ echo $[$x/$y]
 ```
 
 If you are lazy like me, I would urge the bracket notation since it takes less key strokes but if you like to make everything complicated then use the `expr` or expression notation. The choice is yours! 
+
+### If statements
+Let's compare 2 numbers and see if they are greater than, less than, or equal to each other using an if statement. Since we are testing 3 conditions, we need to utilize the if/elif/else structure like so:
+
+```BASH
+read x
+read y
+if [ $x -gt $y ]
+then
+	echo "X is greater than Y"
+elif [ $x -lt $y ]
+then
+	echo "X is less than Y"
+else
+	echo "X is equal to Y"
+fi
+```
+
+`-gt` = Indicates `>` or greater than
+
+`-lt` = Indicates `<` or less than
