@@ -81,3 +81,26 @@ fi
 `-gt` = Indicates `>` or greater than
 
 `-lt` = Indicates `<` or less than
+
+Here's another problem:
+
+Let's `read` in an input and out `YES` or `NO` based on the input. Let's restrain the input to either `Y`, `y`, `N`, or `n` so that it's easier to construct the if statement:
+
+```BASH
+read input
+if [ "$input" = "Y" ]
+then
+	echo "YES"
+elif [ "$input" = "N" ]
+then
+	echo "NO"
+elif [ "$input" = "y" ]
+then
+	echo "YES"
+elif [ "$input" = "n" ]
+then
+	echo "NO"
+else
+	echo "Yes and No?"
+fi
+```
