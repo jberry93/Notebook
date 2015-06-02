@@ -47,3 +47,34 @@ titleCase('I'm a little tea pot');
 `.charAt()` = Will choose a character at an indicated index
 
 And we are done! Output should be: `I'm A Little Tea Pot`
+
+### Finding the Largest Numbers
+Let's create an algorithm that will scan through an array and return an array with the largest number. To increase the difficulty, let's scan through sub-arrays inside of an array and return an array full of the largest numbers of each individual sub-array. For instance:
+
+```Javascript
+var array = [[4,5,1,3],[13,27,18,26],[32,35,37,39],[1000,1001,857,1]];
+```
+
+So the desired output would be: `[5,27,39,1001]`
+
+First thing's first, let's create out function:
+
+```Javascript
+function largestOfFour(arr){
+	//make an algorithm
+}
+largestOfFour([[4,5,1,3],[13,27,18,26],[32,35,37,39],[1000,1001,857,1]]);
+```
+
+To iterate through the sub-arrays, we utilize a for loop. Since we want to return an array full of the largest numbers from each sub-array we need to create a new array. Let's add the for loop and the new empty array:
+
+```Javascript
+function largestOfFour(arr){
+	var newarray = [];
+	for(var i=0; i<arr.length; i++)
+		//algorithm goes here
+	return newarray;
+}
+largestOfFour([[4,5,1,3],[13,27,18,26],[32,35,37,39],[1000,1001,857,1]]);
+```
+
