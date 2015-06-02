@@ -59,7 +59,14 @@ echo $[$x*$y]
 echo $[$x/$y]
 ```
 
-If you are lazy like me, I would urge the bracket notation since it takes less key strokes but if you like to make everything complicated then use the `expr` or expression notation. The choice is yours! 
+If you wish to be more accurate with your answers such as rounding to the nth decimal, we can utilize `printf "%.#f"` to round an expression to the nearest `#` decimal:
+
+```BASH
+read input
+printf "%.4f" $(echo "scale = 10; $input"| bc)
+```
+
+`scale` refers to the number of decimal points while `print "%.4f` will round the `input` down to 4 decimal places. `bc` is a language that supports arbitrary precision numbers with interactive execution of statements. So what this script is doing is taking an `input`, which is any numerical expression, and output the first 10 decimal points but round it down to only 4 decimal points
 
 ### If statements
 Let's compare 2 numbers and see if they are greater than, less than, or equal to each other using an if statement. Since we are testing 3 conditions, we need to utilize the if/elif/else structure like so:
