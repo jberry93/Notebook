@@ -78,3 +78,16 @@ function largestOfFour(arr){
 largestOfFour([[4,5,1,3],[13,27,18,26],[32,35,37,39],[1000,1001,857,1]]);
 ```
 
+Now to input the largest number of each sub-array into the new array, we need to utilize the `.push()` method combined with `Math.max.apply(null,array)` to capture the largest number:
+
+```Javascript
+function largestOfFour(arr){
+	var newarray = [];
+	for(var i=0; i<arr.length; i++)
+		newarray.push(Math.max.apply(null,arr[i]));
+	return newarray;
+}
+largestOfFour([[4,5,1,3],[13,27,18,26],[32,35,37,39],[1000,1001,857,1]]);
+```
+
+This in turn will give the desired output!
