@@ -28,6 +28,15 @@ done
 
 The `{1..99..2}` format will tell the for loop to iterate between the numbers 1 and 99 and increment twice. So `1,3,5,7..`
 
+Also if we need to print all then numbers between 1 and 99 we use `{1..99}` instead:
+
+```BASH
+for i in {1..99}
+do
+	echo $i
+done
+```
+
 ### Read
 Say we want a script that takes in a personalized input and prints that input. We utilize `read` to accomplish this:
 
