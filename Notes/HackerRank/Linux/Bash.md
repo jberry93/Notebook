@@ -27,3 +27,13 @@ done
 ```
 
 The `{1..99..2}` format will tell the for loop to iterate between the numbers 1 and 99 and increment twice. So `1,3,5,7..`
+
+### Read
+Say we want a script that takes in a personalized input and prints that input. We utilize `read` to accomplish this:
+
+```BASH
+read name
+echo "Welcome $name"
+```
+
+This will take an input from you and assign that input value to `name`. You call `name` within `echo` using `$name` and it will print `Welcome (your input)`. Cool right?
