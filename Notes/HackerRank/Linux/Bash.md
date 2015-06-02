@@ -48,7 +48,7 @@ echo "Welcome $name"
 This will take an input from you and assign that input value to `name`. You call `name` within `echo` using `$name` and it will print `Welcome (your input)`. Cool right?
 
 ### Math
-Let's do some math by `read`ing in 2 numbers given by a user and then add, subtract, multiply, and divide those 2 numbers together and print out those results. This can be done in 1 of 3 ways:
+Let's do some math by `read`ing in 2 numbers given by a user, then add, subtract, multiply, and divide those 2 numbers together and finally print out those results. This can be done in 1 of 3 ways:
 
 ```BASH
 read x
