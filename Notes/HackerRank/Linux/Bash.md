@@ -115,7 +115,7 @@ Triangles are either equilateral, isosceles, or scalene:
 
 **Scalene** = All 3 sides are different values
 
-We need to create a if statement that will crunch through any input of 3 sides and spit out `EQUILATERAL`, `ISOSCELES`, or `SCALENE`. So for instance, an input of `1,2,2`, `2,1,2` and `2,2,1` should each output `ISOSCELES` when tested in the if statement:
+We need to create an if statement that will crunch through any input of 3 sides and spit out `EQUILATERAL`, `ISOSCELES`, or `SCALENE`. So for instance, an input of `1,2,2`, `2,1,2` and `2,2,1` should each output `ISOSCELES` when tested in the if statement:
 
 ```BASH
 read a
