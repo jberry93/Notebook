@@ -84,7 +84,7 @@ fi
 
 Here's another problem:
 
-Let's `read` in an input and out `YES` or `NO` based on the input. Let's restrain the input to either `Y`, `y`, `N`, or `n` so that it's easier to construct the if statement:
+Let's `read` in an input and output `YES` or `NO` based on the input. Let's restrain the input to either `Y`, `y`, `N`, or `n` so that it's easier to construct the if statement:
 
 ```BASH
 read input
@@ -102,5 +102,62 @@ then
 	echo "NO"
 else
 	echo "Yes and No?"
+fi
+```
+
+And another problem:
+
+Triangles are either equilateral, isosceles, or scalene:
+
+**Equilateral** = All 3 sides are equal to each other
+
+**Isosceles** = 2 of the 3 sides are equal to each other
+
+**Scalene** = All 3 sides are different values
+
+We need to create a if statement that will crunch through any input of 3 sides and spit out `EQUILATERAL`, `ISOSCELES`, or `SCALENE`. So for instance, an input of `1,2,2`, `2,1,2` and `2,2,1` should each output `ISOSCELES` when tested in the if statement:
+
+```BASH
+read a
+read b
+read c
+if [ $a = $b ]
+then
+	if [ $b = $c ]
+	then
+		echo "EQUILATERAL"
+	elif [ $b -gt $c ]
+	then
+		echo "ISOSCELES"
+	elif [ $b -lt $c ]
+	then
+		echo "ISOSCELES"
+	fi
+elif [ $b = $c ]
+then
+	if [ $c = $a ]
+	then
+		echo "EQUILATERAL"
+	elif [ $c -gt $a ]
+	then
+		echo "ISOSCELES"
+	elif [ $c -lt $a ]
+	then
+		echo "ISOSCELES"
+	fi
+elif [ $a = $c ]
+then
+	if [ $c = $b ]
+	then
+		echo "EQUILATERAL"
+	elif [ $c -gt $b ]
+	then
+		echo "ISOSCELES"
+	elif [ $c -lt $b ]
+	then
+		echo "ISOSCELES"
+	fi
+else
+	echo "SCALENE"
 fi
 ```
