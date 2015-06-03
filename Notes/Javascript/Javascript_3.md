@@ -36,6 +36,7 @@ function truncate(str,num){
 	//make an algorithm
 }
 truncate('A-tisket a-tisket A green and yellow basket',11);
+//Output: A-tisket...
 ```
 
 We need to first verify that the length of the string is indeed larger than the maximum string value using an if statement. If it is then we will truncate via `.slice()` taking care to include '...' into our index count:
