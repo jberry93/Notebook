@@ -25,3 +25,28 @@ repeat('abc',3);
 ```
 
 And we are done!
+
+### Truncating a String
+Take in 2 arguments where the first argument is a string that will be truncated while the second argument is the maximum string length that we are restraining the first argument by. We must return the truncated string with '...' at the end which will also count towards the end of the string length. Here's the initial setup:
+
+```Javascript
+function truncate(str,num){
+	//make an algorithm
+}
+truncate('A-tisket a-tisket A green and yellow basket',11);
+```
+
+We need to first verify that the length of the string is indeed larger than the maximum string value using an if statement. If it is then we will truncate via `.slice()` taking care to include '...' into our index count:
+
+```Javascript
+function truncate(str,num){
+	if(str.length > num){
+		return str.slice(0,num-3) + '...';
+	}else{
+	return str;
+	}
+}
+truncate('A-tisket a-tisket A green and yellow basket',11);
+```
+
+`.slice()` = The first number is where we begin to truncate or slice while the second number is where we end the slice. Everything between these two numbers will be extracted. We subtract 3 from `num` since the length of '...' is 3
