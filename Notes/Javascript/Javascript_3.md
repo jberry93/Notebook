@@ -110,3 +110,29 @@ function chunk(arr,size){
 chunk(['0','1','2','3','4','5'],2);
 //Output: [['0','1'],['0','1'],['0','1'],...]
 ```
+
+### Splice or Slice
+In this instance we are to return the remaining elements of an array after chopping off 'x' amount of elements from the beginning of the element. In this instace, we can use either `.splice()` or `.slice()` since we are not iterating with a for loop. We are either truncating or copying elements from one array and putting those elements into another array. The way we transport those elements into the new array does not matter
+
+Here's the initial setup of a function:
+
+```Javascript
+function slasher(arr,howMany){
+	//make algorithm
+}
+slasher([1,2,3],2);
+```
+
+First of all we need to make an empty array to place our elements into and then set our new array equal to the value of the extracted elements. If we use the `.push()` method, we will end up with nested arrays which we do not want:
+
+```Javascript
+function slasher(arr,howMany){
+	var newarr = [];
+	newarr = arr.splice(howMany-arr.length);
+	return newarr;
+}
+slasher([1,2,3],2);
+//Output: [3]
+```
+
+We want to use `howMany-arr.length` to make sure we extract only the elements that appear on the end (right side) of the array since we are cutting out the elements at the beginning (left side). In this instance: `howMany` = 2 and `arr.length` = 3 giving us `.splice(-1)`
