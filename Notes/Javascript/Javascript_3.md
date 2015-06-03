@@ -53,3 +53,60 @@ truncate('A-tisket a-tisket A green and yellow basket',11);
 ```
 
 `.slice()` = The first number is where we begin to truncate or slice while the second number is where we end the slice. Everything between these two numbers will be extracted. We subtract 3 from `num` since the length of '...' is 3
+
+### Array-ception
+Create a function containing 2 arguments where 1 argument is an array and the second argument is a numerical value that represents the maximum size of sub-arrays. The point of this exercise is to break an array into sub-arrays while also controlling the size of the sub-arrays. For example:
+
+```Javascript
+var bigArray = ["cat","dog","penguin","pig","pug","jim"];
+var subArray = [];
+var limit = 3;
+//Algorithm goes here
+return subArray;
+//Output: [["cat","dog","penguin"],["pig","pug","jim"]]
+```
+
+Here is our basic format for the function:
+
+```Javascript
+function chunk(arr,size){
+	//make algorithm
+}
+chunk(['0','1','2','3','4','5'],2);
+```
+
+We need to use a for loop to iterate through the array so that we can `.push()` and `.splice()` it into a new array `newarr`containing sub-arrays:
+
+```Javascript
+function chunk(arr,size){
+	var newarr = [];
+	for(var i=0;i<=arr.length;i++){
+		newarr.push(arr.splice(0,size));
+	}
+	return newarr;
+}
+chunk(['0','1','2','3','4','5'],2);
+//Output: [['0','1'],['2','3'],['4','5']]
+```
+
+**for loop explanation** = We need to make sure we iterate through every element of `arr` so we must be inclusive when limiting the value of `i` in our for loop to the length of `arr`. If we fail to be inclusive, we will not produce sub-arrays containing every element of the initial array `arr`
+
+**.push() explanation** = Since we are making sub-arrays, we use `.splice()` and NOT `.slice()` since:
+
+`.splice()` = A method that changes the content of an array by removing existing elements and/or adding new elements
+
+`.slice()` = A method that returns a copy of a portion of an array into a new array object.
+
+`.slice()` returns a copy while `.splice()` has the ability to make changes which is what we want. We are changing the initial array and returning it in the form of multiple sub-arrays within an array. Here is what will happen if we replace `.splice()` with `.slice()` in our current function we get:
+
+```Javascript
+function chunk(arr,size){
+	var newarr = [];
+	for(var i=0;i<=arr.length;i++){
+		newarr.push(arr.slice(0,size));
+	}
+	return newarr;
+}
+chunk(['0','1','2','3','4','5'],2);
+//Output: [['0','1'],['0','1'],['0','1'],...]
+```
