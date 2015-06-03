@@ -8,4 +8,5 @@ function repeat(str,num){
 	//make algorithm
 }
 repeat('abc',3);
+//Output: abcabcabc
 ```
