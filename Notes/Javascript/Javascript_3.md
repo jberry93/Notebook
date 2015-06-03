@@ -26,7 +26,9 @@ repeat('abc',3);
 
 And we are done!
 
-### Truncating a String
+### Truncation
+Click [here](http://dictionary.reference.com/browse/truncate) for a definition on 'truncate' (You should have an idea of what it is based on the name of the method involved)
+
 Take in 2 arguments where the first argument is a string that will be truncated while the second argument is the maximum string length that we are restraining the first argument by. We must return the truncated string with '...' at the end which will also count towards the end of the string length. Here's the initial setup:
 
 ```Javascript
