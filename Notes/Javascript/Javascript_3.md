@@ -112,7 +112,7 @@ chunk(['0','1','2','3','4','5'],2);
 ```
 
 ### Splice or Slice
-In this instance we are to return the remaining elements of an array after chopping off 'x' amount of elements from the beginning of the element. In this instace, we can use either `.splice()` or `.slice()` since we are not iterating with a for loop. We are either truncating or copying elements from one array and putting those elements into another array. The way we transport those elements into the new array does not matter
+In this instance we are to return the remaining elements of an array after chopping off 'x' amount of elements from the beginning of the element. We can use either `.splice()` or `.slice()` since we are not iterating with a for loop. We are either truncating or copying elements from one array and putting those elements into another array. The way we transport those elements into the new array does not matter
 
 Here's the initial setup of a function:
 
