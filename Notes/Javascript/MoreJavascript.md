@@ -115,13 +115,13 @@ In this case: `target = str.substr(str.length - target.length);` is saying that 
 
 ```Javascript
 var str = 'This is a string';
-var target = 'string';
+var target = 'strings';
 target = str.substr(str.length - target.length);
 return target;
 //Output: ' string'
 ```
 
-You see that we have a space in our substring ` string`? We need to eliminate that space so that our algorithm works for the cases where spaces are present. We can utilize `.replace()` with a regular expression to get rid of the spaces
+We have a slight bug since we have a space in our substring. We need to eliminate that space so that our algorithm works for the cases where spaces are present. We can utilize `.replace()` with a regular expression to get rid of the spaces
 
 Before that, we need to make an if statement that checks to see if `str` ends with `target`. Let's eliminate 2 birds with 1 stone and apply the if statement along with `.replace()`:
 
