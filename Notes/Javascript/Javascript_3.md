@@ -11,7 +11,7 @@ repeat('abc',3);
 //Output: abcabcabc
 ```
 
-We can use the `.repeat()` method to easily accomplish this task but we also want to confirm that the number that is passed through the function is positive since we cannot possibly return a negative amount of strings:
+We can use the `.repeat()` method to easily accomplish this task but we also want to confirm that the number that is passed through the function is positive and not zero since we cannot possibly return a negative amount of strings and we want to return at least 1 string:
 
 ```Javascript
 function repeat(str,num){
