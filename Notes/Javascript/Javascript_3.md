@@ -36,7 +36,6 @@ function truncate(str,num){
 	//make an algorithm
 }
 truncate('A-tisket a-tisket A green and yellow basket',11);
-//Output: A-tisket...
 ```
 
 We need to first verify that the length of the string is indeed larger than the maximum string value using an if statement. If it is then we will truncate via `.slice()` taking care to include '...' into our index count:
@@ -50,6 +49,7 @@ function truncate(str,num){
 	}
 }
 truncate('A-tisket a-tisket A green and yellow basket',11);
+//Output: A-tisket...
 ```
 
 `.slice()` = The first number is where we begin to truncate or slice while the second number is where we end the slice. Everything between these two numbers will be extracted. We subtract 3 from `num` since the length of '...' is 3
