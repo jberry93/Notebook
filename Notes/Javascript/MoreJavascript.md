@@ -137,4 +137,4 @@ function end(str,target){
 end('If you want to save our world, you must hurry. We dont know how much longer we can withstand the nothing','mountain')
 ```
 
-Looks good!
+Refer to my [Regular Expressions](https://github.com/jberry93/Notebook/blob/master/Notes/Regular%20Expressions/RegExr.md) section for a review. Also, refer to the [Palindromes](https://github.com/jberry93/Notebook/blob/master/Notes/Javascript/Javascript.md) section for another instance when I combined `.replace()` with regular expression
