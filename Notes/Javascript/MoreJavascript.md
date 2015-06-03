@@ -71,7 +71,7 @@ To iterate through the sub-arrays, we utilize a for loop. Since we want to retur
 ```Javascript
 function largestOfFour(arr){
 	var newarray = [];
-	for(var i=0; i<arr.length; i++)
+	for(var i=0; i < arr.length; i++)
 		//use 'push' and 'Math.max.apply'
 	return newarray;
 }
@@ -83,7 +83,7 @@ Now to input the largest number of each sub-array into the new array, we need to
 ```Javascript
 function largestOfFour(arr){
 	var newarray = [];
-	for(var i=0; i<arr.length; i++)
+	for(var i=0; i < arr.length; i++)
 		newarray.push(Math.max.apply(null,arr[i]));
 	return newarray;
 }
@@ -91,3 +91,50 @@ largestOfFour([[4,5,1,3],[13,27,18,26],[32,35,37,39],[1000,1001,857,1]]);
 ```
 
 This should give the desired output!
+
+### Confirming Target String
+In this exercise, we will check if a certain string ends with a given target string:
+
+```Javascript
+function end(str,target){
+	//make algorithm
+}
+end('If you want to save our world, you must hurry. We dont know how much longer we can withstand the nothing','mountain')
+```
+
+First of all, we need to set `target` equal to the ending of `str`. We do this by using `.substr()` (or `.substring()`) and `.length`:
+
+```Javascript
+function end(str,target){
+	target = str.substr(str.length - target.length);
+}
+end('If you want to save our world, you must hurry. We dont know how much longer we can withstand the nothing','mountain')
+```
+
+In this case: `target = str.substr(str.length - target.length);` is saying that we take the substring equal to the index of the difference in lengths between `str` and `target` and set that value to `target`. For example:
+
+```Javascript
+var str = 'This is a string';
+var target = 'string';
+target = str.substr(str.length - target.length);
+return target;
+//Output: ' string'
+```
+
+You see that we have a space in our substring ` string`? We need to eliminate that space so that our algorithm works for the cases where spaces are present. We can utilize `.replace()` with a regular expression to get rid of the spaces
+
+Before that, we need to make an if statement that checks to see if `str` ends with `target`. Let's eliminate 2 birds with 1 stone and apply the if statement along with `.replace()`:
+
+```Javascript
+function end(str,target){
+	target = str.substr(str.length - target.length);
+	if(str.substr(str.length - target.length) === target.replace(/\s/g,'')){
+		return true;
+	}else{
+		return false;
+	}
+}
+end('If you want to save our world, you must hurry. We dont know how much longer we can withstand the nothing','mountain')
+```
+
+Looks good!
