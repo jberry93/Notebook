@@ -33,4 +33,7 @@ function mutation(arr){
 mutation(['hello','hey']); //false
 mutation(['Mary','Aarmy']); //false
 mutation(['Alien','line']); //true
+mutation(['hello','Hello']); //true
+mutation(['floor','for']); //true
+mutation(['zyxwvutsrqponmlkjihgfedcba','qrstu']); //true
 ```
