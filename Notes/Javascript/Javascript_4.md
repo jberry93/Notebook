@@ -15,6 +15,9 @@ function mutation(arr){
 mutation(['hello','hey']); //false
 mutation(['Mary','Aarmy']); //false
 mutation(['Alien','line']); //true
+mutation(['hello','Hello']); //true
+mutation(['floor','for']); //true
+mutation(['zyxwvutsrqponmlkjihgfedcba','qrstu']); //true
 ```
 
 Since we are comparing 2 strings, we need to make an if statement since if all the letters within the first string are contained within the second string then we will return true:
