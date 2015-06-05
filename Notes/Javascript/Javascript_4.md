@@ -26,5 +26,8 @@ function mutation(arr){
 	}else{
 		return false;
 	}
-}	
+}
+mutation(['hello','hey']); //false
+mutation(['Mary','Aarmy']); //false
+mutation(['Alien','line']); //true
 ```
