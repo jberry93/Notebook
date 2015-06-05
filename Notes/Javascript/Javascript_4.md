@@ -12,5 +12,7 @@ Here's the basic setup of a function...again:
 function mutation(arr){
 	//make algorithm
 }
-mutation(['hello','hey']);
+mutation(['hello','hey']); //false
+mutation(['Mary','Aarmy']); //false
+mutation(['Alien','line']); //true
 ```
