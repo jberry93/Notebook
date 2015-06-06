@@ -127,3 +127,10 @@ bouncer([7,'ate','',false,9]); //Output: [7,'ate',9]
 bouncer(['a','b','c']); //Output: ['a','b','c']
 bouncer([false,null,0]); //Output: []
 ```
+
+### Collecting
+Let's make a function that takes in 2 arguments `collection` and `source` where:
+
+`collection` = Scans through the elements in an array
+
+`source` = Returns another array of the objects of the same property value  
