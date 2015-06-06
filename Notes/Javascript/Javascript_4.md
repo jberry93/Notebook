@@ -95,7 +95,7 @@ First we need to understand what the `.filter()` method does:
 
 **.filter()** = A method that will pass elements through a test using another function and create another array containing those elements that pass said test
 
-So before we even use `.filter()`, let's first make another function called `callback` which will implement a test that checks to see if an element in a given array is true or false. If true, we will return the `value` of that element. If false, we will return an empty array:
+So before we even use `.filter()`, let's first make another function called `callback` which will implement a test that checks to see if an element in a given array is true or false. Technically the `callback` function would have 3 arguments (element,index,array) but we only care if the element or `value` in this case is true or false. If true, we will return the `value` of that element. If false, we will return an empty array:
 
 ```Javascript
 function callback(value){
@@ -108,4 +108,20 @@ function callback(value){
 function bouncer(arr){
 	//use filter
 }
+```
+
+Now we just need to call the `callback` function using the `.filter()` method and return the array the method creates after implementing the `callback` test:
+
+```Javascript
+function callback(value){
+	if(value !== true){
+		return value;
+	}else{
+		return [];
+	}
+}
+function bouncer(arr){
+	return arr.filter(callback);
+}
+bouncer([7,'ate','',false,9]); //Output: [7,'ate',9]
 ```
