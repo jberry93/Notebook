@@ -50,7 +50,7 @@ function mutation(arr){
 }
 ```
 
-Now let's split the second element up into an array containing all the individual letters of the second element string:
+Now let's split the second element up into an array containing all the individual letters of the second element string in lowercase so that case sensitivity is eliminated:
 
 ```Javascript
 function mutation(arr){
@@ -70,7 +70,7 @@ function mutation(arr){
 		return false;
 	}
 	for(var i=0; i < arr[1].length; i++){
-		if(arr[0].toLowerCase().indexOf(arr1[i])===-1){
+		if(arr[0].toLowerCase().indexOf(arr1[i]) === -1){
 			return false;
 		}
 	}
