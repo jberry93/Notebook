@@ -124,4 +124,6 @@ function bouncer(arr){
 	return arr.filter(callback);
 }
 bouncer([7,'ate','',false,9]); //Output: [7,'ate',9]
+bouncer(['a','b','c']); //Output: ['a','b','c']
+bouncer([false,null,0]); //Output: []
 ```
