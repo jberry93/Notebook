@@ -4,7 +4,7 @@
 (http://shibemart.com/static/media/uploads/services/vryhckr/.thumbnails/programmer-555x0.jpg)
 
 ### Mutations
-Make a function whose argument is an array with 2 strings. If the first element string in the array has all the letters of the second element string in the same array then return true. If not, return false.
+Make a function whose argument is an array with 2 strings. If the first element in the array has all the letters of the second element in the same array then return true. If not, return false.
 
 Here's the basic setup of our function:
 
@@ -38,5 +38,15 @@ mutation(['Alien','line']); //true
 mutation(['hello','Hello']); //true
 mutation(['floor','for']); //true
 mutation(['zyxwvutsrqponmlkjihgfedcba','qrstu']); //true
+```
+
+Instead of focusing our if statement on what makes something true, let's focus on what makes it false. First of all, if the length of the first element is less than the length of the second element then the first element cannot possible contain all the letters of the second element:
+
+```Javascript
+function mutation(arr){
+	if(arr[0].length < arr[1].length){
+		return false;
+	}
+}
 ```
 
