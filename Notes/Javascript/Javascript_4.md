@@ -1,8 +1,5 @@
 # Many Javascript! Much Wow!
 
-![Image of Doge]
-(http://shibemart.com/static/media/uploads/services/vryhckr/.thumbnails/programmer-555x0.jpg)
-
 ### Mutations
 Make a function whose argument is an array with 2 strings. If the first element in the array has all the letters of the second element in the same array then return true. If not, return false.
 
