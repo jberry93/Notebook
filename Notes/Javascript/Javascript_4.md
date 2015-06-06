@@ -143,6 +143,12 @@ function where(collection,source){
 	//make algorithm
 	return arr;
 }
-where([{ first: 'Romeo', last: 'Montague' }, { first: 'Mercutio', last: null }, { first: 'Tybalt', last: 'Capulet' }], { last: 'Capulet' });
+where(
+[
+	{ first: 'Romeo', last: 'Montague' }, 
+	{ first: 'Mercutio', last: null }, 
+	{ first: 'Tybalt', last: 'Capulet' }
+], 
+{ last: 'Capulet' });
 ```
 } 
