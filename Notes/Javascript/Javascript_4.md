@@ -95,7 +95,7 @@ First we need to understand what the `.filter()` method does:
 
 **.filter()** = A method that will pass elements through a test using another function and create another array containing those elements that pass said test
 
-So before we even use `.filter()`, let's first make another function called `callback` which will implement a test that checks to see if a value in a given array is true or false. If true, we will return the `value` of that element. If false, we will return an empty array:
+So before we even use `.filter()`, let's first make another function called `callback` which will implement a test that checks to see if an element in a given array is true or false. If true, we will return the `value` of that element. If false, we will return an empty array:
 
 ```Javascript
 function callback(value){
