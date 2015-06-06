@@ -106,6 +106,6 @@ function callback(value){
 	}
 }
 function bouncer(arr){
-	//make algorithm
+	//make newarr and use filter
 }
 ```
