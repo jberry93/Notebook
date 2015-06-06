@@ -78,3 +78,4 @@ function mutation(arr){
 }
 ```
 
+`.indexOf()` = A method that will return the first index at which a given element can be found in an array. If the element is not present, -1 will be the output
