@@ -151,4 +151,3 @@ where(
 ], 
 { last: 'Capulet' });
 ```
-} 
