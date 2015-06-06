@@ -90,3 +90,9 @@ function bouncer(arr){
 }
 bouncer([7,'ate','',false,9]);
 ```
+
+First we need to understand what the `.filter()` method does:
+
+**.filter()** = A method that will pass elements through a test using another function and create another array containing those elements that pass said test
+
+ 
