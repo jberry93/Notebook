@@ -50,3 +50,31 @@ function mutation(arr){
 }
 ```
 
+Now let's split the second element up into an array containing all the individual letters of the second element string:
+
+```Javascript
+function mutation(arr){
+	var arr1 = arr[1].toLowerCase().split('');
+	if(arr[0].length < arr[1].length){
+		return false;
+	}
+}
+```
+
+We now need to iterate through the individual letters of the second element string array `arr1` and apply another if statement which checks to see if each letter is present in the first element string:
+
+```Javascript
+function mutation(arr){
+	var arr1 = arr[1].toLowerCase().split('');
+	if(arr[0].length < arr[1].length){
+		return false;
+	}
+	for(var i=0; i < arr[1].length; i++){
+		if(arr[0].toLowerCase().indexOf(arr1[i])===-1){
+			return false;
+		}
+	}
+	return true;
+}
+```
+
