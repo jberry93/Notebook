@@ -76,3 +76,17 @@ function mutation(arr){
 ```
 
 `.indexOf()` = A method that will return the first index at which a given element can be found in an array. If the element is not present, -1 will be the output
+
+### Falsey
+Falsey values are defined to be: `false`,`null`,`0`,`""`,`undefined`, and `NaN`
+
+Let's create a function that will remove all falsey values from a given array utilizing boolean objects and a method called `.filter()`
+
+Let's make the general structure of the function first:
+
+```Javascript
+function bouncer(arr){
+	//make algorithm
+}
+bouncer([7,'ate','',false,9]);
+```
