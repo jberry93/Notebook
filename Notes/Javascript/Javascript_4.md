@@ -133,4 +133,16 @@ Let's make a function that takes in 2 arguments `collection` and `source` where:
 
 `collection` = Scans through the elements in an array
 
-`source` = Returns another array of the objects of the same property value  
+`source` = Returns another array of the objects of the same property value 
+
+Here's what is given:
+
+```Javascript
+function where(collection,source){
+	var arr = [];
+	//make algorithm
+	return arr;
+}
+where([{ first: 'Romeo', last: 'Montague' }, { first: 'Mercutio', last: null }, { first: 'Tybalt', last: 'Capulet' }], { last: 'Capulet' });
+```
+} 
