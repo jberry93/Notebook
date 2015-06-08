@@ -176,3 +176,7 @@ where([{ first: 'Romeo', last: 'Montague' }, { first: 'Mercutio', last: null }, 
 
 where([{'a':1}, {'a':1}, {'a':1, 'b':2}], {'a':1});
 ```
+
+The variables `propname` and `propvalue` will be useful later on since we have a method that will utilize these values to make our function work!
+
+Next step; create a for loop that will iterate through `collection` and check it for any objects that have the same property:
