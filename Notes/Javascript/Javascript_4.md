@@ -168,7 +168,7 @@ Next, we need to store the value of the property into a variable:
 function where(collection,source){
 	var arr = [];
 	var propname = Object.keys(source)[0];
-	var propvalue = source[key];
+	var propvalue = source[propname];
 	console.log(propvalue); //Output: Capulet 1
 	return arr;
 }
