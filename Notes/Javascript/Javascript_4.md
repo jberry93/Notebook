@@ -153,8 +153,23 @@ We need to store the string of the array of a object's property into a variable.
 ```Javascript
 function where(collection,source){
 	var arr = [];
-	var key = Object.keys(source)[0]; //gives a string value of the property name
-	console.log(key); //Output: 'a' 'last'
+	var propname = Object.keys(source)[0]; //gives a string value of the property name
+	console.log(key); //Output: 'last' 'a'
+	return arr;
+}
+where([{ first: 'Romeo', last: 'Montague' }, { first: 'Mercutio', last: null }, { first: 'Tybalt', last: 'Capulet' }], { last: 'Capulet' });
+
+where([{'a':1}, {'a':1}, {'a':1, 'b':2}], {'a':1});
+```
+
+Next, we need to store the value of the property into a variable:
+
+```Javascript
+function where(collection,source){
+	var arr = [];
+	var propname = Object.keys(source)[0];
+	var propvalue = source[key];
+	console.log(propvalue); //Output: Capulet 1
 	return arr;
 }
 where([{ first: 'Romeo', last: 'Montague' }, { first: 'Mercutio', last: null }, { first: 'Tybalt', last: 'Capulet' }], { last: 'Capulet' });
