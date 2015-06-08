@@ -199,3 +199,20 @@ where([{'a':1}, {'a':1}, {'a':1, 'b':2}], {'a':1});
 ```
 
 What goes inside of this if statement is the main meat of this function. We need to iterate through `collection` and return an array of objects that have the same property as `source`. We do this by utilizing a method called `.hasOwnProperty()`. This method will return a boolean that indicates whether a given object has a given property. This is where `propname` comes into play:
+
+```Javascript
+function where(collection,source){
+	var arr = [];
+	var propname = Object.keys(source)[0];
+	var propvalue = source[propname];
+	for(var x=0; x < collection.length; x++){
+		if(collection[x].hasOwnProperty(propname)){
+			/*do something*/
+		}
+	}
+	return arr;
+}
+where([{ first: 'Romeo', last: 'Montague' }, { first: 'Mercutio', last: null }, { first: 'Tybalt', last: 'Capulet' }], { last: 'Capulet' });
+
+where([{'a':1}, {'a':1}, {'a':1, 'b':2}], {'a':1});
+```
