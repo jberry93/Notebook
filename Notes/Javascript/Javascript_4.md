@@ -144,5 +144,7 @@ function where(collection,source){
 	return arr;
 }
 where([{ first: 'Romeo', last: 'Montague' }, { first: 'Mercutio', last: null }, { first: 'Tybalt', last: 'Capulet' }], { last: 'Capulet' });
+
+where([{'a':1}, {'a':1}, {'a':1, 'b':2}], {'a':1});
 ```
 
