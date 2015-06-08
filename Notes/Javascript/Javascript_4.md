@@ -218,3 +218,20 @@ where([{'a':1}, {'a':1}, {'a':1, 'b':2}], {'a':1});
 ```
 
 So far, this if statement is incomplete. It is taking in each object element in the array and checking to see if the property matches up with the property of `source`. We also need to make sure that even though the object element and `source` properties are the same, their property values are also the same. As long as BOTH the name and value of the properties are the same in both the object element and `source`, it will pass the if statement:
+
+```Javascript
+function where(collection,source){
+	var arr = [];
+	var propname = Object.keys(source)[0];
+	var propvalue = source[propname];
+	for(var x=0; x < collection.length; x++){
+		if(collection[x].hasOwnProperty(propname) && collection[x][propname] == propvalue){
+			/*do something*/
+		}
+	}
+	return arr;
+}
+where([{ first: 'Romeo', last: 'Montague' }, { first: 'Mercutio', last: null }, { first: 'Tybalt', last: 'Capulet' }], { last: 'Capulet' });
+
+where([{'a':1}, {'a':1}, {'a':1, 'b':2}], {'a':1});
+```
