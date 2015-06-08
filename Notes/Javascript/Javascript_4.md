@@ -258,3 +258,5 @@ where([{ first: 'Romeo', last: 'Montague' }, { first: 'Mercutio', last: null }, 
 where([{'a':1}, {'a':1}, {'a':1, 'b':2}], {'a':1});
 //Output: [{ a: 1 }, { a: 1 }, { a: 1, b: 2 }]
 ```
+
+The function is now complete! Congratulations!
