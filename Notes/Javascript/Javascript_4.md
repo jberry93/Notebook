@@ -197,3 +197,5 @@ where([{ first: 'Romeo', last: 'Montague' }, { first: 'Mercutio', last: null }, 
 
 where([{'a':1}, {'a':1}, {'a':1, 'b':2}], {'a':1});
 ```
+
+What goes inside of this if statement is the main meat of this function. We need iterate through `collection` and return an array of objects that have the same property as `source`. We do this by utilizing a method called `.hasOwnProperty()`. This method will return a boolean that indicates whether a given object has a given property. This is where `propname` comes into play:
