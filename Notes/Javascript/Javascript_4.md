@@ -129,11 +129,7 @@ bouncer([false,null,0]); //Output: []
 ```
 
 ### Collecting
-Let's make a function that takes in 2 arguments `collection` and `source` where:
-
-`collection` = Scans through the elements in an array
-
-`source` = Returns another array of the objects of the same property value 
+Let's make a functon that will iterate through a list/array and return an array full of objects that have the same property values from the initial list/array. This list/array will be the argument called `collection` while the property values we are trying to push into the array is an argument called `source` 
 
 Here's what is given:
 
@@ -148,3 +144,4 @@ where([{ first: 'Romeo', last: 'Montague' }, { first: 'Mercutio', last: null }, 
 where([{'a':1}, {'a':1}, {'a':1, 'b':2}], {'a':1});
 ```
 
+We need to store the array of 
