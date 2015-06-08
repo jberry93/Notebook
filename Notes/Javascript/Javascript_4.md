@@ -235,3 +235,5 @@ where([{ first: 'Romeo', last: 'Montague' }, { first: 'Mercutio', last: null }, 
 
 where([{'a':1}, {'a':1}, {'a':1, 'b':2}], {'a':1});
 ```
+
+The `collection[x][propname]` is calling the value of the properties in `collection` while `propvalue` is calling the value of the property in `source`.
