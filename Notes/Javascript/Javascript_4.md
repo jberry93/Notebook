@@ -154,6 +154,10 @@ We need to store the string of the array of a object's property into a variable.
 function where(collection,source){
 	var arr = [];
 	var key = Object.keys(source)[0]; //gives a string value
+	console.log(key); //Output: 'a' 'last'
 	return arr;
 }
+where([{ first: 'Romeo', last: 'Montague' }, { first: 'Mercutio', last: null }, { first: 'Tybalt', last: 'Capulet' }], { last: 'Capulet' });
+
+where([{'a':1}, {'a':1}, {'a':1, 'b':2}], {'a':1});
 ```
