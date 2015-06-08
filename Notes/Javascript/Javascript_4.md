@@ -131,7 +131,7 @@ bouncer([false,null,0]); //Output: []
 ### Collecting
 Let's make a functon that will iterate through a list/array and return an array full of objects that have the same property values from the initial list/array. This list/array will be the argument called `collection` while the property values we are trying to push into the array is an argument called `source` 
 
-Here's what is given:
+Here is what's given:
 
 ```Javascript
 function where(collection,source){
@@ -144,4 +144,8 @@ where([{ first: 'Romeo', last: 'Montague' }, { first: 'Mercutio', last: null }, 
 where([{'a':1}, {'a':1}, {'a':1, 'b':2}], {'a':1});
 ```
 
-We need to store the array of 
+We need to store the string of the array of a object's property into a variable. We do this by utilizing the `Object` constructor and `.keys()` method:
+
+`Object` constructor = It will take any value it's given and make it an object. If it's given nothing, it will simply return an empty object
+
+`.keys()` method = This method will produce an array of an object's properties while in this case, we only have 1 property from `source`: 
