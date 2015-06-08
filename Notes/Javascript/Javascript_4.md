@@ -153,7 +153,7 @@ We need to store the string of the array of a object's property into a variable.
 ```Javascript
 function where(collection,source){
 	var arr = [];
-	var key = Object.keys(source)[0]; //gives a string value
+	var key = Object.keys(source)[0]; //gives a string value of the property name
 	console.log(key); //Output: 'a' 'last'
 	return arr;
 }
