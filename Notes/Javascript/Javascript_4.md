@@ -148,4 +148,12 @@ We need to store the string of the array of a object's property into a variable.
 
 `Object` constructor = It will take any value it's given and make it an object. If it's given nothing, it will simply return an empty object
 
-`.keys()` method = This method will produce an array of an object's properties while in this case, we only have 1 property from `source`: 
+`.keys()` method = This method will produce an array of an object's properties while in this case, we only have 1 property from `source`:
+
+```Javascript
+function where(collection,source){
+	var arr = [];
+	var key = Object.keys(source)[0]; //gives a string value
+	return arr;
+}
+```
