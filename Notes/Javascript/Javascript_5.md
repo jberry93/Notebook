@@ -54,6 +54,17 @@ destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3);
 //Output: [1, 5, 1]
 ```
 
+This `arguments` object is really useful when it comes to referring to a function's arguments within the function itself. For example:
+
+```Javascript
+function idMe(firstName,favDog,age){
+	console.log(arguments[0]); //Output: 'Jeff'
+	console.log(arguments[1]); //Output: 'Pug'
+	console.log(arguments[2]); //Output: 22
+}
+idMe('Jeff','Pug',22);
+```
+
 Okay now comes the important part: the `callback` function. Since we are trying to remove the numbers 2 and 3 from our arrays, we need to make sure that the `element`s in our array do not equal 2 or 3. If the `element` does not equal 2 or 3 then we will return the element which will be pushed into an array via the `.filter()` method:
 
 ```Javascript
