@@ -33,3 +33,23 @@ destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3);
 ```
 
 Refer to Javascript_4; section [Falsey](https://github.com/jberry93/Notebook/blob/master/Notes/Javascript/Javascript_4.md) for another use case of the method `.filter()`
+
+Now that we have our basic format for our 2 functions we need to make sure that when we pass arguments into `destroyer` that our first argument is indeed an array so to do that, we need to use an if statement to check and make sure that is true:
+
+```Javascript
+function callback(/*argument*/){
+	/*something useful*/
+}
+function destroyer(arr){
+	if(typeof arguments[0] !== 'object'){
+		return [];
+	}else{
+		return arr.filter(callback);
+	}
+}
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+//Output: [1, 1]
+
+destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3);
+//Output: [1, 5, 1]
+```
