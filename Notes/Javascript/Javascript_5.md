@@ -15,3 +15,5 @@ destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3);
 //Output: [1, 5, 1]
 ```
+
+In order to complete this function, we need to utilize the method `.filter()` again which will read in a `callback` function, implement the test that `callback` contains, and spit out an array full of elements that pass the `callback` test. In this case, the `callback` function is what will make the `destroyer` function. Here's the `callback` function together with the `destroyer` function:
