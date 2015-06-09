@@ -91,3 +91,16 @@ Our `destroyer` function coupled with the `callback` function is complete!
 
 ### Index?
 Make a function that will insert a number `num` into an array `arr` and return the lowest possible index where it would be sorted into
+
+Here's the initial function:
+
+```Javascript
+function where(arr,num){
+	/*magic*/
+}
+where([10, 20, 30, 40, 50], 35);
+//Output: 3
+
+where([10, 20, 30, 40, 50], 30);
+//Output: 2
+```
