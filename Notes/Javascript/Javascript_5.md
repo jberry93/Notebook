@@ -104,3 +104,7 @@ where([10, 20, 30, 40, 50], 35);
 where([10, 20, 30, 40, 50], 30);
 //Output: 2
 ```
+
+We need to utilize 3 different methods to accomplish this function: `.concat()`, `.sort()`, and `.indexOf()`:
+
+`.concat()` = A method that will return an array made up of the original array plus whatever extra arrays and/or elements placed within `()`
