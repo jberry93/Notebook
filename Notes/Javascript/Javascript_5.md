@@ -55,3 +55,25 @@ destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3);
 ```
 
 Okay now comes the important part: the `callback` function. Since we are trying to remove the numbers 2 and 3 from our arrays, we need to make sure that the `element`s in our array do not equal 2 or 3. If the `element` does not equal 2 or 3 then we will return the element which will be pushed into an array via the `.filter()` method:
+
+```Javascript
+function callback(element){
+	if(element !== 2 && element !== 3){
+		return element;
+	}
+}
+function destroyer(arr){
+	if(typeof arguments[0] !== 'object'){
+		return [];
+	}else{
+		return arr.filter(callback);
+	}
+}
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+//Output: [1, 1]
+
+destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3);
+//Output: [1, 5, 1]
+```
+
+Our `destroyer` function coupled with the `callback` function is complete!
