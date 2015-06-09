@@ -23,7 +23,7 @@ function callback(/*argument*/){
 	/*something useful*/
 }
 function destroyer(arr){
-	arr.filter(callback);
+	return arr.filter(callback);
 }
 destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 //Output: [1, 1]
