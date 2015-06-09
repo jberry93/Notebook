@@ -114,3 +114,14 @@ We need to utilize 3 different methods to accomplish this function: `.concat()`,
 `.indexOf()` = A method that will return the first index a given element is found. Refer to Javascript_4; section [Mutations](https://github.com/jberry93/Notebook/blob/master/Notes/Javascript/Javascript_4.md) for another use case of this method
 
 Now all we need to do is first add `num` to `arr`, sort the array with the added `num` inside of it, and finally find the index of `num` in the newly sorted array. This can all be accomplished in one line of code:
+
+```Javascript
+function where(arr,num){
+	return arr.concat(num).sort().indexOf(num);
+}
+where([10, 20, 30, 40, 50], 35);
+//Output: 3
+
+where([10, 20, 30, 40, 50], 30);
+//Output: 2
+```
