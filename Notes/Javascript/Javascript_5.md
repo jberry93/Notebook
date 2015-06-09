@@ -32,4 +32,4 @@ destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3);
 //Output: [1, 5, 1]
 ```
 
-Refer to the [Falsey](https://github.com/jberry93/Notebook/blob/master/Notes/Javascript/Javascript_4.md) section for another use case of the method `.filter()`
+Refer to Javascript_4; section [Falsey](https://github.com/jberry93/Notebook/blob/master/Notes/Javascript/Javascript_4.md) for another use case of the method `.filter()`
