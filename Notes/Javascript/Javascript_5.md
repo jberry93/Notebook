@@ -110,3 +110,5 @@ We need to utilize 3 different methods to accomplish this function: `.concat()`,
 `.concat()` = A method that will return an array made up of the original array plus whatever extra arrays and/or elements placed within `()`
 
 `.sort()` = A method that will sort elements based on string unicode code points and return an array of the elements sorted thereafter
+
+`.indexOf()` = A method that will return the first index a given element is found. Refer to Javascript_4; section [Mutations](https://github.com/jberry93/Notebook/blob/master/Notes/Javascript/Javascript_4.md) for another use case of this method
