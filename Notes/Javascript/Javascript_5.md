@@ -89,7 +89,7 @@ destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3);
 
 Our `destroyer` function coupled with the `callback` function is complete!
 
-### Index?
+### Array-Index Trouble
 Make a function that will insert a number `num` into an array `arr` and return the lowest possible index where it would be sorted into
 
 Here's the initial function:
