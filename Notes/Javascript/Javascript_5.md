@@ -130,3 +130,13 @@ where([10, 20, 30, 40, 50], 30);
 In this function, we will pass in an array containing 2 elements that are numbers. The point of this function is to add up those 2 numbers along with all the other numbers between those 2 numbers together and return the value
 
 Here's the initial function:
+
+```Javascript
+function sumAll(arr){
+	/*magic*/
+}
+sumAll([1, 4]); //Output: 10
+sumAll([4, 1]); //Output: 10
+sumAll([5, 10]); //Output: 45
+sumAll([10, 5]); //Output: 45
+```
