@@ -158,3 +158,19 @@ sumAll([10, 5]); //Output: 45
 Now we need to utilize a for loop and iterate through all the numbers between the smallest number and the largest number and add up all the numbers with a `+=`. We will also be using `Math.min()` to call our smallest number and `Math.max()` to call our largest number
 
 We need to initialize our for loop variable to equal the smallest possible number in our array. We will then set the limit less than or equal to the largest possible number in our array and the iterate by one through the numbers:
+
+```Javascript
+function sumAll(arr){
+	var sum = 0;
+		for(var i=Math.min(arr[0],arr[1]);i<=Math.max(arr[0],arr[1]);i++){
+			sum += i;
+	}
+	return sum;
+}
+sumAll([1, 4]); //Output: 10
+sumAll([4, 1]); //Output: 10
+sumAll([5, 10]); //Output: 45
+sumAll([10, 5]); //Output: 45
+```
+
+And we have now complete the function!
