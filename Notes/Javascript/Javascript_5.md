@@ -125,3 +125,8 @@ where([10, 20, 30, 40, 50], 35);
 where([10, 20, 30, 40, 50], 30);
 //Output: 2
 ```
+
+### Adding Numbers
+In this function, we will pass in an array containing 2 elements that are numbers. The point of this function is to add up those 2 numbers along with all the other numbers between those 2 numbers together and return the value
+
+Here's the initial function:
