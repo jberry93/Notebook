@@ -173,4 +173,4 @@ sumAll([5, 10]); //Output: 45
 sumAll([10, 5]); //Output: 45
 ```
 
-And we have now complete the function!
+And we have now completed the function!
