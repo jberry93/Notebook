@@ -143,3 +143,14 @@ sumAll([10, 5]); //Output: 45
 
 First thing we need to do is create a variable called `sum` which will at first equal 0. We want to eventually input the sum of all numbers between the 2 elements in the array into the `sum` variable so that we can return it:
 
+```Javascript
+function sumAll(arr){
+	var sum = 0;
+	/*more magic*/
+	return sum;
+}
+sumAll([1, 4]); //Output: 10
+sumAll([4, 1]); //Output: 10
+sumAll([5, 10]); //Output: 45
+sumAll([10, 5]); //Output: 45
+```
