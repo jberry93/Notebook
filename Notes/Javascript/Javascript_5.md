@@ -177,3 +177,28 @@ And we have now completed the function!
 
 ### Comparing Arrays
 Let's make a function that will compare the elements of 2 different arrays and return a new array containing elements that are not found in either of the 2 original arrays
+
+Here's our initial function:
+
+```Javascript
+function diff(arr1,arr2){
+	/*magic~*/
+}
+diff(['diorite', 'andesite', 'grass', 'dirt', 'pink wool', 'dead shrub'], ['diorite', 'andesite', 'grass', 'dirt', 'dead shrub']);
+//Output: ['pink wool']
+
+diff(['andesite', 'grass', 'dirt', 'pink wool', 'dead shrub'], ['diorite', 'andesite', 'grass', 'dirt', 'dead shrub']);
+//Output: ['diorite', 'pink wool']
+
+diff(['andesite', 'grass', 'dirt', 'dead shrub'], ['andesite', 'grass', 'dirt', 'dead shrub']);
+//Output: []
+
+diff([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+//Output: [4]
+
+diff([1, 'calf', 3, 'piglet'], [1, 'calf', 3, 4]);
+//Output: ['piglet', 4]
+
+diff([], ['snuffleupagus', 'cookie monster', 'elmo']);
+//Output: ['snuffleupagus', 'cookie monster', 'elmo']
+```
