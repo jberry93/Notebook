@@ -178,7 +178,7 @@ And we have now completed the function!
 ### Comparing Arrays
 Let's make a function that will compare the elements of 2 different arrays and return a new array containing elements that are not found in either of the 2 original arrays
 
-Here's our initial function:
+Here's our initial function and test cases for the function:
 
 ```Javascript
 function diff(arr1,arr2){
