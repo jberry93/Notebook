@@ -259,3 +259,6 @@ function diff(arr1,arr2){
 }
 /*Test cases here*/
 ```
+
+So now that we have singled out the differences between both arrays, we need to `.push()` those different elements into `newArr` like so:
+
