@@ -224,3 +224,19 @@ function diff(arr1,arr2){
 
 In the first if statement, we will utilize the `.indexOf()` method to see if there are any `arr1` elements that are not present in `arr2`. `.indexOf()` is useful in that if the given element from `arr1` is not also part of `arr2`, `.indexOf()` will return a value of `-1`, therefore we will use it accordingly:
 
+```Javascript
+function diff(arr1,arr2){
+	var newArr = [];
+	for(var i=0;i < arr1.length; i++){
+		if(arr2.indexOf(arr1[i]) == -1){
+			/*do something magical*/
+		}
+	}
+	for(var j=0;j < arr2.length; j++){
+		if(/*constraint*/){
+			/*do something magical*/
+		}
+	}
+}
+/*Test cases here*/
+```
