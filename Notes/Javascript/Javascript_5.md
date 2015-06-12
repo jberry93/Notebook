@@ -240,3 +240,6 @@ function diff(arr1,arr2){
 }
 /*Test cases here*/
 ```
+
+A similar constraint is given to the second if statement but in this case, we are checking `arr2` elements with `arr1` array:
+
