@@ -202,3 +202,22 @@ diff([1, 'calf', 3, 'piglet'], [1, 'calf', 3, 4]);
 diff([], ['snuffleupagus', 'cookie monster', 'elmo']);
 //Output: ['snuffleupagus', 'cookie monster', 'elmo']
 ```
+
+Our strategy for solving this function will be to use a combination of a for loop with an if statement within the loop. This way, we can iterate through each element of both arrays and check to see if there are any differences between the elements in `arr1` and `arr2`. We are going to need 2 of these for/if combinations, one for each array argument of function `diff`:
+
+```Javascript
+function diff(arr1,arr2){
+	var newArr = [];
+	for(var i=0;i < arr1.length; i++){
+		if(/*constraint*/){
+			/*do something magical*/
+		}
+	}
+	for(var j=0;j < arr2.length; j++){
+		if(/*constraint*/){
+			/*do something magical*/
+		}
+	}
+}
+/*Test cases here*/
+```
