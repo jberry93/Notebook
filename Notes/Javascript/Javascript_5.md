@@ -243,3 +243,19 @@ function diff(arr1,arr2){
 
 A similar constraint is given to the second if statement but in this case, we are checking `arr2` elements with `arr1` array:
 
+```Javascript
+function diff(arr1,arr2){
+	var newArr = [];
+	for(var i=0;i < arr1.length; i++){
+		if(arr2.indexOf(arr1[i]) == -1){
+			/*do something magical*/
+		}
+	}
+	for(var j=0;j < arr2.length; j++){
+		if(arr1.indexOf(arr2[j]) == -1){
+			/*do something magical*/
+		}
+	}
+}
+/*Test cases here*/
+```
