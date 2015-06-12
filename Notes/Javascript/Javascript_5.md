@@ -279,3 +279,5 @@ function diff(arr1,arr2){
 }
 /*Test cases here*/
 ```
+
+We have completed the function!
