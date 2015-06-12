@@ -221,3 +221,6 @@ function diff(arr1,arr2){
 }
 /*Test cases here*/
 ```
+
+In the first if statement, we will utilize the `.indexOf()` method to see if there are any `arr1` elements that are not present in `arr2`. `.indexOf()` is useful in that if the given element from `arr1` is not also part of `arr2`, `.indexOf()` will return a value of `-1`, therefore we will use it accordingly:
+
