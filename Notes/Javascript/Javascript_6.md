@@ -150,3 +150,25 @@ function replace(str,before,after){
 }
 /*test cases*/
 ```
+
+All that is left is to use the `.replace()` method to replace the `before` string with `after` in `str`:
+
+```Javascript
+function replace(str,before,after){
+	var beforearr = before.split('');
+	var afterarr = after.split('');
+	if(beforearr[0].toUpperCase() == beforearr[0]){
+		afterarr[0] = afterarr[0].toUpperCase();
+		after = afterarr.join('');
+	}
+	return str.replace(before,after);
+}
+replace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+replace("Let us go to the store", "store", "mall");
+replace("He is Sleeping on the couch", "Sleeping", "sitting");
+replace("This has a spellngi error", "spellngi", "spelling");
+replace("His name is Tom", "Tom", "john");
+replace("Let us get back to more Coding", "Coding", "bonfires");
+```
+
+This function has been successfully completed! Run it with the test cases above to see for yourself!
