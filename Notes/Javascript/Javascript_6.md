@@ -42,7 +42,7 @@ function convert(num){
 /*Test cases*/
 ```
 
-The next step is the hardest! We need to combine a for loop with a while loop to make our function work. We will first iterate through the length of `romanVal`:
+We need to combine a for loop with a while loop to make our function work efficiently. We will first iterate through the length of `romanVal`:
 
 ```Javascript
 function convert(num){
