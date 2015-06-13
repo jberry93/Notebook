@@ -78,3 +78,28 @@ convert(9); //'IIIIIIIII'
 convert(29); //'IIIIIIIIIIIIIIIIIIIIIIIIIIIII'
 convert(16); //'IIIIIIIIIIIIIIII'
 ```
+
+Oh no! We have a major problem with our code! Notice how the inside of the while loop is set up. Since we are iterating through the elements of `decimalVal` one at a time from left to right and subtracting that element from the value of `num`, we are only subtracting with the first element of `decimalVal` which is `1`. We need to flip the order of both arrays to get the correct roman numeral values:
+
+```Javascript
+function convert(num){
+	var romanVal = ['X','IX','V','IV','I'];
+	var decimalVal = [10,9,5,4,1];
+	var romanNum = '';
+	for(var i=0;i < romanVal.length; i++){
+		while(num>=decimalVal[i]){
+			num-=deciamlVal[i];
+			romanNum+=romanVal[i];
+		}
+	}
+	return romanNum;
+}
+convert(36); //'XXXVI'
+convert(12); //'XII'
+convert(5); //'V'
+convert(9); //'IX'
+convert(29); //'XXIX'
+convert(16); //'XVI'
+```
+
+Awesome! Now that we flipped the arrays, we begin subtracting with the largest possible `decimalVal` and continue on down the line of elements until `num` is zero
