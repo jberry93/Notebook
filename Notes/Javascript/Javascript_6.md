@@ -112,3 +112,17 @@ Make a function that will take in a total of 3 arguments:
 `before` = The word that we are replacing
 
 `after` = The word that we are replacing `before` with
+
+Here is the initial function:
+
+```Javascript
+function replace(str,before,after){
+	/*sorcery*/
+}
+replace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+replace("Let us go to the store", "store", "mall");
+replace("He is Sleeping on the couch", "Sleeping", "sitting");
+replace("This has a spellngi error", "spellngi", "spelling");
+replace("His name is Tom", "Tom", "john");
+replace("Let us get back to more Coding", "Coding", "bonfires");
+```
