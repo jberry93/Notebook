@@ -65,7 +65,7 @@ function convert(num){
 	var romanNum = '';
 	for(var i=0;i < romanVal.length; i++){
 		while(num>=decimalVal[i]){
-			num-=deciamlVal[i];
+			num-=decimalVal[i];
 			romanNum+=romanVal[i];
 		}
 	}
