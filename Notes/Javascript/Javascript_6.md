@@ -29,3 +29,15 @@ function convert(num){
 }
 /*Test cases*/
 ```
+
+Now we need to stick our roman numerals into a variable so that we can return the value so let's also make another variable whose value is an empty string:
+
+```Javascript
+function convert(num){
+	var romanVal = ['I','IV','V','IX','X'];
+	var decimalVal = [1,4,5,9,10];
+	var romanNum = '';
+	/*Roman sorcery*/
+}
+/*Test cases*/
+```
