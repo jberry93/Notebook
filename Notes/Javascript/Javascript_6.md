@@ -136,3 +136,6 @@ function replace(str,before,after){
 }
 /*test cases*/
 ```
+
+Next we can include an if statement that checks the first letter (or in this case, the first element of the `beforearr` array) of the `before` string to see if it is capitalized. If it is then we will capitalize the first letter (or the first element in the `afterarr` array) of the `after` string and `.join()` all the characters back into a string:
+
