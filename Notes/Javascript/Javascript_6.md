@@ -55,3 +55,6 @@ function convert(num){
 }
 /*Test cases*/
 ```
+
+Next is the while loop component. For as long as `num` is larger than the elements within `decimalVal`, our while loop will subtract the elements of `decimalVal` from `num` and set it back equal to `num` until `num` equals zero. At the same time, the elements from `romanVal` will be added to `romanNum` for as long as the while loop condition stands true:
+
