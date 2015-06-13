@@ -103,3 +103,12 @@ convert(16); //'XVI'
 ```
 
 Awesome! Now that we flipped the arrays, we begin subtracting with the largest possible `decimalVal` and continue on down the line of elements until `num` is zero
+
+### Replacing Strings
+Make a function that will take in a total of 3 arguments:
+
+`str` = The initial string we are manipulating
+
+`before` = The word that we are replacing
+
+`after` = The word that we are replacing `before` with
