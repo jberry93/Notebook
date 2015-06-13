@@ -126,3 +126,5 @@ replace("This has a spellngi error", "spellngi", "spelling");
 replace("His name is Tom", "Tom", "john");
 replace("Let us get back to more Coding", "Coding", "bonfires");
 ```
+
+First order of business is to separate the `before` and `after` strings into 2 separate arrays containing their individual characters. We need to make sure that if the first letter of `before` is capitalized that the first letter of `after` is also capitalized:
