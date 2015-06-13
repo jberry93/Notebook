@@ -113,7 +113,7 @@ Make a function that will take in a total of 3 arguments:
 
 `after` = The word that we are replacing `before` with
 
-Here is the initial function:
+Here is the initial function with test cases:
 
 ```Javascript
 function replace(str,before,after){
