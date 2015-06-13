@@ -41,3 +41,17 @@ function convert(num){
 }
 /*Test cases*/
 ```
+
+The next step is the hardest! We need to combine a for loop with a while loop to make our function work. We will first iterate through the length of `romanVal`:
+
+```Javascript
+function convert(num){
+	var romanVal = ['I','IV','V','IX','X'];
+	var decimalVal = [1,4,5,9,10];
+	var romanNum = '';
+	for(var i=0;i < romanVal.length; i++){
+		/*Roman sorcery*/
+	}
+}
+/*Test cases*/
+```
