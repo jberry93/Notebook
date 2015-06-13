@@ -168,7 +168,6 @@ replace("Let us go to the store", "store", "mall");
 replace("He is Sleeping on the couch", "Sleeping", "sitting");
 replace("This has a spellngi error", "spellngi", "spelling");
 replace("His name is Tom", "Tom", "john");
-replace("Let us get back to more Coding", "Coding", "bonfires");
 ```
 
 This function has been successfully completed! Run it with the test cases above to see for yourself!
