@@ -202,3 +202,18 @@ function vowelCheck(strarr){
 ```
 
 In `vowelCheck` we need to see if the the given array has any element containing a vowel which could be 'a', 'e', 'i', 'o', or 'u'. If it is 'a', 'e', 'i', 'o', or 'u', we will have the function return `true`. Else, the function will return `false`:
+
+```Javascript
+function translate(str){
+	var strarr = str.split('');
+	/*pig magic*/
+}
+function vowelCheck(strarr){
+	if(strarr == 'a' || strarr == 'e' || strarr == 'i' || strarr == 'o' || strarr == 'u'){
+    	return true;
+  	}else{
+    	return false;
+  	}
+}
+/*test cases*/
+```
