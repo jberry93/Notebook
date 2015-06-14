@@ -173,3 +173,15 @@ This function has been successfully completed! Run it with the test cases above 
 
 ###Pig Latin
 Make a function that will convert a given string into its Pig Latin equivalent. For example:
+
+```Javascript
+function translate(str){
+	/*pig magic*/
+}
+translate('consonant'); //'onsonantcay'
+translate('california'); //'aliforniacay'
+translate('paragraphs'); //'aragraphspay'
+translate('glove'); //'oveglay'
+translate('algorithm'); //'alogorithmway'
+translate('eight'); //'eightway'
+```
