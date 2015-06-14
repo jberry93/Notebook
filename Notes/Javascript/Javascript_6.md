@@ -222,7 +222,7 @@ Now that we have completed the `vowelCheck` function, we now need to make our co
 
 **Condition 1** = Check to see if the first element in `strarr` is a vowel. If it is, return the original string `str` concatenated with 'way'
 
-**Condition 2** = Check to see if the 2nd element of the string is a consonant (which would make our `vowelCheck` function return `false`). If it is, take the first 2 letters and place them on the end of the string and add 'ay' to the very end of that same string
+**Condition 2** = Check to see if the 2nd element of `strarr` is a consonant (which would make our `vowelCheck` function return `false`). If it is, place the first 2 elements at the end of the `strarr` array along with an 'ay' using `strarr[strarr.length] = strarr[0]+strarr[1]+'ay'`
 
 **Condition 3** = Check to see if the 1st element of the string is a consonant. If it is, take the first element and place it on the end of the string and add 'ay' to the very end of that same string
 
