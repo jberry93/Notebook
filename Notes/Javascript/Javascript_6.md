@@ -220,11 +220,11 @@ function vowelCheck(strarr){
 
 Now that we have completed the `vowelCheck` function, we now need to make our conditions for the `translate` function. In this case, we will have 3 different conditions which means we will have an if/else-if/else structure:
 
-**Condition 1** = Check to see if the first letter in the string is a vowel. If it is, return the string with 'way' at the end of the string
+**Condition 1** = Check to see if the first element in `strarr` is a vowel. If it is, return the original string `str` concatenated with 'way'
 
-**Condition 2** = Check to see if the 2nd letter of the string is a consonant (which would make our `vowelCheck` function return `false`). If it is, take the first 2 letters and place them on the end of the string and add 'ay' to the very end of that same string
+**Condition 2** = Check to see if the 2nd element of the string is a consonant (which would make our `vowelCheck` function return `false`). If it is, take the first 2 letters and place them on the end of the string and add 'ay' to the very end of that same string
 
-**Condition 3** = Check to see if the 1st letter of the string is a consonant. If it is, take the first letter and place it on the end of the string and add 'ay' to the very end of that same string
+**Condition 3** = Check to see if the 1st element of the string is a consonant. If it is, take the first element and place it on the end of the string and add 'ay' to the very end of that same string
 
 ```Javascript
 function translate(str){
