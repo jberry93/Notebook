@@ -225,3 +225,27 @@ Now that we have completed the `vowelCheck` function, we now need to make our co
 **Condition 2** = Check to see if the 2nd letter of the string is a consonant (which would make our `vowelCheck` function return `false`). If it is, take the first 2 letters and place them on the end of the string and add 'ay' to the very end of that same string
 
 **Condition 3** = Check to see if the 1st letter of the string is a consonant. If it is, take the first letter and place it on the end of the string and add 'ay' to the very end of that same string
+
+```Javascript
+function translate(str){
+	var strarr = str.split('');
+	//Condition 1
+	if(vowelCheck(strarr[0])){
+    	return str + 'way';
+  	}/*Condition 2*/else if(vowelCheck(strarr[1]) === false){
+    	strarr[strarr.length] = strarr[0] + strarr[1] + 'ay';
+    	return strarr.splice(2,strarr.length).join('');
+  	}/*Condition 3*/else{
+    	strarr[strarr.length] = strarr[0] + 'ay';
+    	return strarr.splice(1,strarr.length).join('');
+  	}
+}
+function vowelCheck(strarr){
+	if(strarr == 'a' || strarr == 'e' || strarr == 'i' || strarr == 'o' || strarr == 'u'){
+    	return true;
+  	}else{
+    	return false;
+  	}
+}
+/*test cases*/
+```
