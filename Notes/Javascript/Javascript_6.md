@@ -224,7 +224,7 @@ Now that we have completed the `vowelCheck` function, we now need to make our co
 
 **Condition 2** = Check to see if the 2nd element of `strarr` is a consonant (which would make our `vowelCheck` function return `false`). If it is, place the first 2 elements at the end of the `strarr` array along with an 'ay' using `strarr[strarr.length] = strarr[0]+strarr[1]+'ay'`. Return the Pig Latin translation using `.splice()` by starting on index 2 and splice till the end of `strarr` and `.join()` all the elements together into one string. We want to start splicing on index 2 because the rules of Pig Latin force us to move groups of consonants to the end of the word. We cannot include the first 2 letters given that they are consonants
 
-**Condition 3** = Check to see if the 1st element of the string is a consonant. If it is, take the first element and place it on the end of the string and add 'ay' to the very end of that same string
+**Condition 3** = Check to see if the 1st element of `strarr` is a consonant. If it is, take the first element and place it on the end of `strarr` and add 'ay' using similar code to **Condition 2**. The only difference is that we do not include `strarr[1]`. Return the Pig Latin translation using nearly identical code to **Condition 2** except we begin splicing on index 1 instead of index 2 since we are assuming that the 2nd element of `strarr` is a vowel for this condition
 
 ```Javascript
 function translate(str){
