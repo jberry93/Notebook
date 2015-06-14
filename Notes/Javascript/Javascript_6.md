@@ -170,3 +170,6 @@ replace("His name is Tom", "Tom", "john");
 ```
 
 This function has been successfully completed! Run it with the test cases above to see for yourself!
+
+###Pig Latin
+Make a function that will convert a given string into its Pig Latin equivalent. For example:
