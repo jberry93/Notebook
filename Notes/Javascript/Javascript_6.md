@@ -188,7 +188,7 @@ translate('eight'); //'eightway'
 
 Here is the Wikipedia entry for [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin) to get a better understanding of the rules
 
-Pig Latin relies heavily on the presence and/or absence of vowels which can include 'a', 'e', 'i', 'o', or 'u'. Let's first make a separate function called `vowelCheck` outside of `translate` that takes in an array of letters comprised of the given string using `.split()`:
+Pig Latin relies heavily on the presence and/or absence of vowels which include 'a', 'e', 'i', 'o', or 'u'. Let's first make a separate function called `vowelCheck` outside of `translate` that takes in an array of letters comprised of the given string using `.split()`:
 
 ```Javascript
 function translate(str){
