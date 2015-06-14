@@ -222,7 +222,7 @@ Now that we have completed the `vowelCheck` function, we now need to make our co
 
 **Condition 1** = Check to see if the first element in `strarr` is a vowel. If it is, return the original string `str` concatenated with 'way'
 
-**Condition 2** = Check to see if the 2nd element of `strarr` is a consonant (which would make our `vowelCheck` function return `false`). If it is, place the first 2 elements at the end of the `strarr` array along with an 'ay' using `strarr[strarr.length] = strarr[0]+strarr[1]+'ay'`
+**Condition 2** = Check to see if the 2nd element of `strarr` is a consonant (which would make our `vowelCheck` function return `false`). If it is, place the first 2 elements at the end of the `strarr` array along with an 'ay' using `strarr[strarr.length] = strarr[0]+strarr[1]+'ay'`. Return the Pig Latin translation using `.splice()` by starting on index 2 and splice till the end of `strarr` and `.join()` all the elements together into one string. We want to start splicing on index 2 because the rules of Pig Latin force us to move groups of consonants to the end of the word. We cannot include the first 2 letters given that they are consonants
 
 **Condition 3** = Check to see if the 1st element of the string is a consonant. If it is, take the first element and place it on the end of the string and add 'ay' to the very end of that same string
 
