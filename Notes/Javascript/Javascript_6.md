@@ -253,3 +253,5 @@ translate('glove'); //'oveglay'
 translate('algorithm'); //'alogorithmway'
 translate('eight'); //'eightway'
 ```
+
+And we have successfully crafted a simple Pig Latin translator!
