@@ -229,8 +229,7 @@ Now that we have completed the `vowelCheck` function, we now need to make our co
 ```Javascript
 function translate(str){
 	var strarr = str.split('');
-	//Condition 1
-	if(vowelCheck(strarr[0])){
+	/*Condition 1*/if(vowelCheck(strarr[0])){
     	return str + 'way';
   	}/*Condition 2*/else if(vowelCheck(strarr[1]) === false){
     	strarr[strarr.length] = strarr[0] + strarr[1] + 'ay';
