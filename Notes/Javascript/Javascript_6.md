@@ -185,3 +185,5 @@ translate('glove'); //'oveglay'
 translate('algorithm'); //'alogorithmway'
 translate('eight'); //'eightway'
 ```
+
+Here is the Wikipedia entry for [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin) to get a better understanding
