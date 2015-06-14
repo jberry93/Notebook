@@ -200,3 +200,5 @@ function vowelCheck(strarr){
 }
 /*test cases*/
 ```
+
+In `vowelCheck` we need to see if the the given array has any element containing a vowel which could be 'a', 'e', 'i', 'o', or 'u'. If it is 'a', 'e', 'i', 'o', or 'u', we will have the function return `true`. Else, the function will return `false`:
