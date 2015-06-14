@@ -246,5 +246,10 @@ function vowelCheck(strarr){
     	return false;
   	}
 }
-/*test cases*/
+translate('consonant'); //'onsonantcay'
+translate('california'); //'aliforniacay'
+translate('paragraphs'); //'aragraphspay'
+translate('glove'); //'oveglay'
+translate('algorithm'); //'alogorithmway'
+translate('eight'); //'eightway'
 ```
