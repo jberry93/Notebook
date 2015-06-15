@@ -2,3 +2,13 @@
 Make a function that will take in a string that is a range of letters. Check the string for any missing letters and return the letters missing from the range. If there are no letters missing, return `undefined`
 
 Here's the initial function:
+
+```Javascript
+function fearNotLetter(str){
+	/*letter detective*/
+}
+fearNotLetter('abce'); //'d'
+fearNotLetter('bcd'); //undefined
+fearNotLetter('abcdefghjklmno'); //'i'
+fearNotLetter('yz'); //undefined
+```
