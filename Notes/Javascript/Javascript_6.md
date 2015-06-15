@@ -257,7 +257,23 @@ translate('eight'); //'eightway'
 And we have successfully crafted a simple Pig Latin translator!
 
 ### DNA Pairs
-Let's make a function that will take in a string containing the Nitrogenous bases A (Adenosine), T (Thymine), C (Cytosine), and G (Guanine). A binds with T and C binds with G
+Let's make a function that will take in a string containing the Nitrogenous bases A (Adenosine), T (Thymine), C (Cytosine), and G (Guanine). A binds with T and C binds with G. This function will return a 2D array containing each nitrogenous base given from the initial string paired with the base it would bind to
 
 Here's the initial function:
 
+```Javascript
+function pair(str){
+	/*genetics*/
+}
+pair('GCG'); 
+//[['G','C'],['C','G'],['G','C']]
+
+pair('ATCGA');
+//[['A','T'],['T','A'],['C','G'],['G','C'],['A','T']]
+
+pair('TTGAG');
+//[['T','A'],['T','A'],['G','C'],['A','T'],['G','C']]
+
+pair('CTCTA');
+//[['C','G'],['T','A'],['C','G'],['T','A'],['A','T']]
+```
