@@ -298,3 +298,6 @@ function pair(str){
 }
 /*test cases*/
 ```
+
+Now we need to check if the element given during the iteration is a certain nitrogenous base. If it is, we will set that element equal to an array containing that nitrogenous base with its base pair like so:
+
