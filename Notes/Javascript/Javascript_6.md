@@ -316,5 +316,15 @@ function pair(str){
     	}
 	}
 }
-/*test cases*/
+pair('GCG'); 
+//[['G','C'],['C','G'],['G','C']]
+
+pair('ATCGA');
+//[['A','T'],['T','A'],['C','G'],['G','C'],['A','T']]
+
+pair('TTGAG');
+//[['T','A'],['T','A'],['G','C'],['A','T'],['G','C']]
+
+pair('CTCTA');
+//[['C','G'],['T','A'],['C','G'],['T','A'],['A','T']]
 ```
