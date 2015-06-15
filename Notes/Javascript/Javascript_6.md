@@ -286,3 +286,5 @@ function pair(str){
 }
 /*test cases*/
 ```
+
+Next, let's make a for loop that will iterate through each element or in this case nitrogenous base so that we can utilize an if/else-if/else structure to check each nitrogenous base:
