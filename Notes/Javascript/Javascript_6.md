@@ -277,3 +277,12 @@ pair('TTGAG');
 pair('CTCTA');
 //[['C','G'],['T','A'],['C','G'],['T','A'],['A','T']]
 ```
+
+The first step is to separate the given string into an array using `.split()`:
+
+```Javascript
+function pair(str){
+	var strarr = str.split('');
+}
+/*test cases*/
+```
