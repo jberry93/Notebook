@@ -288,3 +288,13 @@ function pair(str){
 ```
 
 Next, let's make a for loop that will iterate through each element or in this case nitrogenous base so that we can utilize an if/else-if/else structure to check each nitrogenous base:
+
+```Javascript
+function pair(str){
+	var strarr = str.split('');
+	for(var i=0;i < strarr.length;i++){
+		/*if/else-if/else*/
+	}
+}
+/*test cases*/
+```
