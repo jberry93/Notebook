@@ -255,3 +255,9 @@ translate('eight'); //'eightway'
 ```
 
 And we have successfully crafted a simple Pig Latin translator!
+
+### DNA Pairs
+Let's make a function that will take in a string containing the Nitrogenous bases A (Adenosine), T (Thymine), C (Cytosine), and G (Guanine). A binds with T and C binds with G
+
+Here's the initial function:
+
