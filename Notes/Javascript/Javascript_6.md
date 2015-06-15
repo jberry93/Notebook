@@ -301,3 +301,20 @@ function pair(str){
 
 Now we need to check if the element given during the iteration is a certain nitrogenous base. If it is, we will set that element equal to an array containing that nitrogenous base with its base pair like so:
 
+```Javascript
+function pair(str){
+	var strarr = str.split('');
+	for(var i=0;i < strarr.length;i++){
+		if(strarr[i] == 'G'){
+      		strarr[i] = ['G','C'];
+    	}else if(strarr[i] == 'C'){
+      		strarr[i] = ['C','G'];
+    	}else if(strarr[i] == 'A'){
+      		strarr[i] = ['A','T'];
+    	}else{
+      		strarr[i] = ['T','A'];
+    	}
+	}
+}
+/*test cases*/
+```
