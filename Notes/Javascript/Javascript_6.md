@@ -328,3 +328,5 @@ pair('TTGAG');
 pair('CTCTA');
 //[['C','G'],['T','A'],['C','G'],['T','A'],['A','T']]
 ```
+
+And we have successfully completed the nitrogenous base pairing script!
