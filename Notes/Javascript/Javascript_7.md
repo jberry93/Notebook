@@ -58,7 +58,7 @@ function fearNotLetter(str){
 /*test cases*/
 ```
 
-**if statement** = This if statement will check to see if the unicode sums equal each other. If they do not equal, subtract the two unicode sums and use the method `String.fromCharCode()` to return the letter that is missing from the given letter range. If they do equal, return `undefined`:
+**if statement** = This if statement will check to see if the unicode sums equal each other. If they do not equal, subtract the two unicode sums and use the method `String.fromCharCode()` to return the letter that is missing from the given letter range. We use `String.fromCharCode()` and not just `.fromCharCode()` since `.fromCharCode()` is a static method of `String`. According to [Wikipedia](https://en.wikipedia.org/wiki/Method_(computer_programming)#Static_methods) a static method is meant to be relevant to all instances of a class, not just a specific instance. If they do equal, return `undefined`:
 
 ```Javascript
 function fearNotLetter(str){
