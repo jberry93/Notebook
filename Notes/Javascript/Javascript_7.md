@@ -87,3 +87,5 @@ fearNotLetter('bcd'); //undefined
 fearNotLetter('abcdefghjklmno'); //'i'
 fearNotLetter('yz'); //undefined
 ```
+
+We have completed the function!
