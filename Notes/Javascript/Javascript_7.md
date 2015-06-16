@@ -25,7 +25,18 @@ function fearNotLetter(str){
 
 **First for loop** = This for loop will iterate through the given string `str`, add up all the unicode values given by the method `.charCodeAt()` and set that sum equal to a variable `sumunistr`:
 
-
+```Javascript
+function fearNotLetter(str){
+	var sumunistr = 0;
+	var sumunialpha = 0;
+	
+	//first for loop
+	for(var j=0;j<str.length;j++){
+		sumunistr += str.charCodeAt(j);
+	}
+}
+/*test cases*/
+```
 
 **Second for loop** = This for loop will iterate through all the letters between the first letter and the last letter given in `str`, add up all the unicode values given by the same method as above and set that sum equal to a variable `sumunialpha`
 
