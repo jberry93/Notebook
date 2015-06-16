@@ -122,3 +122,5 @@ boo(false);
 boo([].slice);
 boo({'a':1});
 ```
+
+As simple as that!
