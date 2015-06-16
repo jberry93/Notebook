@@ -107,3 +107,18 @@ boo({'a':1});
 ```
 
 We can make this function with just 1 if statement which will check to see if the given `bool` value is `true` or `false`. If it is, return `true`. If it is not, return `false`:
+
+```Javascript
+function boo(bool){
+	if(bool === true || bool === false){
+		return true;
+	}else{
+		return false;
+	}
+}
+boo(null);
+boo(1);
+boo(false);
+boo([].slice);
+boo({'a':1});
+```
