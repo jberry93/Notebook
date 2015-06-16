@@ -58,7 +58,7 @@ function fearNotLetter(str){
 /*test cases*/
 ```
 
-**if statement** = This if statement will check to see if the unicode sums equal each other. If they do not equal, subtract the two unicode sums and use the method `.fromCharCode()` to return the letter that is missing from the given letter range. If they do equal, return `undefined`
+**if statement** = This if statement will check to see if the unicode sums equal each other. If they do not equal, subtract the two unicode sums and use the method `String.fromCharCode()` to return the letter that is missing from the given letter range. If they do equal, return `undefined`
 
 ```Javascript
 function fearNotLetter(str){
@@ -71,7 +71,7 @@ function fearNotLetter(str){
 	}
 
 	//second for loop
-	for(var i=str.charCodeAt(0);i<=str.charCodeAt(str.length-1);;i++){
+	for(var i=str.charCodeAt(0);i<=str.charCodeAt(str.length-1);i++){
 		sumunialpha += i;
 	}
 
