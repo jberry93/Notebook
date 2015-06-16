@@ -13,7 +13,15 @@ fearNotLetter('abcdefghjklmno'); //'i'
 fearNotLetter('yz'); //undefined
 ```
 
-Our strategy for making this function will be to have 2 different for loops and an if statement after the for loops:
+Our strategy for making this function will be to have 2 different for loops and an if statement after the for loops but first let's initialize 2 important variables:
+
+```Javascript
+function fearNotLetter(str){
+	var sumunistr = 0;
+	var sumunialpha = 0;
+}
+/*test cases*/
+```
 
 **First for loop** = This for loop will iterate through the given string `str`, add up all the unicode values given by the method `.charCodeAt()` and set that sum equal to a variable `sumunistr`:
 
