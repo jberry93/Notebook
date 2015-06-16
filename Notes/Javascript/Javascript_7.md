@@ -105,3 +105,5 @@ boo(false);
 boo([].slice);
 boo({'a':1});
 ```
+
+We can make this function with just 1 if statement which will check to see if the given `bool` value is `true` or false`. If it is, return `true`. If it is not, return `false`:
