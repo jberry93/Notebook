@@ -38,7 +38,7 @@ function fearNotLetter(str){
 /*test cases*/
 ```
 
-**Second for loop** = This for loop will iterate through all the unicode values of the letters between the first letter (Given by: `str.charCodeAt(0)`) and the last letter (By limiting `i` by: `str.charCodeAt(str.length-1)`) given in `str`, add up all the unicode values given by the same method as above and set that sum equal to a variable `sumunialpha`
+**Second for loop** = This for loop will iterate through all the unicode values of the letters between the first letter (Given by: `str.charCodeAt(0)`) and the last letter (By limiting `i` by: `str.charCodeAt(str.length-1)`) given in `str`, add up all the unicode values given by the same method as above and set that sum equal to a variable `sumunialpha`:
 
 ```Javascript
 function fearNotLetter(str){
@@ -58,7 +58,7 @@ function fearNotLetter(str){
 /*test cases*/
 ```
 
-**if statement** = This if statement will check to see if the unicode sums equal each other. If they do not equal, subtract the two unicode sums and use the method `String.fromCharCode()` to return the letter that is missing from the given letter range. If they do equal, return `undefined`
+**if statement** = This if statement will check to see if the unicode sums equal each other. If they do not equal, subtract the two unicode sums and use the method `String.fromCharCode()` to return the letter that is missing from the given letter range. If they do equal, return `undefined`:
 
 ```Javascript
 function fearNotLetter(str){
@@ -82,5 +82,8 @@ function fearNotLetter(str){
 		return undefined;
 	}
 }
-/*test cases*/
+fearNotLetter('abce'); //'d'
+fearNotLetter('bcd'); //undefined
+fearNotLetter('abcdefghjklmno'); //'i'
+fearNotLetter('yz'); //undefined
 ```
