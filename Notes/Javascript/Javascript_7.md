@@ -89,3 +89,8 @@ fearNotLetter('yz'); //undefined
 ```
 
 We have completed the function!
+
+### Booleans
+Very simple function this time around! Check if a given value is classified as a boolean primitive (Meaning, is it `true` or `false`?)
+
+Here's the initial function:
