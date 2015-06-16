@@ -59,3 +59,28 @@ function fearNotLetter(str){
 ```
 
 **if statement** = This if statement will check to see if the unicode sums equal each other. If they do not equal, subtract the two unicode sums and use the method `.fromCharCode()` to return the letter that is missing from the given letter range. If they do equal, return `undefined`
+
+```Javascript
+function fearNotLetter(str){
+	var sumunistr = 0;
+	var sumunialpha = 0;
+	
+	//first for loop
+	for(var j=0;j<str.length;j++){
+		sumunistr += str.charCodeAt(j);
+	}
+
+	//second for loop
+	for(var i=str.charCodeAt(0);i<=str.charCodeAt(str.length-1);;i++){
+		sumunialpha += i;
+	}
+
+	//if statement
+	if(sumunistr !== sumunialpha){
+		return String.fromCharCode(sumunialpha - sumunistr);
+	}else{
+		return undefined;
+	}
+}
+/*test cases*/
+```
