@@ -94,3 +94,14 @@ We have completed the function!
 Very simple function this time around! Check if a given value is classified as a boolean primitive (Meaning, is it `true` or `false`?)
 
 Here's the initial function:
+
+```Javascript
+function boo(bool){
+	/*true or false?*/
+}
+boo(null);
+boo(1);
+boo(false);
+boo([].slice);
+boo({'a':1});
+```
