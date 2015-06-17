@@ -124,3 +124,8 @@ boo({'a':1});
 ```
 
 As simple as that!
+
+### Très Arrays
+Make a function that will take in 3 arrays and return an array containing all unique values in the order of the original provided arrays
+
+Here's an example:
