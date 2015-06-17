@@ -161,3 +161,5 @@ function unite(arr1,arr2,arr3){
 }
 /*test cases*/
 ```
+
+The first for loop is going to iterate through `arr1` and push all its elements into the new array `alpha`:
