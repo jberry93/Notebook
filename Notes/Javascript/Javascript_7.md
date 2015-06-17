@@ -207,3 +207,5 @@ function unite(arr1,arr2,arr3){
 }
 /*test cases*/
 ```
+
+The third for loop is going to do the same thing as the second for loop except for `arr3`. The if statement will also do the same thing as the second for loop except for `arr3` as well:
