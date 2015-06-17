@@ -228,5 +228,11 @@ function unite(arr1,arr2,arr3){
 	}
 	return alpha;
 }
-/*test cases*/
+unite([1, 2, 3], [5, 2, 1, 4], [2, 1]); //[1,2,3,5,4]
+unite([1, 3, 2], [5, 2, 1, 4], [2, 1]); //[1,3,2,5,4]
+unite([1, 3, 2], [1, [5]], [2, [4]]); //[1,3,2,[5],[4]]
 ```
+
+We have officially finished the function!
+
+For another use case of `.indexOf()` in this same way, refer to my notes on the [Comparing Arrays](https://github.com/jberry93/Notebook/blob/master/Notes/Javascript/Javascript_5.md) section
