@@ -129,3 +129,11 @@ As simple as that!
 Make a function that will take in 3 arrays and return an array containing all unique values in the order of the original provided arrays
 
 Here's an example:
+
+```Javascript
+function unite(arr1,arr2,arr3){
+	/*très array magic*/
+}
+unite([1, 2, 3], [5, 2, 1, 4], [2, 1]);
+//Output: [1,2,3,5,4]
+```
