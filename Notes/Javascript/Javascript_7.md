@@ -139,3 +139,24 @@ unite([1, 2, 3], [5, 2, 1, 4], [2, 1]);
 ```
 
 The strategy for this function will be a collection of 3 for loops where 2 of these for loops will have an if statement within. Let's first initialize a variable that we will be using throughout the 3 for loops and get the general structure of our function down:
+
+```Javascript
+function unite(arr1,arr2,arr3){
+	var alpha = [];
+	for(/*first for loop*/){
+		/*certain method here*/
+	}
+	for(/*second for loop*/){
+		if(/*first constraint*/){
+			/*same method here*/
+		}
+	}
+	for(/*third for loop*/){
+		if(/*second constraint*/){
+			/*same method here*/
+		}
+	}
+	return alpha;
+}
+/*test cases*/
+```
