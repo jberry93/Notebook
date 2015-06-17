@@ -134,8 +134,9 @@ Here's an example:
 function unite(arr1,arr2,arr3){
 	/*très array magic*/
 }
-unite([1, 2, 3], [5, 2, 1, 4], [2, 1]);
-//Output: [1,2,3,5,4]
+unite([1, 2, 3], [5, 2, 1, 4], [2, 1]); //[1,2,3,5,4]
+unite([1, 3, 2], [5, 2, 1, 4], [2, 1]); //[1,3,2,5,4]
+unite([1, 3, 2], [1, [5]], [2, [4]]); //[1,3,2,[5],[4]]
 ```
 
 The strategy for this function will be a collection of 3 for loops where 2 of these for loops will have an if statement within. Let's first initialize a variable that we will be using throughout the 3 for loops and get the general structure of our function down:
