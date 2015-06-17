@@ -209,3 +209,24 @@ function unite(arr1,arr2,arr3){
 ```
 
 The third for loop is going to do the same thing as the second for loop except for `arr3`. The if statement will also do the same thing as the second for loop except for `arr3` as well:
+
+```Javascript
+function unite(arr1,arr2,arr3){
+	var alpha = [];
+	for(var i=0; i < arr1.length;i++){
+		alpha.push(arr1[i]);
+	}
+	for(var j=0;j < arr2.length;j++){
+		if(alpha.indexOf(arr2[j]) == -1){
+			alpha.push(arr2[j]);
+		}
+	}
+	for(var k=0;k < arr3.length;k++){
+		if(alpha.indexOf(arr3[k]) == -1){
+			alpha.push(arr3[k]);
+		}
+	}
+	return alpha;
+}
+/*test cases*/
+```
