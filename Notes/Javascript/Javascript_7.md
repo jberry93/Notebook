@@ -167,7 +167,7 @@ The first for loop is going to iterate through `arr1` and `.push()` all its elem
 ```Javascript
 function unite(arr1,arr2,arr3){
 	var alpha = [];
-	for(var i=0; i < arr1.length; i++){
+	for(var i=0; i < arr1.length;i++){
 		alpha.push(arr1[i]);
 	}
 	for(/*second for loop*/){
@@ -185,4 +185,25 @@ function unite(arr1,arr2,arr3){
 /*test cases*/
 ```
 
-The second for loop is going to iterate through `arr2` and `.push()` its elements into array `alpha` if `alpha` does not contain the iterated element from `arr2`. We will filter the elements in `arr2` via the if statement:
+The second for loop is going to iterate through `arr2` and `.push()` its elements into array `alpha` if `alpha` does not contain the iterated element from `arr2`. We will filter the elements in `arr2` via the if statement using the `.indexOf()` method:
+
+```Javascript
+function unite(arr1,arr2,arr3){
+	var alpha = [];
+	for(var i=0; i < arr1.length;i++){
+		alpha.push(arr1[i]);
+	}
+	for(var j=0;j < arr2.length;j++){
+		if(alpha.indexOf(arr2[j]) == -1){
+			alpha.push(arr2[j]);
+		}
+	}
+	for(/*third for loop*/){
+		if(/*second constraint*/){
+			/*same method here*/
+		}
+	}
+	return alpha;
+}
+/*test cases*/
+```
