@@ -167,7 +167,7 @@ The first for loop is going to iterate through `arr1` and `.push()` all its elem
 ```Javascript
 function unite(arr1,arr2,arr3){
 	var alpha = [];
-	for(var i=0;i < arr1.length; i++){
+	for(var i=0; i < arr1.length; i++){
 		alpha.push(arr1[i]);
 	}
 	for(/*second for loop*/){
@@ -184,3 +184,5 @@ function unite(arr1,arr2,arr3){
 }
 /*test cases*/
 ```
+
+The second for loop is going to iterate through `arr2` and `.push()` its elements into array `alpha` if `alpha` does not contain the iterated element from `arr2`. We will filter the elements in `arr2` via the if statement:
