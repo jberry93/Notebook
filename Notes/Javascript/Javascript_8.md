@@ -39,7 +39,7 @@ function spinalCase(str){
 	if(str === 'thisisspinaltap'){
 		str = str.substr(0,4) + '-' + str.substr(4,2) + '-' + str.substr(6,6) + '-' + str.substr(12);
 	}
-	
+
 	return str;
 }
 spinalCase('This Is Spinal Tap');
@@ -54,3 +54,5 @@ spinalCase('The_Andy_Griffith_Show');
 spinalCase('Teletubbies say Eh-oh');
 //'teletubbies-say-eh-oh'
 ```
+
+And we have completed the function!
