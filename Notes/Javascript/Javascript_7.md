@@ -238,4 +238,6 @@ We have officially finished the function!
 For another use case of `.indexOf()` in this same way, refer to my notes on the [Comparing Arrays](https://github.com/jberry93/Notebook/blob/master/Notes/Javascript/Javascript_5.md) section
 
 ### HTML Entities
-For this next function, let's read in a character like an ampersand ('&') and convert the string into its corresponding HTML entity
+For this next function, let's read in a character like an ampersand ('&') and convert the string into its corresponding HTML entity. 
+
+For more information on HTML entities, please refer to this [link](http://www.w3schools.com/html/html_entities.asp) for an in-depth explanation
