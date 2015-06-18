@@ -251,3 +251,5 @@ function convert(str){
 convert('Dolce & Gabbana');
 //Output: 'Dolce &amp; Gabbana'
 ```
+
+To complete this function, we just need to replace any instance we see an ampersand with its corresponding HTML entity `&amp;` this is made easy by using the `.replace()` function along with a regular expression:
