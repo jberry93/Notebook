@@ -253,3 +253,13 @@ convert('Dolce & Gabbana');
 ```
 
 To complete this function, we just need to replace any instance we see an ampersand with its corresponding HTML entity `&amp;` this is made easy by using the `.replace()` function along with a regular expression:
+
+```Javascript
+function convert(str){
+	return str.replace(/&/g, '&amp;');
+}
+convert('Dolce & Gabbana');
+//Output: 'Dolce &amp; Gabbana'
+```
+
+And we are done! The regular expression will pick up on the ampersand and replace it accordingly with `&amp;`
