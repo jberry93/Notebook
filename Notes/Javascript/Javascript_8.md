@@ -28,3 +28,6 @@ function spinalCase(str){
 }
 /*test cases*/
 ```
+
+Remember that for spinal case, we separate each word with a dash so that is what we will be replacing spaces and underscores with. There is one test case that does not work which is where an if statement will come into play. We will use `.substr()` to brute force the answer out of the particular case:
+
