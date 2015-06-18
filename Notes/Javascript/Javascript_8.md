@@ -19,3 +19,5 @@ spinalCase('The_Andy_Griffith_Show');
 spinalCase('Teletubbies say Eh-oh');
 //'teletubbies-say-eh-oh'
 ```
+
+Let's use `.replace()` and some regular expression to account for spaces and underscores (_). We also want to use `.toLowerCase()` to make sure all our strings are lowercase:
