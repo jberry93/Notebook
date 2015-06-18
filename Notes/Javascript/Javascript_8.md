@@ -1,2 +1,21 @@
 ### Spinal Tap Case
 Let's create a function that will take in any string value and return it in spinal case. Spinal case consists of all lowercase characters where each word is joined by a dash (-)
+
+Here is the initial function:
+
+```Javascript
+function spinalCase(str){
+	/*spinal reconstruction surgery*/
+}
+spinalCase('This Is Spinal Tap');
+//'this-is-spinal-tap'
+
+spinalCase('thisIsSpinalTap');
+//'this-is-spinal-tap'
+
+spinalCase('The_Andy_Griffith_Show');
+//'the-andy-griffith-show'
+
+spinalCase('Teletubbies say Eh-oh');
+//'teletubbies-say-eh-oh'
+```
