@@ -236,3 +236,6 @@ unite([1, 3, 2], [1, [5]], [2, [4]]); //[1,3,2,[5],[4]]
 We have officially finished the function!
 
 For another use case of `.indexOf()` in this same way, refer to my notes on the [Comparing Arrays](https://github.com/jberry93/Notebook/blob/master/Notes/Javascript/Javascript_5.md) section
+
+### HTML Entities
+For this next function, let's read in a character like an ampersand ('&') and convert the string into its corresponding HTML entity
