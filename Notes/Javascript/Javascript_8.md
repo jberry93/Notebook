@@ -21,3 +21,10 @@ spinalCase('Teletubbies say Eh-oh');
 ```
 
 Let's use `.replace()` and some regular expression to account for spaces and underscores (_). We also want to use `.toLowerCase()` to make sure all our strings are lowercase:
+
+```Javascript
+function spinalCase(str){
+	str = str.toLowerCase().replace(/[\s\_]/g,/*what are we replacing with?*/);
+}
+/*test cases*/
+```
