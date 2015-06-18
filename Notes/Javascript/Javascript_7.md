@@ -241,3 +241,13 @@ For another use case of `.indexOf()` in this same way, refer to my notes on the 
 For this next function, let's read in a character like an ampersand ('&') and convert the string into its corresponding HTML entity. 
 
 For more information on HTML entities, please refer to this [link](http://www.w3schools.com/html/html_entities.asp) for an in-depth explanation
+
+Here is our initial function:
+
+```Javascript
+function convert(str){
+	/*HTML entity*/
+}
+convert('Dolce & Gabbana');
+//Output: 'Dolce &amp; Gabbana'
+```
