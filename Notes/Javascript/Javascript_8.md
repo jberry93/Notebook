@@ -56,3 +56,6 @@ spinalCase('Teletubbies say Eh-oh');
 ```
 
 And we have completed the function!
+
+### Fibonacci Sequence
+Make a function that will return the sum of all odd Fibonacci numbers up to and including the passed number if it is itself a Fibonacci number
