@@ -58,4 +58,17 @@ spinalCase('Teletubbies say Eh-oh');
 And we have completed the function!
 
 ### Fibonacci Sequence
-Make a function that will return the sum of all odd Fibonacci numbers up to and including the passed number if it is itself a Fibonacci number
+Make a function that will return the sum of all odd Fibonacci numbers up to and including the passed number if the number itself is a Fibonacci number
+
+Here's the initial function:
+
+```Javascript
+function sumFibs(num){
+	/*Fibonacci sequencing*/
+}
+sumFibs(4); //5
+sumFibs(1000); //1785
+sumFibs(4000000); //4613732
+sumFibs(75024); //60696
+sumFibs(75025); //135721
+```
