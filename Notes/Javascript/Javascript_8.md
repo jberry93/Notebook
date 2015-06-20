@@ -60,7 +60,7 @@ And we have completed the function!
 ### Fibonacci Sequence
 Make a function that will return the sum of all odd Fibonacci numbers up to and including the passed number if the number itself is a Fibonacci number
 
-Here's the initial function:
+Here's the initial function and test cases we need to pass:
 
 ```Javascript
 function sumFibs(num){
