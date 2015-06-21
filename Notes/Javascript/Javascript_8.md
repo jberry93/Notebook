@@ -168,3 +168,11 @@ And we have completed the function! Congrats!
 This function is going to utilize Greek mathematics developed by [Eratosthenes](https://en.wikipedia.org/wiki/Eratosthenes). The main objective of the function is to pass a number and sum all the prime numbers from 2 to that number and return the result 
 
 Its name is the [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)! Quite useful when it comes to finding prime numbers from 2 to a given limit
+
+Here is the method:
+
+1) We will first make an array consisting of `1`s so that we have some way to mark numbers. The array will contain the same number of `1`s as the value of `num` passed into the function (Complete via for loop and `.push()` method)
+
+2) Next, check to make sure that the new array definitely has `1`s passed into it using another for loop with an if statement. If the element within the array is `1` then it will move on to the next step
+
+3) Within the if statement, another for loop will check for multiples of a passed element and mark them with a `0`. This mark will prevent that number from being added to the sum thereby extracting only prime numbers from the list of numbers
