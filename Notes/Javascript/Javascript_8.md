@@ -72,3 +72,5 @@ sumFibs(4000000); //4613732
 sumFibs(75024); //60696
 sumFibs(75025); //135721
 ```
+
+Our strategy will be utilizing some for loop trickery to brute force the correct Fibonacci sequence into existence. First we must initialize some variables:
