@@ -163,3 +163,8 @@ sumFibs(75025); //135721
 ```
 
 And we have completed the function! Congrats!
+
+### Prime Numbers & A Greek Mathematician
+This function is going to utilize Greek mathematics developed by [Eratosthenes](https://en.wikipedia.org/wiki/Eratosthenes). The main objective of the function is to pass a number and sum all the prime numbers from 2 to that number and return the result 
+
+Its name is the [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)! Quite useful when it comes to finding prime numbers from 2 to a given limit
