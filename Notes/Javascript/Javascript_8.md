@@ -161,3 +161,5 @@ sumFibs(4000000); //4613732
 sumFibs(75024); //60696
 sumFibs(75025); //135721
 ```
+
+And we have completed the function! Congrats!
