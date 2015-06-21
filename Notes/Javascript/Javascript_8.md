@@ -115,3 +115,21 @@ function sumFibs(num){
 ```
 
 The job of the second for loop will be to wittle down the `fibarr` down to numbers less than or equal to `num`. It will do this using an if statement to `.push()` the values into the empty array `limitarr`:
+
+```Javascript
+function sumFibs(num){
+	var fibarr = [0,1];
+	var limitarr = [];
+	var sum = 0;
+	for(var i=2;i <= num;i++){
+		fibarr.push(fibarr[i-1] + fibarr[i-2]);
+	}
+	for(var j=0;j < fibarr.length;j++){
+		if(fibarr[j] <= num){
+			limitarr.push(fibarr[j]);
+		}
+	}
+}
+/*test cases*/
+```
+
