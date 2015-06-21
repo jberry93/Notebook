@@ -74,3 +74,12 @@ sumFibs(75025); //135721
 ```
 
 Our strategy will be utilizing some for loop trickery to brute force the Fibonacci sequence. First we must initialize some variables:
+
+```Javascript
+function sumFibs(num){
+	var fibarr = [0,1];
+	var limitarr = [];
+	var sum = 0;
+}
+/*test cases*/
+```
