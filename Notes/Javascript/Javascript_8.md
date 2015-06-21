@@ -176,3 +176,6 @@ Here is the method:
 2) Next, check to make sure that the new array definitely has `1`s passed into it using another for loop with an if statement. If the element within the array is `1` then it will move on to the next step
 
 3) Within the if statement, another for loop will check for multiples of a passed element and mark them with a `0`. This mark will prevent that number from being added to the sum thereby extracting only prime numbers from the list of numbers
+
+That may or may not make any sense but let's first take it one step at a time. First let's initialize our variables:
+
