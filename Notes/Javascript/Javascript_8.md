@@ -133,3 +133,5 @@ function sumFibs(num){
 /*test cases*/
 ```
 
+Now comes the third for loop which will sort through the elements of `limitarr` and extract only the odd numbers using an if statement and modulo:
+
