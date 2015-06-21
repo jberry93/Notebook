@@ -135,3 +135,29 @@ function sumFibs(num){
 
 Now comes the third for loop which will sort through the elements of `limitarr` and extract only the odd numbers using an if statement and modulo and sum them together:
 
+```Javascript
+function sumFibs(num){
+	var fibarr = [0,1];
+	var limitarr = [];
+	var sum = 0;
+	for(var i=2;i <= num;i++){
+		fibarr.push(fibarr[i-1] + fibarr[i-2]);
+	}
+	for(var j=0;j < fibarr.length;j++){
+		if(fibarr[j] <= num){
+			limitarr.push(fibarr[j]);
+		}
+	}
+	for(var k=0;k < limitarr.length;k++){
+		if(limitarr[k] % 2 !== 0){
+			sum += limitarr[k];
+		}
+	}
+	return sum;
+}
+sumFibs(4); //5
+sumFibs(1000); //1785
+sumFibs(4000000); //4613732
+sumFibs(75024); //60696
+sumFibs(75025); //135721
+```
