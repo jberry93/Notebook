@@ -283,3 +283,5 @@ function sumPrimes(num){
 }
 sumPrimes(10); //17
 ```
+
+Keep trying different numbers and look on StackOverflow for more insight if it is still difficult to understand! Good luck!
