@@ -236,3 +236,23 @@ function sumPrimes(num){
 ```
 
 Our 3rd and last for loop is what will sift out the different multiples of `p` and mark them by changing their value from `1` to `0`. This way, we can eliminate extraneous numbers from the sum and only include prime numbers:
+
+```Javascript
+function sumPrimes(num){
+	var sieve = [];
+	var sum = 0;
+	for(var a=2;a<=num;a++){
+		sieve[a] = 1;
+	}
+	for(var p=2;p<=num;p++){
+		if(sieve[p] == 1){
+			for(var b=p*2;b<=num;b+=p){
+				sieve[b] = 0;
+			}
+			sum += p;
+		}
+	}
+}
+sumPrimes(10); //17
+sumPrimes(977); //73156
+```
