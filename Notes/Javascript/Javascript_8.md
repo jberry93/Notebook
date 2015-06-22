@@ -256,3 +256,30 @@ function sumPrimes(num){
 sumPrimes(10); //17
 sumPrimes(977); //73156
 ```
+
+Looks scary I know but let's try running the first case when `num` is `10` through that for/if/for loop structure and maybe it will be clearer:
+
+```Javascript
+function sumPrimes(num){
+	var sieve = [];
+	var sum = 0;
+	for(var a=2;a<=num;a++){
+		sieve[a] = 1;
+	}
+
+	for(var p=2;p<=num;p++){
+		console.log(p); //2,3,4,5,6,7,8,9,10
+		if(sieve[p] == 1){
+			for(var b=p*2;b<=num;b+=p){
+				console.log(b); //4,6,8,10,6,9,10
+				console.log(sieve[b]); //1,1,1,1,0,1,0
+				sieve[b] = 0;
+			}
+			console.log(prime); //2,3,5,7
+			sum += p;
+		}
+		return sum; //17
+	}
+}
+sumPrimes(10); //17
+```
