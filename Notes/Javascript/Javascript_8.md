@@ -201,7 +201,7 @@ function sumPrimes(num){
 /*test cases*/
 ```
 
-The purpose of our next for loop is to iterate through our prime numbers which we will sigify with variable `p`:
+The purpose of our next for loop is to iterate through our prime numbers which we will signify with variable `p`:
 
  ```Javascript
 function sumPrimes(num){
@@ -216,3 +216,5 @@ function sumPrimes(num){
 }
 /*test cases*/
 ```
+
+Remember our array `sieve`? It currently contains a bunch of `1`s so we are going to check and make sure `1` was passed in as an element. If it is, we will run the 3rd for loop:
