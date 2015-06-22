@@ -177,7 +177,7 @@ Here is the method:
 
 3) Within the if statement, another for loop will check for multiples of a passed element and mark them with a `0`. This mark will prevent that number from being added to the sum thereby extracting only prime numbers from the list of numbers
 
-That may or may not make any sense but let's first take it one step at a time. First let's initialize our variables:
+That may or may not make any sense but let's take it one step at a time. First let's initialize our variables:
 
 ```Javascript
 function sumPrimes(num){
@@ -187,3 +187,5 @@ function sumPrimes(num){
 sumPrimes(10); //17
 sumPrimes(977); //73156
 ```
+
+Next thing is our first for loop. This for loop will start iterate through all numbers from 2 till the passed value of `num` and stop at `num`. Within the for loop, we will place `1` into array `sieve` signifying each number from 2 to `num`:
