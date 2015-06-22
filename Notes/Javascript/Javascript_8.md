@@ -189,3 +189,15 @@ sumPrimes(977); //73156
 ```
 
 Next thing is our first for loop. This for loop will start iterate through all numbers from 2 till the passed value of `num` and stop at `num`. Within the for loop, we will place `1` into array `sieve` signifying each number from 2 to `num`:
+
+```Javascript
+function sumPrimes(num){
+	var sieve = [];
+	var sum = 0;
+	for(var a=2;a<=num;a++){
+		sieve[a] = 1;
+	}
+}
+sumPrimes(10); //17
+sumPrimes(977); //73156
+```
