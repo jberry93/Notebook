@@ -252,6 +252,7 @@ function sumPrimes(num){
 			sum += p;
 		}
 	}
+	return sum;
 }
 sumPrimes(10); //17
 sumPrimes(977); //73156
@@ -278,8 +279,8 @@ function sumPrimes(num){
 			console.log(prime); //2,3,5,7
 			sum += p;
 		}
-		return sum; //17
 	}
+	return sum; //17
 }
 sumPrimes(10); //17
 ```
