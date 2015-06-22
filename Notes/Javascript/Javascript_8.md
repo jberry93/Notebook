@@ -198,6 +198,7 @@ function sumPrimes(num){
 		sieve[a] = 1;
 	}
 }
-sumPrimes(10); //17
-sumPrimes(977); //73156
+/*test cases*/
 ```
+
+The purpose of our next for loop is to iterate through our prime numbers which we will sigify with variable `p`: 
