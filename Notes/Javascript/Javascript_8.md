@@ -179,3 +179,11 @@ Here is the method:
 
 That may or may not make any sense but let's first take it one step at a time. First let's initialize our variables:
 
+```Javascript
+function sumPrimes(num){
+	var sieve = [];
+	var sum = 0;
+}
+sumPrimes(10); //17
+sumPrimes(977); //73156
+```
