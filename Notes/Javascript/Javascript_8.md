@@ -234,3 +234,5 @@ function sumPrimes(num){
 }
 /*test cases*/
 ```
+
+Our 3rd and last for loop is what will sift out the different multiples of `p` and mark them by changing their value from `1` to `0`. This way, we can eliminate extraneous numbers from the sum and only include prime numbers:
