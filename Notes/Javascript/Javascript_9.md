@@ -36,8 +36,10 @@ function smallestCommons(arr){
 	}
 	var a = rangeArr[0];
 	for(var i=1;i < rangeArr.length;i++){
-		/*Euclid Algorithm*/
+		/*Euclidean Algorithm*/
 	}
 }
 /*test cases*/
 ```
+
+And here is where Greek mathematician [Euclid](https://en.wikipedia.org/wiki/Euclid) comes into play! His [algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm) is a very efficient way to calculate the greatest common divisor(GCD). The [GCD](https://en.wikipedia.org/wiki/Greatest_common_divisor#Using_Euclid.27s_algorithm) is the largest possible number that divides evenly into 2 given numbers
