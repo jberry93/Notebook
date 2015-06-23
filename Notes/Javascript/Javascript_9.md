@@ -133,5 +133,23 @@ a > b ? a %= b : b %= a;
 condition ? valueIfTrue : valueIfFalse;
 ```
 
-Let's replace the if/else with the ternary equivalent to make our code a little easier on the eye and return `a` to complete our function:
+Let's replace the if/else statement with the ternary equivalent to make our code a little easier on the eye and return `a` to complete our function:
 
+```Javascript
+function smallestCommons(arr){
+	var rangeArr = [];
+	for(var j=Math.min(arr[0],arr[1]);j<=Math.max(arr[0],arr[1]);j++){
+		rangeArr.push(j);
+	}
+	var a = rangeArr[0];
+	for(var i=1;i < rangeArr.length;i++){
+		var b = rangeArr[i];
+		var c = a;
+		while(a && b){
+			a > b ? a %= b : b %= a;
+		}
+		a = (c * rangeArr[i]) / (a + b)
+	}
+}
+/*test cases*/
+```
