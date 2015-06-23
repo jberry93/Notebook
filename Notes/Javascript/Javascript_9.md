@@ -91,3 +91,6 @@ function smallestCommons(arr){
 }
 /*test cases*/
 ```
+
+Okay! Now that we have our GCD, let's now solve for the LCM. We are going to take all the elements of `rangeArr` and multiply each one together. From here, we will divide by the sum of `a` and `b` (which is our GCD) to get our LCM!
+
