@@ -48,7 +48,7 @@ To find the GCD of 18 and 48 using Euclid's algorithm, take the larger of the 2 
 
 This example provides us with pseudocode which we will now implement in our existing code using a while loop within our for loop. Our while loop is going work for as long as the given condition is true. This means whatever we pass as the condition must exist to evaluate true and since `0` is considered `false` to the while loop, the while loop will stop. We will use this to our advantage when solving for the GCD (Keep in mind that this function will solve for the LCM and return it!)
 
-Let's first initialize some variables before making the contents of our while loop:
+Let's first initialize some variables before filling in the contents of our while loop:
 
 ```Javascript
 function smallestCommons(arr){
@@ -67,3 +67,6 @@ function smallestCommons(arr){
 }
 /*test cases*/
 ```
+
+Reason why we set variable `c` equal to `a` is that the value of `a` is going to possibly change with what we will use inside of the while loop. We are going to use modulo to grab the remainder of the larger number divided by the smaller number and set it equal to `a` or `b` depending on which is larger. Plus we need `c` to equal `a` since we are going to use the first element of `rangeArr` along with the GCD to help us solve for the LCM. Let's fill in the contents of our while loop:
+
