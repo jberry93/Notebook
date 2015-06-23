@@ -133,3 +133,5 @@ a > b ? a %= b : b %= a;
 condition ? valueIfTrue : valueIfFalse;
 ```
 
+Let's replace the if/else with the ternary equivalent to make our code a little easier on the eye and return `a` to complete our function:
+
