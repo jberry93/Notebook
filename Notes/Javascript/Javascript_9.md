@@ -150,6 +150,9 @@ function smallestCommons(arr){
 		}
 		a = (c * rangeArr[i]) / (a + b)
 	}
+	return a;
 }
-/*test cases*/
+smallestCommons([1,5]); //60
+smallestCommons([5,1]); //60
+smallestCommons([1,13]); //360360
 ```
