@@ -27,3 +27,17 @@ function smallestCommons(arr){
 So what this for loop will do is start from the smallest number of the 2 elements in the `arr` array and iterate up to and including the largest of the 2 elements in `arr` and push each number into the empty array `rangeArr`. This way, we have an array of all the numbers in our range!
 
 Let's make another for loop that will iterate through each element of `rangeArr`, not including the first element which we will set equal to variable `a`. The purpose of this will be clearer later on:
+
+```Javascript
+function smallestCommons(arr){
+	var rangeArr = [];
+	for(var j=Math.min(arr[0],arr[1]);j<=Math.max(arr[0],arr[1]);j++){
+		rangeArr.push(j);
+	}
+	var a = rangeArr[0];
+	for(var i=1;i < rangeArr.length;i++){
+		/*Euclid Algorithm*/
+	}
+}
+/*test cases*/
+```
