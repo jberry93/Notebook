@@ -116,3 +116,17 @@ function smallestCommons(arr){
 }
 /*test cases*/
 ```
+
+All that's left is to return `a` but here's a quick note on the contents of our while loop: We could technically use a ternary operation which utilizes `?` and `:` to get the same result as the if/else statement like so:
+
+```Javascript
+if(a > b){
+	a %= b;
+}else{
+	b %= a;
+}
+
+//Ternary equivalent:
+
+a > b ? a %= b : b %= a;
+```
