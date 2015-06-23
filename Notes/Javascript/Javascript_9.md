@@ -94,3 +94,25 @@ function smallestCommons(arr){
 
 Okay! Now that we have our GCD, let's now solve for the LCM. We are going to take all the elements of `rangeArr` and multiply each one together. From here, we will divide by the sum of `a` and `b` (which is our GCD) to get our LCM!
 
+```Javascript
+function smallestCommons(arr){
+	var rangeArr = [];
+	for(var j=Math.min(arr[0],arr[1]);j<=Math.max(arr[0],arr[1]);j++){
+		rangeArr.push(j);
+	}
+	var a = rangeArr[0];
+	for(var i=1;i < rangeArr.length;i++){
+		var b = rangeArr[i];
+		var c = a;
+		while(a && b){
+			if(a > b){
+				a %= b;
+			}else{
+				b %= a;
+			}
+		}
+		a = (c * rangeArr[i]) / (a + b)
+	}
+}
+/*test cases*/
+```
