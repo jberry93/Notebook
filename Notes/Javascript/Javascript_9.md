@@ -1,0 +1,1 @@
+### Smallest Common Multiple
