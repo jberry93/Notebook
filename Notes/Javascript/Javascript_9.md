@@ -1,1 +1,2 @@
 ### Smallest Common Multiple
+This function will take in an array containing 2 numbers which indicates a range. The job of this function is to find the least common multiple that is evenly divisibly by every number in this range
