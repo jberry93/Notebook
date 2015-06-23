@@ -42,4 +42,6 @@ function smallestCommons(arr){
 /*test cases*/
 ```
 
-And here is where Greek mathematician [Euclid](https://en.wikipedia.org/wiki/Euclid) comes into play! His [algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm) is a very efficient way to calculate the greatest common divisor(GCD). The [GCD](https://en.wikipedia.org/wiki/Greatest_common_divisor#Using_Euclid.27s_algorithm) is the largest possible number that divides evenly into 2 given numbers
+And here is where Greek mathematician [Euclid](https://en.wikipedia.org/wiki/Euclid) comes into play! His [algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm) is a very efficient way to calculate the greatest common divisor (GCD). The [GCD](https://en.wikipedia.org/wiki/Greatest_common_divisor#Using_Euclid.27s_algorithm) is the largest possible number that divides evenly into 2 given numbers
+
+To find the GCD of 18 and 48 using Euclid's algorithm, take the larger of the 2 numbers and divide by the smallest. So `48 / 18` will yield a quotient of 2 and a remainder of 12 (Note: `48 % 18` equals 12). Now take the smallest number and divide by the remainder: `18 / 12` to get a quotient of 1 and remainder of 6. Now take the previous remainder 12 and divide by the present remainder 6 to get a quotient of 2 and a remainder of 0. Now that our remainder is 0 we can conclude that the GCD of 18 and 48 is 6!
