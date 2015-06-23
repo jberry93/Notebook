@@ -70,3 +70,24 @@ function smallestCommons(arr){
 
 Reason why we set variable `c` equal to `a` is that the value of `a` is going to possibly change with what we will use inside of the while loop. We are going to use modulo to grab the remainder of the larger number divided by the smaller number and set it equal to `a` or `b` depending on which is larger. Plus we need `c` to equal `a` since we are going to use the first element of `rangeArr` along with the GCD to help us solve for the LCM. Let's fill in the contents of our while loop:
 
+```Javascript
+function smallestCommons(arr){
+	var rangeArr = [];
+	for(var j=Math.min(arr[0],arr[1]);j<=Math.max(arr[0],arr[1]);j++){
+		rangeArr.push(j);
+	}
+	var a = rangeArr[0];
+	for(var i=1;i < rangeArr.length;i++){
+		var b = rangeArr[i];
+		var c = a;
+		while(a && b){
+			if(a > b){
+				a %= b;
+			}else{
+				b %= a;
+			}
+		}
+	}
+}
+/*test cases*/
+```
