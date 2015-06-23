@@ -25,3 +25,5 @@ function smallestCommons(arr){
 ```
 
 So what this for loop will do is start from the smallest number of the 2 elements in the `arr` array and iterate up to and including the largest of the 2 elements in `arr` and push each number into the empty array `rangeArr`. This way, we have an array of all the numbers in our range!
+
+Let's make another for loop that will iterate through each element of `rangeArr`, not including the first element which we will set equal to variable `a`. The purpose of this will be clearer later on:
