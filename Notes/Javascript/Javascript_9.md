@@ -158,4 +158,15 @@ smallestCommons([1,13]); //360360
 ```
 
 ### Function As An Argument
-Make a function that takes in an array as its first argument and a function as its second argument. This second argument will be our 'truth test' which will check to see if any of the elements are divisible by 2. If it is, return the first element that is divisible by 2
+Make a function that takes in an array as its first argument and a function as its second argument. This second argument will be our 'truth test' which will check to see if any of the elements are divisible by 2. If it is, return the first element that is divisible by 2. If it is not, return `undefined`
+
+Here is the initial function:
+
+```Javascript
+function find(arr,func){
+	/*A new method awaits!*/
+}
+find([1,2,3,4],function(num){return num % 2 ===0}); //2
+find([1,3,5,8,9,10],function(num){return num % 2 ===0}); //8
+find([1,3,5,9],function(num){return num % 2 ===0}); //undefined
+```
