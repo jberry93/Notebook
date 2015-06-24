@@ -170,3 +170,5 @@ find([1,2,3,4],function(num){return num % 2 ===0}); //2
 find([1,3,5,8,9,10],function(num){return num % 2 ===0}); //8
 find([1,3,5,9],function(num){return num % 2 ===0}); //undefined
 ```
+
+We are going to use a new method called `.some()`. What `.some()` does is test an array with a callback function and return `true` or `false` depending on if the elements of the array pass or fail the callback function test
