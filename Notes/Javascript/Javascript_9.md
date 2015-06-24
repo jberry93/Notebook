@@ -234,3 +234,5 @@ function drop(arr,func){
 }
 /*test cases*/
 ```
+
+Now let's loop through the contents of `arr` and make another variable called `boolean` which will be equal to the output of `func`. If the element in `arr` passes `func`, it will output `true` otherwise it will output `false`:
