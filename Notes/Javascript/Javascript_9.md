@@ -226,3 +226,11 @@ drop([1,2,3,4],function(n){return n > 5;}); //[]
 ```
 
 First thing we will want to do is initialize a variable which will be equal to an empty array. This way when we test `arr` with its corresponding `func`, we can push the elements that pass the test provided by `func` into the empty array:
+
+```Javascript
+function drop(arr,func){
+	var newarr = [];
+	/*Loop through 'arr'*/
+}
+/*test cases*/
+```
