@@ -212,3 +212,15 @@ And we are finished!
 
 ### Function With A Function As An Argument Part 2
 Make a function that takes in an array as its first argument and a function as its second argument. This second argument will act as a test for each element in the given array. Return all elements that pass the function as an array
+
+Here's the initial function:
+
+```Javascript
+function drop(arr,func){
+	/*spiffy Javascript code*/
+}
+drop([1,2,3],function(n){return n < 3;}); //[1,2]
+drop([1,2,3,4],function(n){return n >= 3;}); //[3,4]
+drop([1,2,3],function(n){return n > 0;}); //[1,2,3]
+drop([1,2,3,4],function(n){return n > 5;}); //[]
+```
