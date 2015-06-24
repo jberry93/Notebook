@@ -180,3 +180,10 @@ array.some(callback); //Will return 'true' or 'false'
 ```
 
 In this case, we will create a variable called `boolean` which we will set equal to the result of the `.some()` method. This way, we can return the appropriate response given if a test case is true or false:
+
+```Javascript
+function find(arr,func){
+	var boolean = arr.some(func);
+}
+/*test cases*/
+```
