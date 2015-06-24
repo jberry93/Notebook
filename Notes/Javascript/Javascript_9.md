@@ -172,3 +172,9 @@ find([1,3,5,9],function(num){return num % 2 ===0}); //undefined
 ```
 
 We are going to use a new method called `.some()`. What `.some()` does is test an array with a callback function and return `true` or `false` depending on if the elements of the array pass or fail the callback function test
+
+Here is an example format for using `.some()` method:
+
+```Javascript
+array.some(callback); //Will return 'true' or 'false'
+```
