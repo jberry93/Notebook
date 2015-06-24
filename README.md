@@ -7,4 +7,5 @@ This 'Notebook' will be chock-full of markdown (and some HTML) files detailing w
 - Algorithms (w/Javascript)
 - Bootstrap
 - Regular Expressions
+- PHP
 - (More to come)
