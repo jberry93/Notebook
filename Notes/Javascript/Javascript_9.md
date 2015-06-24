@@ -187,3 +187,5 @@ function find(arr,func){
 }
 /*test cases*/
 ```
+
+If `boolean` is true, loop through the elements of `arr` and return the first element that is divisible by 2. If `boolean` is false, return `undefined`:
