@@ -209,3 +209,6 @@ find([1,3,5,9],function(num){return num % 2 ===0}); //undefined
 ```
 
 And we are finished!
+
+### Function With A Function As An Argument Part 2
+Make a function that takes in an array as its first argument and a function as its second argument. This second argument will act as a test for each element in the given array. Return all elements that pass the function as an array
