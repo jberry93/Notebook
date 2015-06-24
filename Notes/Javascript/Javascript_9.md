@@ -189,3 +189,21 @@ function find(arr,func){
 ```
 
 If `boolean` is true, loop through the elements of `arr` and return the first element that is divisible by 2. If `boolean` is false, return `undefined`:
+
+```Javascript
+function find(arr,func){
+	var boolean = arr.some(func);
+	if(boolean === true){
+		for(var a=0;a < arr.length;a++){
+			if(arr[a] % 2 === 0){
+				return arr[a];
+			}
+		}
+	}else if(boolean === false){
+		return undefined;
+	}
+}
+find([1,2,3,4],function(num){return num % 2 ===0}); //2
+find([1,3,5,8,9,10],function(num){return num % 2 ===0}); //8
+find([1,3,5,9],function(num){return num % 2 ===0}); //undefined
+```
