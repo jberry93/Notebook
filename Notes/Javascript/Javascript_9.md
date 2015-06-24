@@ -158,4 +158,4 @@ smallestCommons([1,13]); //360360
 ```
 
 ### Function As An Argument
-Make a function that takes in an array as its first argument and a function as its second argument. This second argument will be our 'truth test' which will check to see if any of the elements is divisible by 2. If it is, return the first element that is divisible by 2
+Make a function that takes in an array as its first argument and a function as its second argument. This second argument will be our 'truth test' which will check to see if any of the elements are divisible by 2. If it is, return the first element that is divisible by 2
