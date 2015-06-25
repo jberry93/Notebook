@@ -260,7 +260,10 @@ function drop(arr,func){
 	}
 	return newarr;
 }
-/*test cases*/
+drop([1,2,3],function(n){return n < 3;}); //[1,2]
+drop([1,2,3,4],function(n){return n >= 3;}); //[3,4]
+drop([1,2,3],function(n){return n > 0;}); //[1,2,3]
+drop([1,2,3,4],function(n){return n > 5;}); //[]
 ```
 
 And we are done!
