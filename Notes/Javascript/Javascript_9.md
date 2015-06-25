@@ -246,3 +246,5 @@ function drop(arr,func){
 }
 /*test cases*/
 ```
+
+Now we need to use `boolean` to `.push()` the elements in `arr` that make `boolean` true which we complete using an if statement:
