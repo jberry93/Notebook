@@ -247,4 +247,20 @@ function drop(arr,func){
 /*test cases*/
 ```
 
-Now we need to use `boolean` to `.push()` the elements in `arr` that make `boolean` true which we complete using an if statement:
+Now we need to use `boolean` to `.push()` the elements in `arr` that make `boolean` true which we complete using an if statement. At the end of the for loop, return `newarr`:
+
+```Javascript
+function drop(arr,func){
+	var newarr = [];
+	for(var a=0;a < arr.length;a++){
+		var boolean = func(arr[a]);
+		if(boolean === true){
+			newarr.push(arr[a]);
+		}
+	}
+	return newarr;
+}
+/*test cases*/
+```
+
+And we are done!
