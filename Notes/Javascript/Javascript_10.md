@@ -66,5 +66,5 @@ The methods we will be using are `.match()`, `.map()`, `String.fromCharCode()`, 
 
 Syntax example: 
 ```Javascript
-string.match(//*regexpr*//g);
+string.match(/\W/g);
 ```
