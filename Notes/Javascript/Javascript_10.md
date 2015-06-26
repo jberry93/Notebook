@@ -62,3 +62,9 @@ binaryAgent('01001001 00100000 01101100 01101111 01110110 01100101 00100000 0100
 
 The methods we will be using are `.match()`, `.map()`, `String.fromCharCode()`, `parseInt()`, and `.join()`:
 
+**.match()** = This method will look at an indicated string and take in a regular expression that matches characters within that string
+
+Syntax example: 
+```Javascript
+string.match(//*regexpr*//g);
+```
