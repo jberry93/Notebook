@@ -43,3 +43,6 @@ steamroller([1,[2],[3,[[4]]]]); //[1,2,3,4]
 steamroller([[['a']],[['b']]]); //['a','b']
 steamroller([1,[],[3,[[4]]]]); //[1,3,4]
 ```
+
+### Binary
+Let's make a function that will take in a string `str` containing binary code. This function will translate the binary code into a sentence. We will be using a collection of different methods to make this function work
