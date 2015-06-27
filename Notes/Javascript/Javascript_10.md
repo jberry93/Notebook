@@ -96,3 +96,5 @@ Syntax example:
 ```Javascript
 array.join('');
 ```
+
+First thing we need to do is initialize a variable which will take in all the string values that `.match()` our regular expression. In this case, we want to grab all of the binary codes without any spaces:
