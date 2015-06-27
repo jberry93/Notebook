@@ -158,3 +158,8 @@ binaryAgent('01001001 00100000 01101100 01101111 01110110 01100101 00100000 0100
 ```
 
 And we are done!
+
+### Objects and Properties
+Make a function that takes in 2 arguments: `collection` and `pre`. `collection` is an array of objects while `pre` is what we are checking to see if each element in the array contains it. If all elements contain `pre`, return true. If there is even one element that does not contain `pre`, return false
+
+Here is the initial function:
