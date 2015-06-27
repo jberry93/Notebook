@@ -177,3 +177,11 @@ every([{'user': 'Tinky-Winky', 'sex': 'male'}, {'user': 'Dipsy', 'sex': 'male'},
 
 First of all we need to make a for loop that will iterate through the array of objects so that we can check each object individually in the array:
 
+```Javascript
+function every(collection,pre){
+	for(var a=0;a < collection.length;a++){
+		/*truthy statement goes here!*/
+	}
+}
+/*test cases*/
+```
