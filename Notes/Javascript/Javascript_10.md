@@ -60,7 +60,7 @@ binaryAgent('01001001 00100000 01101100 01101111 01110110 01100101 00100000 0100
 //Output: I love FreeCodeCamp!
 ```
 
-The methods we will be using are `.match()`, `.map()`, `String.fromCharCode()`, `parseInt()`, and `.join()`:
+The methods and function we will be using are `.match()`, `.map()`, `String.fromCharCode()`, `parseInt()` (the function), and `.join()`:
 
 **.match()** = This method will look at an indicated string and take in a regular expression that matches characters within that string. For more details check out MDN's explanation on [.match()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)
 
@@ -82,3 +82,5 @@ Syntax example:
 ```Javascript
 String.fromCharCode(/*Unicode values*/);
 ```
+
+**parseInt()** = 
