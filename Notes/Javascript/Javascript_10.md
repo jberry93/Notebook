@@ -118,3 +118,5 @@ function binaryAgent(str){
 }
 /*test cases*/
 ```
+
+Now we need to use `String.fromCharCode()` along with `parseInt()`. We will pass in `binary` and `2` into `parseInt()` and return everything. What this collection of methods will do is read the binary string under radix 2 and parse it. From there, `String.fromCharCode()` will take in the value of the parse and return the letter corresponding to the binary code:
