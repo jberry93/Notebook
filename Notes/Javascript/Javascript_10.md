@@ -89,3 +89,5 @@ Syntax example:
 ```Javascript
 parseInt('binary code',2);
 ```
+
+**.join()** = This method takes in an array and joins all the elements of the array together into a string depending on the separator passed into the method
