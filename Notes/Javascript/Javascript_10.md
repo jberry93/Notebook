@@ -70,3 +70,8 @@ string.match(/\W/g);
 ```
 
 **.map()** = This method will initiate a callback function on the elements of an array and create a new array containing the results of the callback. For more details check out MDN's explanaton on [.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+
+Syntax example:
+```Javascript
+array.map(callback);
+```
