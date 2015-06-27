@@ -98,3 +98,12 @@ array.join('');
 ```
 
 First thing we need to do is initialize a variable which will take in all the string values that `.match()` our regular expression. In this case, we want to grab all of the binary codes without any spaces:
+
+```Javascript
+function binaryAgent(str){
+	var binaryToWord = str.match(/[10]{8}/g);
+}
+/*test cases*/
+```
+
+What we are doing with this `.match()` method is selecting all strings containing 1s and 0s (brackets) in groups of 8 characters (curly brace)
