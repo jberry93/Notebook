@@ -77,3 +77,8 @@ array.map(callback);
 ```
 
 **String.fromCharCode()** = This method will take in unicode and convert it to a string and return it. For more details check out MDN's explanation on [String.fromCharCode()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode)
+
+Syntax example:
+```Javascript
+String.fromCharCode(/*Unicode values*/);
+```
