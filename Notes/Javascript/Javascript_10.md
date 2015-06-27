@@ -90,4 +90,9 @@ Syntax example:
 parseInt('binary code',2);
 ```
 
-**.join()** = This method takes in an array and joins all the elements of the array together into a string depending on the separator passed into the method
+**.join()** = This method takes in an array and joins all the elements of the array together into a string depending on the separator passed into the method. For more details check out MDN's explanation on [.join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
+
+Syntax example:
+```Javascript
+array.join('');
+```
