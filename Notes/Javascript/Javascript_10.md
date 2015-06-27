@@ -129,3 +129,5 @@ function binaryAgent(str){
 }
 /*test cases*/
 ```
+
+What we have now is an array containing the corresponding strings of translated binary code. All that is left is to `.join()` all the elements of this array together and return it as a string value: 
