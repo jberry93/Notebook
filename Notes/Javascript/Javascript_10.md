@@ -142,3 +142,15 @@ function binaryAgent(str){
 ```
 
 Great! Now all that is left is to return the variable `binaryToWord` to get the fully translated string from binary code:
+
+```Javascript
+function binaryAgent(str){
+	var binaryToWord = str.match(/[10]{8}/g).map(function(binary){
+		return String.fromCharCode(parseInt(binary,2));
+	}).join('');
+	return binaryToWord;
+}
+/*test cases*/
+```
+
+And we are done!
