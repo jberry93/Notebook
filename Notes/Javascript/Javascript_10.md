@@ -163,3 +163,14 @@ And we are done!
 Make a function that takes in 2 arguments: `collection` and `pre`. `collection` is an array of objects while `pre` is what we are checking to see if each element in the array contains it. If all elements contain `pre`, return true. If there is even one element that does not contain `pre`, return false
 
 Here is the initial function:
+
+```Javascript
+function every(collection,pre){
+	/*truthy stuff goes here*/
+}
+every([{'user': 'Tinky-Winky', 'sex': 'male'}, {'user': 'Dipsy', 'sex': 'male'}, {'user': 'Laa-Laa', 'sex': 'female'}, {'user': 'Po', 'sex': 'female'}], 'sex');
+//Output: true
+
+every([{'user': 'Tinky-Winky', 'sex': 'male'}, {'user': 'Dipsy', 'sex': 'male'}, {'user': 'Laa-Laa', 'sex': 'female'}, {'user': 'Po', 'sex': 'female'}], {'sex': 'female'});
+//Output: false
+```
