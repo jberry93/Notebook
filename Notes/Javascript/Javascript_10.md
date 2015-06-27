@@ -185,3 +185,5 @@ function every(collection,pre){
 }
 /*test cases*/
 ```
+
+Next step is an if statement. We will use a method called `.hasOwnProperty()` to check and see if all the objects in the array has property `pre` in it. What `.hasOwnProperty()` will do is check to see if the object contains the passed property. If it does, it will return true. If it doesn't, it will return false. Now we have our if statement set up:
