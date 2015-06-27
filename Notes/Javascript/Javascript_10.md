@@ -187,3 +187,20 @@ function every(collection,pre){
 ```
 
 Next step is an if statement. We will use a method called `.hasOwnProperty()` to check and see if all the objects in the array has property `pre` in it. What `.hasOwnProperty()` will do is check to see if the object contains the passed property. If it does, it will return true. If it doesn't, it will return false. Now we have our if statement set up:
+
+```Javascript
+function every(collection,pre){
+	for(var a=0;a < collection.length;a++){
+		if(collection[a].hasOwnProperty(pre) === true){
+			return true;
+		}else{
+			return false;
+		}
+	}
+}
+every([{'user': 'Tinky-Winky', 'sex': 'male'}, {'user': 'Dipsy', 'sex': 'male'}, {'user': 'Laa-Laa', 'sex': 'female'}, {'user': 'Po', 'sex': 'female'}], 'sex');
+//Output: true
+
+every([{'user': 'Tinky-Winky', 'sex': 'male'}, {'user': 'Dipsy', 'sex': 'male'}, {'user': 'Laa-Laa', 'sex': 'female'}, {'user': 'Po', 'sex': 'female'}], {'sex': 'female'});
+//Output: false
+```
