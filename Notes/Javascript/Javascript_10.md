@@ -107,3 +107,14 @@ function binaryAgent(str){
 ```
 
 What we are doing with this `.match()` method is selecting all strings containing 1s and 0s (brackets) in groups of 8 characters (curly brace)
+
+Now we will apply the `.map()` method:
+
+```Javascript
+function binaryAgent(str){
+	var binaryToWord = str.match(/[10]{8}/g).map(function(binary){
+		/*callback function*/
+	});
+}
+/*test cases*/
+```
