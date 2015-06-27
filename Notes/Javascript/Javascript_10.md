@@ -140,3 +140,5 @@ function binaryAgent(str){
 }
 /*test cases*/
 ```
+
+Great! Now all that is left is to return the variable `binaryToWord` to get the fully translated string from binary code:
