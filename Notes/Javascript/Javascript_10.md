@@ -209,3 +209,16 @@ And we are done!
 
 ### Optional Arguments
 Make a function that sums 2 arguments together. In the case that only 1 argument is passed into the function, return a function that will expect the 2nd argument and return the sum of both arguments if both arguments are numbers
+
+Here's the initial function:
+
+```Javascript
+function add(){
+	/*Optional arguments*/
+}
+add(2,3); //5
+add(2)(3); //5
+add('http://bit.ly/IqT6zt'); //undefined
+add(2,'3'); //undefined
+add(2)([3]); //undefined
+```
