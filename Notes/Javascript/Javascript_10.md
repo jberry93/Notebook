@@ -222,3 +222,5 @@ add('http://bit.ly/IqT6zt'); //undefined
 add(2,'3'); //undefined
 add(2)([3]); //undefined
 ```
+
+To solve, we will use a collection of if/else statements to get through each test case. Let's first get rid of cases where the first argument is not a number:
