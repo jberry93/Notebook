@@ -275,3 +275,31 @@ function add(){
 ```
 
 Check to make sure that `argument2` is in fact a number. If it is, sum together both arguments. If it is not, return `undefined`. To make things easier, we will define an argument for `add()` as `argument1`:
+
+```Javascript
+function add(argument1){
+	if(typeof arguments[0] !== 'number'){
+		return undefined;
+	}
+	if(arguments.length === 2){
+		if(typeof arguments[1] === 'number'){
+			return arguments[0] + arguments[1];
+		}else{
+			return undefined;
+		}
+	}else{
+		return function(argument2){
+			if(typeof argument2 === 'number'){
+				return argument1 + argument2;
+			}else{
+				return undefined;
+			}
+		};
+	}
+}
+add(2,3); //5
+add(2)(3); //5
+add('http://bit.ly/IqT6zt'); //undefined
+add(2,'3'); //undefined
+add(2)([3]); //undefined
+```
