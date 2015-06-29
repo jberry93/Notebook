@@ -251,3 +251,5 @@ function add(){
 }
 /*test cases*/
 ```
+
+Now if `arguments` has only 1 argument, pass a function that will expect a second function `argument2`:
