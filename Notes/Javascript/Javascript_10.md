@@ -234,4 +234,20 @@ function add(){
 /*test cases*/
 ```
 
-Now let's return the sum of 2 arguments if the length of `arguments` is equal to `2`:
+Now let's check to see if `arguments` has a length of `2`. If it does, check to see if the second element of `arguments` is a number. If it is, return the sum of both arguments. If it is not, return `undefined`:
+
+```Javascript
+function add(){
+	if(typeof arguments[0] !== 'number'){
+		return undefined;
+	}
+	if(arguments.length === 2){
+		if(typeof arguments[1] === 'number'){
+			return arguments[0] + arguments[1];
+		}else{
+			return undefined;
+		}
+	}
+}
+/*test cases*/
+```
