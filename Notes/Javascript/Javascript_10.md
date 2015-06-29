@@ -224,3 +224,12 @@ add(2)([3]); //undefined
 ```
 
 To solve, we will use a collection of if/else statements to get through each test case. Let's first get rid of cases where the first argument is not a number:
+
+```Javascript
+function add(){
+	if(typeof arguments[0] !== 'number'){
+		return undefined;
+	}
+}
+/*test cases*/
+```
