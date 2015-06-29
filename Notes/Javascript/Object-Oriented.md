@@ -28,4 +28,6 @@ Question: Which of these variables would be available from within the body of th
 
 Answer: All 3 declared variables are accessible within the `example` function
 
-Also take note that curly braces from a function statement will create a new scope. Curly braces from a for loop or if statement do not create a new scope!
+Take note that curly braces from a function statement will create a new scope. Curly braces from a for loop or if statement do not create a new scope!
+
+Also if we were to remove `var` from `var dogs = dogBark();`, `dog` would become a global variable. This may confuse other programmers trying to read your code so it is not good practice to leave out `var`
