@@ -253,3 +253,23 @@ function add(){
 ```
 
 Now if `arguments` has only 1 argument, pass a function that will expect a second function `argument2`:
+
+```Javascript
+function add(){
+	if(typeof arguments[0] !== 'number'){
+		return undefined;
+	}
+	if(arguments.length === 2){
+		if(typeof arguments[1] === 'number'){
+			return arguments[0] + arguments[1];
+		}else{
+			return undefined;
+		}
+	}else{
+		return function(argument2){
+			/*do stuff*/
+		}
+	}
+}
+/*test cases*/
+```
