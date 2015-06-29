@@ -31,3 +31,28 @@ Answer: All 3 declared variables are accessible within the `example` function
 Take note that curly braces from a function statement will create a new scope. Curly braces from a for loop or if statement do not create a new scope!
 
 Also if we were to remove `var` from `var dogs = dogBark();`, `dog` would become a global variable. This may confuse other programmers trying to read your code so it is not good practice to leave out `var`
+
+### Execution Contexts
+An execution context is like the environment in which a function is executed in. It begins with the global execution context and stacks up as we introduce more functions
+
+Example:
+
+```Javascript
+//global execution context out here
+
+function dream(){
+	//another execution context
+
+	function dominickCobb(){
+		//another execution context
+
+		function inception(){
+			//another execution context
+		}
+	}
+
+	function malCobb(){
+		//another execution context
+	}
+}
+```
