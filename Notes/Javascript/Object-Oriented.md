@@ -7,8 +7,9 @@ A lexical scope (or static scope) defines the functionality of variables within 
 Example of lexical and global scope:
 
 ```Javascript
-function example(){
-
+var pugs = pugSnort();
+var meh = function example(){
+	var dogs = dogBark();
 
 	/*The variables stored here are 
 	considered private variables*/
@@ -22,3 +23,9 @@ the function enters the global scope*/
 
 
 ```
+
+Question: Which of these variables would be available from within the body of the `example` function?
+
+Answer: All 3 declared variables are accessible within the `example` function
+
+Also take note that curly braces from a function statement will create a new scope. Curly braces from a for loop or if statement do not create a new scope!
