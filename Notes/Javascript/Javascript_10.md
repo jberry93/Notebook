@@ -303,3 +303,5 @@ add('http://bit.ly/IqT6zt'); //undefined
 add(2,'3'); //undefined
 add(2)([3]); //undefined
 ```
+
+And we are done! That concludes beginner Javascript algorithms!!
