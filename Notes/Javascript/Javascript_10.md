@@ -206,3 +206,6 @@ every([{'user': 'Tinky-Winky', 'sex': 'male'}, {'user': 'Dipsy', 'sex': 'male'},
 ```
 
 And we are done!
+
+### Optional Arguments
+Make a function that sums 2 arguments together. In the case that only 1 argument is passed into the function, return a function that will expect the 2nd argument and return the sum of both arguments if both arguments are numbers
