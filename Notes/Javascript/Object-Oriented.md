@@ -53,6 +53,10 @@ function dream(){
 
 	function malCobb(){
 		//another execution context
+
+		function mindF(){
+			//another execution context
+		}
 	}
 }
 ```
