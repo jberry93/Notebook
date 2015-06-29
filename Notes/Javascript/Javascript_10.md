@@ -233,3 +233,5 @@ function add(){
 }
 /*test cases*/
 ```
+
+Now let's return the sum of 2 arguments if the length of `arguments` is equal to `2`:
