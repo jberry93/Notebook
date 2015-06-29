@@ -273,3 +273,5 @@ function add(){
 }
 /*test cases*/
 ```
+
+Check to make sure that `argument2` is in fact a number. If it is, sum together both arguments. To make things easier, we will define an argument for `add()` as `argument1`:
