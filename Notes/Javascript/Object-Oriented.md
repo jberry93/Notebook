@@ -60,3 +60,5 @@ function dream(){
 	}
 }
 ```
+
+The main difference between lexical scopes and execution contexts is that lexical scopes are built as the code runs
