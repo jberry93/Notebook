@@ -10,23 +10,10 @@
 	<style type='text/css'>
 		
     	h1 {
-      		-moz-animation-duration: 3s;
-      		-webkit-animation-duration: 3s;
-      		-moz-animation-name: slidein;
+    		text-align: center;
+      		-webkit-animation-duration: 2s;
      		 -webkit-animation-name: slidein;
     	}
-    
-    	@-moz-keyframes slidein {
-      		from {
-       			margin-left:100%;
-        		width:300%
-      		}
-      
-      		to {
-      	  	margin-left:0%;
-      	  	width:100%;
-      		}
-   		}
     
     	@-webkit-keyframes slidein {
       		from {
@@ -40,7 +27,24 @@
       		}
     	}
 
+    	div.col-sm-4{
+    		text-align: center;
+    		-webkit-animation-duration:1s;
+    		-webkit-animation-name:columns;
+    	}
+    	@-webkit-keyframes columns{
+    		from{
+    			margin-top:100%;
+    		}
+    		to{
+    			margin-top:0%;
+    		}
+    	}
+
     	/*Make the object*/
+    	
+    	/*
+
     	div{
     		width:50px;
     		height:50px;
@@ -50,7 +54,13 @@
     		-webkit-animation-iteration-count:6;
     		-webkit-animation-direction:alternate;
     	}
+
+    	*/
+
     	/*The keyframes rule*/
+    	
+    	/*
+
     	@-webkit-keyframes anima{
     		from{
     			background-color: green;
@@ -59,18 +69,38 @@
     			background-color: yellow;
     		}
     	}
+		*/
+
 	</style>
 
 	</head>
 	<body>
 
-		<header>
-			<h1>A Header or Title</h1>
-		</header>
+		<div class='container'>
+			
+			<div class='jumbotron'>
+				<h1>Hipsters</h1>
+			</div>
 
-		<p>Let's play with animations:</p>
+			<div class='row'>
+				
+				<div class='col-sm-4'>
+					<h4>Speech1</h4>
+					<p>Trust fund DIY dreamcatcher 3 wolf moon, pork belly chillwave aesthetic High Life swag YOLO lomo you probably haven't heard of them American Apparel Williamsburg pop-up.</p>
+				</div>
 
-		<div></div>
+				<div class='col-sm-4'>
+					<h4>Speech2</h4>
+					<p>Chambray selvage crucifix sartorial drinking vinegar forage. Banjo PBR Blue Bottle Austin fashion axe jean shorts Pinterest locavore organic sartorial Tumblr.</p>
+				</div>
+
+				<div class='col-sm-4'>
+					<h4>Speech3</h4>
+					<p>Chillwave freegan bitters, vinyl kitsch Pitchfork readymade slow-carb McSweeney's try-hard Carles before they sold out lomo Neutra.</p>
+				</div>
+
+			</div>
+		</div>
 
 	</body>
 
