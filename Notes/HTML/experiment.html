@@ -43,6 +43,13 @@
     		}
     	}
 
+    	div.jumbotron{
+    		background-color: #3366FF;
+    	}
+
+    	#header{
+    		color:white;
+    	}
     	/*Make the object*/
     	
     	/*
@@ -72,18 +79,47 @@
     		}
     	}
 		*/
-
 	</style>
 
 	</head>
 	<body>
 
-	<header></header>
+		<!--Let's make a nav bar!-->
+		<nav class='navbar navbar-default'>
+			<div class='container-fluid'>
+				<!--Header-->
+				<div class='navbar-header'>
+					<a class='navbar-brand' href='#'>myPdt</a>
+				</div>
+				<!--Now make elements in the navbar:-->
+				<div>
+					<ul class='nav navbar-nav'>
+
+						<li class='active'>
+							<a href='#'>Home</a>
+						</li>
+
+						<li>
+							<a href='#'>About</a>
+						</li>
+
+						<li>
+							<a href='#'>FAQ</a>
+						</li>
+
+						<li>
+							<a href='#'>Contact</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
 
 		<div class='container'>
 			
 			<div class='jumbotron'>
-				<h1>Hipsters</h1>
+				<div id='header'><h1>Hipsters</h1></div>
 			</div>
 
 			<div class='row'>
