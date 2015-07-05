@@ -73,4 +73,4 @@ var animal = {dog:'pug'}
 console.log(animal.dog)
 ```
 
-The Javascript interpreter is going to first see if object `animal` has the `dog` property. Once it sees that `'pug'` is paired with the `dog` property, it will log `'pug'` into the console 
+The Javascript interpreter is going to first see if object `animal` has the `dog` property. Once it sees that `'pug'` is paired with the `dog` property, it will log `'pug'` into the console. If we tried to execute `console.log(animal.cat)`, we would get `undefined` since the object `animal` does not have property `cat`
