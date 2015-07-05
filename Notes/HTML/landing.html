@@ -1,7 +1,7 @@
 <DOCTYPE! html>
 <html lang='en'>
 	<head>
-		<title>Pdt</title>
+		<title>CrtlFlo</title>
 		<meta charset='UTF-8'>
 
 		<meta name='viewpoint' content='width=device-width, initial-scale=1'>
@@ -15,56 +15,90 @@
   		<style type='text/css'>
   		div.jumbotron{
   			text-align: center;
-  			background-color:#66CCFF;
+  			font-family: Arial;
+  			background-image:url('SVGs/Water.jpg');
   		}
   		#headertitle{
   			color:white;
   		}
   		footer{
-  			background-color:#66CCFF;
+  			background-color:#335CD6;
   			color:white;
   			text-align:left;
-  			position:static;
   		}
-  		section{
-  			text-align:center;
+  		div.col-sm-4{
+  			text-align: center;
+  			font-family: Arial;
   		}
-  		span{
-  			height:50px;
-  			width:50px;
+  		div.headertxt{
+  			text-align: center;
+  			
   		}
+  		div.para{
+  			-webkit-animation-duration:0.4s;
+  			-webkit-animation-name:flow;
+  		}
+  		@-webkit-keyframes flow{
+  			from{
+  				margin-left: 100%;
+  			}
+  			to{
+  				margin-left: 0%;
+  			}
+  		}
+  		body{
+  			text-align: center;
+  		}
+
   		</style>
 	</head>
 	<body>
 
-			<!--<div class='jumbotron'>
+			<div class='jumbotron'>
 
-				<div id='headertitle'><h1>Landing Page</h1></div>
-			</div>-->
-			
-			<header class='header'>
-				<div class='navbar navbar-default navbar-static-top navbar-large' role='navigation'>
+				<div id='headertitle'>
+
+				<h2>Control Flo</h2>
+
+				<br>
+
+				<div class='para'><p>Minimize Water Consumption Together</p></div>
+
+
+
 				</div>
+
+			</div>
+			
+			<header>
+
+				<!--<div class='headertxt'><h2>Minimize Water Consumption</h2></div>-->
+
 			</header>
 
-			<div id='intro'></div>
-
-			<section class='section'>
-
-				<div class='col-sm-5'>
+			<div class='container'>
+				<div class='col-sm-4'>
 					<h4>Section</h4>
 					<p>Brooklyn food truck Etsy fingerstache slow-carb blog. Chia cred vinyl Helvetica, meh tofu banh mi selvage bicycle rights. Lo-fi post-ironic tattooed kale chips church-key. Helvetica Kickstarter ethical drinking vinegar vinyl Shoreditch. Irony banjo heirloom, shabby chic pop-up cornhole semiotics Shoreditch.</p>
 				</div>
+			
 
-				<!--<div class='col-sm-5'>
+				<div class='col-sm-4'>
+					<img src='SVGs/Water.jpg' class='img-responsive img-circle' width="400" height="400" />
+				</div>
+			</div>
+			<div class='container'>
+				<div class='col-sm-4'>
 					<h4>Article</h4>
 					<p>Vegan chambray tote bag messenger bag photo booth cold-pressed, trust fund Pitchfork mlkshk tattooed American Apparel. Selfies authentic four dollar toast stumptown, migas plaid biodiesel before they sold out Helvetica typewriter. Banksy Schlitz asymmetrical, forage narwhal Intelligentsia fap migas flannel art party viral photo booth locavore irony.</p>
-				</div>-->
+				</div>
+			</div>
 
-			</section>
+			<footer class='footer'>
 
+			<div>&copy; Made with <span class="glyphicon glyphicon-heart"></span> by jberry93</div>
 
-			<footer class='footer'>&copy; Made with <span class="glyphicon glyphicon-heart"></span> by jberry93</footer>
+			</footer>
 
 	</body>
 </html>
