@@ -94,5 +94,5 @@ console.log(animal.dog); //pug
 
 var wildAnimal = Object.create(animal);
 wildAnimal.cat = 'lion';
-console.log(wildAnimal.dog); // ???
+console.log(wildAnimal.dog); //pug
 ```
