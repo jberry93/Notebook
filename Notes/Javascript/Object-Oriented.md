@@ -63,8 +63,5 @@ function dream(){
 
 The main difference between lexical scopes and execution contexts is that lexical scopes are built as the code runs
 
-###`this`
-
-
 ###Prototype Chains
 Prototype chains allow you to make objects that behave as if they have the same properties as other objects 
