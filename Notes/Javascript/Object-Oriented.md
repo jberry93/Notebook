@@ -73,3 +73,4 @@ var animal = {dog:'pug'}
 console.log(animal.dog)
 ```
 
+The Javascript interpreter is going to first see if object `animal` has the `dog` property. Once it sees that `'pug'` is paired with the `dog` property, it will log `'pug'` into the console 
