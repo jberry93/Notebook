@@ -64,7 +64,7 @@ function dream(){
 The main difference between lexical scopes and execution contexts is that lexical scopes are built as the code runs
 
 ###Prototype Chains
-Prototype chains allow you to make objects that behave as if they have the same properties as other objects 
+Prototype chains allow you to make objects that behave as if they have the same properties as other objects by depending on failed lookups
 
 Let's first make an object:
 
@@ -86,7 +86,7 @@ wildAnimal.cat = 'lion';
 console.log(wildAnimal.dog); // ???
 ```
 
-Since the object `wildAnimal` does not contain property `dog`, it will go up the chain and check object `animal` to see if it might have property `dog`. Since object `animal` does have property `dog`, `wildAnimal.dog` will log `'pug'` into the console:
+Since the object `wildAnimal` does not contain property `dog` (failed lookup), it will go up the chain and check object `animal` to see if it might have property `dog`. Since object `animal` does have property `dog`, `wildAnimal.dog` will log `'pug'` into the console:
 
 ```Javascript
 var animal = {dog:'pug'};
