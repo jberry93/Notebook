@@ -97,4 +97,6 @@ wildAnimal.cat = 'lion';
 console.log(wildAnimal.dog); //pug
 ```
 
-There is a top-level object that every Javascript object delegates to when looking up properties and this top-level object is called `Object.prototype`
+There is a top-level object that every Javascript object delegates to when looking up properties and this top-level object is called `Object.prototype`. It provides the shared properties of all objects within the system
+
+Prototype chains are extremely useful when it comes to sharing code and being efficient with memory usage
