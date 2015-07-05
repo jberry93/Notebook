@@ -65,3 +65,11 @@ The main difference between lexical scopes and execution contexts is that lexica
 
 ###Prototype Chains
 Prototype chains allow you to make objects that behave as if they have the same properties as other objects 
+
+Let's first make an object:
+
+```Javascript
+var animal = {dog:'pug'}
+console.log(animal.dog)
+```
+
