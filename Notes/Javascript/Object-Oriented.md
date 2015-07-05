@@ -69,10 +69,21 @@ Prototype chains allow you to make objects that behave as if they have the same 
 Let's first make an object:
 
 ```Javascript
-var animal = {dog:'pug'}
-console.log(animal.dog)
+var animal = {dog:'pug'};
+console.log(animal.dog);
 ```
 
 The Javascript interpreter is going to first see if object `animal` has the `dog` property. Once it sees that `'pug'` is paired with the `dog` property, it will log `'pug'` into the console. If we tried to execute `console.log(animal.cat)`, we would get `undefined` since the object `animal` does not have property `cat`
 
 Now if we wanted to create a new object that will execute an ongoing lookup of another object given that a property does not exist in the new object, we must utilize `Object.create()` like so:
+
+```Javascript
+var animal = {dog:'pug'};
+console.log(animal.dog); //pug
+
+var wildAnimal = Object.create(animal);
+wildAnimal.cat = 'lion';
+console.log(wildAnimal.dog); // ???
+```
+
+Since the object `wildAnimal` does not contain property `dog`, it will go up the chain and check object `animal` to see if it might have property `dog`. Since object `animal` does have property `dog`, `wildAnimal.dog` will log `'pug'` into the console:
