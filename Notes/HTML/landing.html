@@ -55,63 +55,111 @@
   				margin-top: 0%;
   			}
   		}
+  		a.navbar-brand{
+  			color:white;
+  		}
+  		ul{
+  			background-color:white;
+  		}
   		</style>
 	</head>
 	<body>
+		<div class='jumbotron'>
 
-			<div class='jumbotron'>
+			<nav class='navbar'>
+				<div class='container-fluid'>
+					<div class='navbar-header'>
+						<button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#navbar'>
+							<span class='icon-bar'></span>
+							<span class='icon-bar'></span>
+							<span class='icon-bar'></span>
+						</button>
 
-				<div id='headertitle'>
+						<a class='navbar-brand' href='#'>PugDevs</a>
 
-				<h2>Pug Developers</h2>
+					</div>
 
-				<br>
+					<div class='collapse navbar-collapse' id='navbar'>
+						<ul class='nav navbar-nav'>
+							<li class='active'><a href='#'>Home</a></li>
 
-				<div><p>Developers with a love for pugs</p></div>
+							<li class='dropdown'>
 
+								<a class='dropdown-toggle' data-toggle='dropdown' href='#'>Devs<span class='caret'></span></a>
 
+								<ul class='dropdown-menu'>
+									<li><a href='#'>Ernie</a></li>
 
+									<li><a href='#'>Jow</a></li>
+
+									<li><a href='#'>Bert</a></li>
+								</ul>
+							</li>
+
+							<li><a href='#'>About Us</a></li>
+
+							<li><a href='#'>Location</a></li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right">
+        					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      					</ul>
+					</div>
 				</div>
-			</div>
-			
-			<header>
+			</nav>
 
 
+			<div id='headertitle'>
 
-			</header>
-
-			<div class='container-fluid'>
-
-			<h3>The Team</h3>
+			<h2>Pug Developers</h2>
 
 			<br>
 
-				<div class='col-sm-4'>
-					<img  id='pug' src='Images/Pug1.jpg' class='img-responsive img-circle' height='100px' width="100px" />
-					<h4>Ernie</h4>
-					<p>Sys Admin</p>
-				</div>
+			<div><p>Developers with a love for pugs</p></div>
 
-				<div class='col-sm-4'>
 
-					<img  id='pug' src='Images/Pug2.jpg' class='img-responsive img-circle' height='100px' width="100px" />
-					<h4>Joe</h4>
-					<p>Sr. Front-End Engineer</p>
-				</div>
 
-				<div class='col-sm-4'>
+			</div>
+		</div>
+			
+		<header>
 
-					<img  id='pug' src='Images/Pug3.jpg' class='img-responsive img-circle' height='100px' width="100px" />
-					<h4>Bert</h4>
-					<p>Software Engineer</p>
-				</div>
+		
+
+		</header>
+
+		<div class='container-fluid'>
+
+		<h3>The Team</h3>
+
+		<br>
+
+			<div class='col-sm-4'>
+				<img  id='pug' src='Images/Pug1.jpg' class='img-responsive img-circle' height='100px' width="100px" />
+				<h4>Ernie</h4>
+				<p>Sys Admin</p>
 			</div>
 
-			<footer class='footer'>
+			<div class='col-sm-4'>
 
-			<div>&copy; Made with <span class="glyphicon glyphicon-heart"></span> by jberry93</div>
+				<img  id='pug' src='Images/Pug2.jpg' class='img-responsive img-circle' height='100px' width="100px" />
+				<h4>Joe</h4>
+				<p>Sr. Front-End Engineer</p>
+			</div>
 
-			</footer>
+			<div class='col-sm-4'>
 
+				<img  id='pug' src='Images/Pug3.jpg' class='img-responsive img-circle' height='100px' width="100px" />
+				<h4>Bert</h4>
+				<p>Software Engineer</p>
+			</div>
+		</div>
+
+		<footer class='footer'>
+
+		<div>&copy; Made with <span class="glyphicon glyphicon-heart"></span> by jberry93</div>
+
+		</footer>
 	</body>
 </html>
