@@ -96,3 +96,5 @@ var wildAnimal = Object.create(animal);
 wildAnimal.cat = 'lion';
 console.log(wildAnimal.dog); //pug
 ```
+
+There is a top-level object that every Javascript object delegates to when looking up properties and this top-level object is called `Object.prototype`
