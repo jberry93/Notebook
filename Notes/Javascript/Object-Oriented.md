@@ -87,3 +87,12 @@ console.log(wildAnimal.dog); // ???
 ```
 
 Since the object `wildAnimal` does not contain property `dog`, it will go up the chain and check object `animal` to see if it might have property `dog`. Since object `animal` does have property `dog`, `wildAnimal.dog` will log `'pug'` into the console:
+
+```Javascript
+var animal = {dog:'pug'};
+console.log(animal.dog); //pug
+
+var wildAnimal = Object.create(animal);
+wildAnimal.cat = 'lion';
+console.log(wildAnimal.dog); // ???
+```
