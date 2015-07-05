@@ -74,3 +74,5 @@ console.log(animal.dog)
 ```
 
 The Javascript interpreter is going to first see if object `animal` has the `dog` property. Once it sees that `'pug'` is paired with the `dog` property, it will log `'pug'` into the console. If we tried to execute `console.log(animal.cat)`, we would get `undefined` since the object `animal` does not have property `cat`
+
+Now if we wanted to create a new object that will execute an ongoing lookup of another object given that a property does not exist in the new object, we must utilize `Object.create()` like so:
