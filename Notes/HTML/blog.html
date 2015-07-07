@@ -110,7 +110,22 @@
 			<button>Like</button>
 		</article>
 		<script type="text/javascript">
-			alert("Javascript works!");
+			/*
+			$("selector").on("typeOfEvent", function(){ do something });
+			
+			selector = Chooses the element to listen to
+
+			.on() = Sets up an event listener for the element selected
+
+			typeOfEvent = Type of event .on() is listening for
+
+			function = Action to take once the event occurs
+			*/
+
+			$("button").on("click", function(){
+				alert("clicked!");
+			});
+			
 		</script>
 	</body>
 
