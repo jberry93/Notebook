@@ -46,7 +46,7 @@
 			color: white;
 		}
 		h1{
-			font-size: 70px;
+			font-size: 55px;
 		}
 		img{
 			margin: 40px 0px 0px 0px;
@@ -61,6 +61,16 @@
 			padding: 20px;
 			/*'margin: 0 auto;' is SUPER useful for web dev!*/
 			margin: 0 auto;
+		}
+		/*If the browser width is less than 500px, let's change some of the components to accommodate the change in size:*/
+		@media (max-width: 500px){
+			h1{
+				font-size: 36px; 
+			}
+			li{
+				display: block;
+				padding: 5px;
+			}
 		}
 		</style>
 
