@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-us">
-	
 	<head>
 		<title>Blog</title>
 		<meta charset="UTF-8">
@@ -25,59 +24,61 @@
 
 		<!--Internal CSS-->
 		<style>
-		header{
-			text-align: center;
-			background-size: cover;
-			background: url("Images/Water.jpg");
-			color: white;
-		}
-
-		ul{
-			padding: 10px;
-			background: black;
-		}
-
-		li{
-			display: inline;
-			/*padding: top right bottom left*/
-			padding: 0px 10px 0px 10px;
-		}
-		a{
-			color: white;
-		}
-		h1{
-			font-size: 55px;
-		}
-		img{
-			margin: 40px 0px 0px 0px;
-			border: 7px solid white;
-			border-radius: 20px;
-			height: 200px;
-			width: 200px;
-		}
-		article{
-			/*'max-width' gives a limit up to '500px' and not larger BUT it can be any number of pixels smaller*/
-			max-width: 500px;
-			padding: 20px;
-			/*'margin: 0 auto;' is SUPER useful for web dev!*/
-			margin: 0 auto;
-		}
-		/*If the browser width is less than 500px, let's change some of the components to accommodate the change in size:*/
-		@media (max-width: 500px){
-			h1{
-				font-size: 36px; 
+			header{
+				text-align: center;
+				background-size: cover;
+				background: url("Images/Water.jpg");
+				color: white;
 			}
+
+			ul{
+				padding: 10px;
+				background: black;
+			}
+
 			li{
-				display: block;
-				padding: 5px;
+				display: inline;
+				/*padding: top right bottom left*/
+				padding: 0px 10px 0px 10px;
 			}
-		}
+			a{
+				color: white;
+			}
+			h1{
+				font-size: 55px;
+			}
+			img{
+				margin: 40px 0px 0px 0px;
+				border: 7px solid white;
+				border-radius: 20px;
+				height: 200px;
+				width: 200px;
+			}
+			article{
+				/*'max-width' gives a limit up to '500px' and not larger BUT it can be any number of pixels smaller*/
+				max-width: 500px;
+				padding: 20px;
+				/*'margin: 0 auto;' is SUPER useful for web dev!*/
+				margin: 0 auto;
+			}
+			h3{
+				text-align: center;
+			}
+			/*If the browser width is less than 500px, let's change some of the components to accommodate the change in size:*/
+			@media (max-width: 500px){
+				h1{
+					font-size: 36px; 
+				}
+				li{
+					display: block;
+					padding: 5px;
+				}
+			}
 		</style>
 
 		<!--External Javascript script-->
 		<script src="example.js"></script>
 	</head>
-
 	<body>
 		
 		<header>
@@ -109,6 +110,7 @@
 			<p>Gentrify seitan food truck selfies selvage artisan. Before they sold out Shoreditch heirloom 8-bit, American Apparel food truck Brooklyn cred Kickstarter retro forage Marfa. Authentic farm-to-table 3 wolf moon you probably haven't heard of them PBR&B, bicycle rights gastropub locavore whatever four dollar toast put a bird on it try-hard Kickstarter. Cardigan aesthetic 90's, flannel PBR&B iPhone Wes Anderson fashion axe ethical stumptown locavore. Small batch blog you probably haven't heard of them, American Apparel dreamcatcher cred fanny pack health goth single-origin coffee. Aesthetic quinoa art party swag, chillwave yr tofu put a bird on it ugh Echo Park Neutra hella cornhole Pinterest bitters. Drinking vinegar Pitchfork try-hard cardigan Wes Anderson.</p>
 			<button>Like</button>
 		</article>
+
 		<script type="text/javascript">
 			/*
 			$("selector").on("typeOfEvent", function(){ do something });
@@ -125,8 +127,6 @@
 			$("button").on("click", function(){
 				alert("clicked!");
 			});
-			
 		</script>
 	</body>
-
 </html>
