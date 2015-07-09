@@ -1,5 +1,12 @@
 # Bash Notes
 
+### Basics
+The 3 main commands that are utilized the most are `pwd`, `cd` and `ls`:
+
+```Shell
+pwd
+```
+
 ### Echo
 All `echo` does is output something. For instance:
 
