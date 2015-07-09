@@ -3,9 +3,11 @@
 ### Basics
 The 3 main commands that are utilized the most are `pwd`, `cd` and `ls`:
 
-```Shell
-pwd
-```
+`pwd` = Print working directory (current working directory)
+
+`cd` = Change directory
+
+`ls` = List all files and directors in the current working directory
 
 ### Echo
 All `echo` does is output something. For instance:
