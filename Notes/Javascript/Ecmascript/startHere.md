@@ -11,3 +11,10 @@ Because this is how I learn! Learning through teaching has been effective for me
 
 ### What else are you working on?
 I currently have been playing with Angular and React so expect some notes or a directory on those two frameworks as well. Hopefully I can ship out two project: one for Angular and one for React.
+
+### I have no more questions
+Awesome! You are ready for the next step which is all about declarations. Good luck :+1:
+
+[Next](https://github.com/jberry93/Notebook/blob/master/Notes/Javascript/Ecmascript/declarations.md) (Declarations)
+
+[Previous](https://www.reddit.com/r/programmerreactions/) (Nothing I'm afraid but here's a link to Reddit if you're bored)
