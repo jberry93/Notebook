@@ -15,6 +15,8 @@ I currently have been playing with Angular and React so expect some notes or a d
 ### I have no more questions
 Awesome! You are ready for the next step which is all about declarations. Good luck :+1:
 
+---
+
 [Next](https://github.com/jberry93/Notebook/blob/master/Notes/Javascript/Ecmascript/declarations.md) (Declarations)
 
 [Previous](https://www.reddit.com/r/programmerreactions/) (Nothing I'm afraid but here's a link to Reddit if you're bored)
