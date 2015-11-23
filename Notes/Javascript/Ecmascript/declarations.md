@@ -99,13 +99,16 @@ For example:
 
 ```JavaScript
 const CONSTANT = "Here's a constant"; // Good!
-const CONSTANT = "Here's another // constant"; // Error!!
+const CONSTANT = "Here's another constant"; // Error!!
 var CONSTANT = 21; // Error!!
 const ANOTHER_CONSTANT; // Error!!
 const OBJECT = {"key": "value"}; // Good!
 ```
 
-Awesome! That's everything I learned for declarations in Ecmascript 6! Hopefully you learned something too!
+Awesome! That's everything I learned for declarations in Ecmascript 6! Hopefully you learned something too! Continue on and read about arrow functions.
+
+##### :+1:
+![Good luck!!](images/goodluck.gif)
 
 ---
 
