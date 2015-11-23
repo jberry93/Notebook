@@ -79,6 +79,13 @@ console.log(varTwo); // 4
 ##### Get it?
 ![Jack is confused](images/jackConfused.gif)
 
-No? Well let me explain:
+No? Well let me explain by going line-by-line:
 
-The first two lines of the code block consist of initializing two variables: `varOne` will equal `1` and `varTwo` will equal `2`. The if statement will check to see if `varOne` strictly equals a numeral value of 1. If so, run the code between the two curly braces. Next we `let` `varOne` equal `3`, meaning only within the scope of this if statement (Only when `varOne` is strictly equal to `1`) will `varOne` equal `3`. Below that we are initializing `var` `varTwo` equal to `4`, meaning that from now on regardless of scope, `varTwo` will now equal `4` because we used `var` instead of `let` 
+The first two lines of the code block consist of initializing two variables: `varOne` will equal `1` and `varTwo` will equal `2`. The if statement will check to see if `varOne` strictly equals a numeral value of 1. If so, run the code between the two curly braces. Next we `let` `varOne` equal `3`, meaning only within the scope of this if statement (Only when `varOne` is strictly equal to `1`) will `varOne` equal `3`. Below that we are initializing `var` `varTwo` equal to `4`, meaning that from now on regardless of scope, `varTwo` will now equal `4` because we used `var` instead of `let`.
+
+Please note that hoisting does occur with `let`! If we reference the variable before it is declared, we will get a reference error which tells us that that variable does not exist at this point in time.
+
+##### Got it? Good!
+![thumbs up](images/thumbsUp.gif)
+
+### How does `const` do?
