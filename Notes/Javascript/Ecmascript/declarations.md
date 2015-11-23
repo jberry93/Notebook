@@ -89,3 +89,26 @@ Please note that hoisting does occur with `let`! If we reference the variable be
 ![thumbs up](images/thumbsUp.gif)
 
 ### How does `const` do?
+When using `const` think of it like you are writing something in stone. Here are three rules to abide by when using `const`:
+- `const` requires an initializer
+- The variable name used for `const` cannot be reused with another `const`, `let`, or `var`
+- Once initialized, the value of `const` will not and cannot be changed
+- Best practice to uppercase the entire variable name
+
+For example:
+
+```JavaScript
+const CONSTANT = "Here's a constant"; // Good!
+const CONSTANT = "Here's another // constant"; // Error!!
+var CONSTANT = 21; // Error!!
+const ANOTHER_CONSTANT; // Error!!
+const OBJECT = {"key": "value"}; // Good!
+```
+
+Awesome! That's everything I learned for declarations in Ecmascript 6! Hopefully you learned something too!
+
+---
+
+[Next]() (Arrow functions)
+
+[Previous](https://github.com/jberry93/Notebook/blob/master/Notes/Javascript/Ecmascript/startHere.md) (Introduction)
