@@ -17,6 +17,6 @@ Awesome! You are ready for the next step which is all about setting up React. Go
 
 ---
 
-[Next]() (Setting up React)
+[Next](https://github.com/jberry93/Notebook/blob/master/Notes/Javascript/React/setup.md) (Setting up React)
 
 [Previous](https://www.reddit.com/r/programmerreactions/) (Nothing I'm afraid but here's a link to Reddit if you're bored)

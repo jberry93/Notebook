@@ -8,7 +8,7 @@ With React, you are going to need to know a little bit of JavaScript so that you
 - Use [npm](https://www.npmjs.com/) to import packages (not JavaScript but need it!!)
 - Understand the basics of using objects and functions in JavaScript
 
-Fear not! I will go through the process of setting up a local web server using NodeJS and Express for React. The only instance you need to use this is if you want to use the Chrome browser to view your React app.
+Fear not! I will go through the process of setting up a local web server using NodeJS and Express for React. The only instance you need to use this is if you want to use the Chrome browser to view your site.
 
 **Reason being: Chrome does not allow you to load files using XHR (XMLHttpRequest)**
 
@@ -29,3 +29,15 @@ Think of it as a place to execute server-side JavaScript code. If you like to li
 
 #### What is npm?
 npm stands for Node Package Manager. It does exactly what its name implies which is manage Node packages. Use it to install and update packages containing code for your own projects.
+
+#### What is Express?
+According to their website (linked in the first bullet point above), Express is a server framework for NodeJS. Essentially, it allows you to implement the MVC (Model View Controller) architecture.
+
+So now that we have an idea of what we are using for making our server, let's start with installing the necessary node packages to build it:
+
+Open up a terminal and run this:
+```BASH
+npm install -save express
+```
+
+What this is doing is using `npm` to `install` `express` globally using `-g`.
