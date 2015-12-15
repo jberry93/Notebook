@@ -9,5 +9,6 @@ Past material that I completed:
 
 Current material that I'm working on:
 - [EcmaScript 6](https://github.com/jberry93/Notebook/blob/master/Notes/Javascript/Ecmascript/startHere.md)
-- [Angular]() (Not created yet)
-- [React]() (Not created yet)
+- [Angular](https://github.com/jberry93/angular-practice) (Refer to my other repo: [angular-practice](https://github.com/jberry93/angular-practice))
+- [React](https://github.com/jberry93/react-practice) (Refer to my other repo: [react-practice](https://github.com/jberry93/react-practice))
+- [Ruby]()
