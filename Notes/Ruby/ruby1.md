@@ -32,11 +32,11 @@ The key difference between double and single quotes is this:
   - Use single quotes `' '`
 
 So now you may be wondering what is string interpolation in the first place?
-- Think of it as a way to assign a string value to a placeholder/variable which can be used later on in the code
+- Think of it as a way to assign a value to a placeholder/variable
 
 Here is an example of string interpolation in action:
 ```Ruby
 puts('2*3 = #{2*3}') # 2*3 = #{2*3}
 puts("2*3 = #{2*3}") # 2*3 = 6
 ```
-We embed the value of `2*3` thanks to string interpolation, double quotes, and `#{}`. 
+We embed the value of `2*3` thanks to string interpolation, double quotes, and `#{}`.
