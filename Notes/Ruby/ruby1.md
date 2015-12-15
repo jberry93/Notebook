@@ -1,4 +1,8 @@
 ## Humble Beginnings
+Notes:
+- Here is a link to the communal [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide)
+- I am still learning Ruby so I am prone to make mistakes!
+- These files are for documenting my own learning experience with Ruby!
 
 #### Stringy Situations
 To make the simplest Ruby program in existence (Print 'Hello World'), we write the following Ruby code:
