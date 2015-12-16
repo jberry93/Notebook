@@ -40,3 +40,17 @@ puts('2*3 = #{2*3}') # 2*3 = #{2*3}
 puts("2*3 = #{2*3}") # 2*3 = 6
 ```
 We embed the value of `2*3` thanks to string interpolation, double quotes, and `#{}`.
+
+Here is another example:
+```Ruby
+print('Please enter your name: ')
+yourName = gets()
+puts("Hi #{yourName}") # Hi (value of 'yourName')
+```
+Couple things going on here:
+- We are using the `print` method to print the above prompt to ask the user for a name.
+  - The main difference between `print` and `puts` is:
+    - `puts` = Adds a new line
+    - `print` = No new line
+- We have `yourName` set equal to a `gets` method which will read whatever comes after the `print` method and set it equal to `yourName`
+- Finally, we have string interpolation in play with the double quotes and `#{}` thereby printing in the console `Hi (your name)` using the `puts` method
