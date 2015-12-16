@@ -85,3 +85,26 @@ Here's what is happening here:
   - Similar to `class`, we end defining the method by using keyword `end`
 - We create an object by setting `aNewObject` equal to a reference of the `ANewClass` class thanks to the `new` method. This way we have access to `ANewClass`'s method(s)
 - All we have to do now is call the method using dot notation and `Hey!` should print in the console
+
+Here is the same example with multiple methods:
+```Ruby
+class ANewClass
+  def aNewMethod
+    print('Hey!')
+  end
+  def anotherMethod
+    puts('Hey there!')
+  end
+  def yetAnotherMethod
+    puts('Hey Hey Hey~')
+  end
+  def andYetAnotherMethod
+    puts('Hay')
+  end
+end
+aNewObject = ANewClass.new
+aNewObject.aNewMethod
+aNewObject.anotherMethod
+aNewObject.yetAnotherMethod
+aNewObject.andYetAnotherMethod
+```
