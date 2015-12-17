@@ -57,7 +57,7 @@ Couple things going on here:
 
 ---
 
-### Objects and Methods
+#### Objects and Methods
 So how do we make an object in Ruby with a method? Here is an example:
 ```Ruby
 class ANewClass
