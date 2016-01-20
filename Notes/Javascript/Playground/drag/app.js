@@ -1,5 +1,30 @@
 "use strict";
 
+/* Drag Logic Start*/
+var source;
+var isBefore = function(first, second) {
+  if(first.parentNode === second.parentNode) {
+    for(var item = first; item; item = item.previousSibling) {
+      if(item === second) {
+        return true;
+      }
+    }
+  }
+  return false;
+}
+var handleDragEnter = function(event) {
+  if(isBefore(source, event.target)) {
+    event.target.parentNode.insertBefore(source, event.target);
+  } else {
+    event.target.parentNode.insertBefore(source, event.target.nextSibling);
+  }
+}
+var handleDragStart = function(event) {
+  source = event.target;
+  event.dataTransfer.effectAllowed = "move";
+}
+/* Drag Logic End */
+
 var sendThree = function(event) {
   event.preventDefault();
   var firstInput = document.getElementById("first");
