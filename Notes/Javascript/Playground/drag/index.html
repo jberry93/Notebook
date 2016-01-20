@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Drag N Drop</title>
+    <script src="app.js"></script>
+    <style>
+      div.box {
+        border: 2px solid black;
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        text-align: center;
+      }
+      li {
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Drag N Drop</h1>
+    <form id="dragForm" action="index.html" method="post">
+      <h3>Drag Form</h3>
+      <input type="text" placeholder="first">
+      <input type="text" placeholder="second">
+      <input type="text" placeholder="third">
+    </form>
+    <ul>
+      <li><div class="box" draggable=true>A</div></li>
+      <li><div class="box" draggable=true>B</div></li>
+      <li><div class="box" draggable=true>C</div></li>
+      <li><div class="box" draggable=true>D</div></li>
+      <li><div class="box" draggable=true>E</div></li>
+      <li><div class="box" draggable=true>F</div></li>
+      <li><div class="box" draggable=true>G</div></li>
+      <li><div class="box" draggable=true>H</div></li>
+      <li><div class="box" draggable=true>I</div></li>
+      <li><div class="box" draggable=true>J</div></li>
+    </ul>
+  </body>
+</html>
