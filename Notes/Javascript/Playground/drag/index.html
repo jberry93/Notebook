@@ -3,9 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Drag N Drop</title>
-    <script src="app.js"></script>
     <style>
-      div.box {
+      [draggable] {
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        -khtml-user-drag: element;
+        -webkit-user-drag: element;
+      }
+      .box {
         border: 2px solid black;
         width: 50px;
         height: 50px;
@@ -21,21 +28,23 @@
     <h1>Drag N Drop</h1>
     <form id="dragForm" action="index.html" method="post">
       <h3>Drag Form</h3>
-      <input type="text" placeholder="first">
-      <input type="text" placeholder="second">
-      <input type="text" placeholder="third">
+      <input id="first" type="text" placeholder="first">
+      <input id="second" type="text" placeholder="second">
+      <input id="third" type="text" placeholder="third">
+      <button id="button">Send</button>
     </form>
     <ul>
-      <li><div class="box" draggable=true>A</div></li>
-      <li><div class="box" draggable=true>B</div></li>
-      <li><div class="box" draggable=true>C</div></li>
-      <li><div class="box" draggable=true>D</div></li>
-      <li><div class="box" draggable=true>E</div></li>
-      <li><div class="box" draggable=true>F</div></li>
-      <li><div class="box" draggable=true>G</div></li>
-      <li><div class="box" draggable=true>H</div></li>
-      <li><div class="box" draggable=true>I</div></li>
-      <li><div class="box" draggable=true>J</div></li>
+      <li class="box" draggable="true" ondragstart="handleDragStart(event)" ondragenter="handleDragEnter(event)">A</li>
+      <li class="box" draggable="true" ondragstart="handleDragStart(event)" ondragenter="handleDragEnter(event)">B</li>
+      <li class="box" draggable="true" ondragstart="handleDragStart(event)" ondragenter="handleDragEnter(event)">C</li>
+      <li class="box" draggable="true" ondragstart="handleDragStart(event)" ondragenter="handleDragEnter(event)">D</li>
+      <li class="box" draggable="true" ondragstart="handleDragStart(event)" ondragenter="handleDragEnter(event)">E</li>
+      <li class="box" draggable="true" ondragstart="handleDragStart(event)" ondragenter="handleDragEnter(event)">F</li>
+      <li class="box" draggable="true" ondragstart="handleDragStart(event)" ondragenter="handleDragEnter(event)">G</li>
+      <li class="box" draggable="true" ondragstart="handleDragStart(event)" ondragenter="handleDragEnter(event)">H</li>
+      <li class="box" draggable="true" ondragstart="handleDragStart(event)" ondragenter="handleDragEnter(event)">I</li>
+      <li class="box" draggable="true" ondragstart="handleDragStart(event)" ondragenter="handleDragEnter(event)">J</li>
     </ul>
+    <script src="app.js"></script>
   </body>
 </html>
