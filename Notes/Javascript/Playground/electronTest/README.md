@@ -8,4 +8,4 @@ $ ./node_modules/.bin/electron .
 ```
 An Electron app should start running like so:
 
-![Screenshot of Electron App](/img/electronScreenshot.png)
+![Screenshot of Electron App](img/electronScreenshot.png)
