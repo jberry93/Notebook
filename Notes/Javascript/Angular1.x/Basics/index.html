@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Basics of Angular</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="./app/css/default.css">
+  </head>
+  <body ng-app="myApp">
+    <div ng-controller="MainController">
+      <h2>{{text}}</h2>
+      <div class="game" ng-repeat="game in games">
+        <h5>Title: {{game.title | uppercase}}</h5>
+        <h5>Price: {{game.price | currency}}</h5>
+        <h5>Rating: {{game.rating}}</h5>
+        <button ng-click="plusOne($index)">+ {{game.likes}}</button>
+        <button ng-click="minusOne($index)">- {{game.dislikes}}</button>
+        <br>
+      </div>
+    </div>
+    <script src="./node_modules/angular/angular.js"></script>
+    <script src="./app/app.js"></script>
+    <script src="./app/js/controllers/MainController.js"></script>
+  </body>
+</html>
