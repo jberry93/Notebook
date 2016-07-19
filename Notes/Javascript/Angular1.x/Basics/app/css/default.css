@@ -1,0 +1,9 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  font-family: Roboto, sans-serif;
+}
+
+.game {
+  display: inline-block;
+  padding: 0 1rem 0 1rem;
+}
