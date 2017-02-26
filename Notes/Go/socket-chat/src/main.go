@@ -12,7 +12,11 @@ var clients = make(map[*websocket.Conn]bool) // connected clients
 var broadcast = make(chan Message) // broadcast channel
 
 // upgrader: convert HTTP connection to WebSocket
-var upgrader = websocket.Upgrader{}
+var upgrader = websocket.Upgrader{
+  CheckOrigin: func(r *http.Request) bool {
+    return true
+  },
+}
 
 // Message object:
 type Message struct {
@@ -58,7 +62,7 @@ func handleConnections(w http.ResponseWriter, r *http.Request) {
     var msg Message
 
     // read `msg` as JSON and map it to `Message`:
-    err := ws.ReadJson(&msg)
+    err := ws.ReadJSON(&msg)
     if err != nil {
       log.Printf("error: %v", err)
       delete(clients, ws)
