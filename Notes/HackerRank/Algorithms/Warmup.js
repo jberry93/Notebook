@@ -60,3 +60,80 @@ function solve(n, arr) {
   console.log((neg / n).toPrecision(6));
   console.log((zero / n).toPrecision(6));
 }
+
+
+// Staircase
+function solve(n) {
+  let count = n;
+  while (count > 0) {
+    let row = '';
+
+    for (let i = count - 1; i > 0; i--) {
+      row += ' ';
+    }
+    for (let j = row.length; j < n; j++) {
+      row += '#';
+    }
+
+    console.log(row);
+    count--;
+  }
+}
+
+// Min-Max Sum
+function main() new Promise(function(resolve, reject) {
+  arr = readLine().split(' '); // provided
+  arr = arr.map(Number); // provided
+
+  arr.sort();
+  let min = 0;
+  let max = 0;
+
+  for (let i = 0; i < 4; i++) {
+    min += arr[i];
+  }
+
+  for (let j = arr.length - 1; j > 0; j--) {
+    max += arr[j];
+  }
+
+  console.log(min + ' ' + max);
+});
+
+// Birthday Cake Candles
+/**
+ *  Note: Not an ideal solution since I am using a hash table which involves key, pairs.
+ *  An array of 'keys' and an array of 'values' may be better since I can return the last
+ *  value of the values array as my answer.
+ */
+function birthdayCakeCandles(n, ar) {
+    // Complete this function
+    let table = {};
+
+    // set up hash table
+    for (let num of ar) {
+        let key = num.toString();
+        table[key] = 0;
+    }
+
+    // sort array from biggest to smallest number
+    let sortedHeights = ar.sort((a, b) => (b - a));
+
+    // account for each value and increase occurrence by one if prop exists
+    for (let num of sortedHeights) {
+        let key = num.toString();
+        if (table.hasOwnProperty(key)) {
+            table[key]++;
+        }
+    }
+
+    /**
+     *  since we have the answer in order on the table, all we need is the
+     *  last value of the last key in the table. So we overwrite it to 'answer'
+     */
+    let answer = '';
+    for (let key in table) {
+        answer = table[key];
+    }
+    return answer;
+}
