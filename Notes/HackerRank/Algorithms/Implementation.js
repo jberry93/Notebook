@@ -25,3 +25,31 @@ function gradingStudents(grades) {
 
     return parsedGrades;
 }
+
+// Apples and Oranges
+function countApplesAndOranges(s, t, a, b, apples, oranges) {
+    let caughtApples = 0,
+        caughtOranges = 0,
+        applesIndex = 0,
+        orangesIndex = 0,
+        appleDropPosition = 0,
+        orangeDropPosition = 0;
+
+    for (applesIndex; applesIndex < apples.length; applesIndex++) {
+        appleDropPosition = a + apples[applesIndex];
+
+        if (appleDropPosition >= s && appleDropPosition <= t) {
+            caughtApples++;
+        }
+    }
+
+    for (orangesIndex; orangesIndex < oranges.length; orangesIndex++) {
+        orangeDropPosition = b + oranges[orangesIndex];
+
+        if (orangeDropPosition >= s && orangeDropPosition <= t) {
+            caughtOranges++;
+        }
+    }
+
+    console.log(caughtApples + "\n" + caughtOranges);
+}
