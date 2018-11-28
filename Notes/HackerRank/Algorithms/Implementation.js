@@ -53,3 +53,21 @@ function countApplesAndOranges(s, t, a, b, apples, oranges) {
 
     console.log(caughtApples + "\n" + caughtOranges);
 }
+
+// Kangaroo
+function kangaroo(x1, v1, x2, v2) {
+    /**
+     * y = Number of jumps
+     * x1 + yv1 = x2 + yv2
+     * yv1 = x2 + yv2 - x1
+     * yv1 - yv2 = x2 - x1
+     * y(v1 - v2) = x2 - x1
+     * y = (x2 - x1)/(v1 - v2)
+     */
+
+    if (x1 > x2 || (v1 - v2) < 0) {
+        return 'NO';
+    }
+    
+    return (x2 - x1) % (v1 - v2) === 0 ? 'YES' : 'NO';
+}
