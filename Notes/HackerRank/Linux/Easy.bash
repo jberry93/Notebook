@@ -22,19 +22,37 @@ echo "Welcome $name"
 # The World of Numbers
 read x
 read y
-echo $[$x + $y]
-echo $[$x - $y]
-echo $[$x * $y]
-echo $[$x / $y]
+echo $[ $x + $y ]
+echo $[ $x - $y ]
+echo $[ $x * $y ]
+echo $[ $x / $y ]
 
 # Comparing Numbers
 read x
 read y
-if [$x -gt $y]
+if [ $x -gt $y ]
 then
     echo "X is greater than Y"
-elif [$x -lt $y]
+elif [ $x -lt $y ]
     echo "X is less than Y"
 else
     echo "X is equal to Y"
+fi
+
+# Getting started with conditionals
+read input
+if [ "$input" = "Y" ]
+then
+	echo "YES"
+elif [ "$input" = "N" ]
+then
+	echo "NO"
+elif [ "$input" = "y" ]
+then
+	echo "YES"
+elif [ "$input" = "n" ]
+then
+	echo "NO"
+else
+	echo "Yes and No?"
 fi
