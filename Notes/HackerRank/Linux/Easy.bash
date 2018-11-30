@@ -8,3 +8,7 @@ for i in {1..99..2}
 do
     echo $i
 done
+
+# A Personalized Echo
+read name
+echo "Welcome $name"
