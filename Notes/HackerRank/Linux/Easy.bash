@@ -18,3 +18,11 @@ done
 # A Personalized Echo
 read name
 echo "Welcome $name"
+
+# The World of Numbers
+read x
+read y
+echo $[$x + $y]
+echo $[$x - $y]
+echo $[$x * $y]
+echo $[$x / $y]
