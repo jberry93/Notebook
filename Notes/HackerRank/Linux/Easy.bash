@@ -56,3 +56,47 @@ then
 else
 	echo "Yes and No?"
 fi
+
+# More on conditionals
+read a
+read b
+read c
+if [ $a = $b ]
+then
+	if [ $b = $c ]
+	then
+		echo "EQUILATERAL"
+	elif [ $b -gt $c ]
+	then
+		echo "ISOSCELES"
+	elif [ $b -lt $c ]
+	then
+		echo "ISOSCELES"
+	fi
+elif [ $b = $c ]
+then
+	if [ $c = $a ]
+	then
+		echo "EQUILATERAL"
+	elif [ $c -gt $a ]
+	then
+		echo "ISOSCELES"
+	elif [ $c -lt $a ]
+	then
+		echo "ISOSCELES"
+	fi
+elif [ $a = $c ]
+then
+	if [ $c = $b ]
+	then
+		echo "EQUILATERAL"
+	elif [ $c -gt $b ]
+	then
+		echo "ISOSCELES"
+	elif [ $c -lt $b ]
+	then
+		echo "ISOSCELES"
+	fi
+else
+	echo "SCALENE"
+fi
