@@ -32,3 +32,43 @@ function sockMerchant(n, ar) {
 
     return pairs;
 }
+
+/**
+ * Counting Valleys
+ * 
+ * Return an integer that denotes the number
+ * of valleys a hiker traversed. A valley
+ * is when the hiker enters below sea level
+ * and reenters sea level
+ * 
+ * Sample Input:
+ * 8
+ * UDDDUDUU
+ * 
+ * Sample Output:
+ * 1
+ */
+function countingValleys(n, s) {
+    let valleys = 0,
+        seaLevelMeter = 0,
+        step = 0,
+        stepsArray = s.split(''),
+        inValley = false;
+
+    for (step; step < n; step++) {
+        if (stepsArray[step] === 'U') {
+            seaLevelMeter++;
+        } else {
+            seaLevelMeter--;
+        }
+
+        let previousInValley = inValley;
+        inValley = seaLevelMeter < 0 ? true : false;
+
+        if (previousInValley === false && inValley === true) {
+            valleys++;
+        }
+    }
+    
+    return valleys;
+}
