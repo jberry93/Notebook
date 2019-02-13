@@ -48,3 +48,11 @@ The CountryCode for Japan is JPN
 */
 SELECT * FROM City
 WHERE CountryCode = 'JPN';
+
+/*
+Weather Observation Station 1
+
+Query a list of City and State
+from the Station table
+*/
+SELECT City, State FROM Station;
