@@ -38,3 +38,13 @@ CITY with the Id 1661
 */
 SELECT * FROM City
 WHERE Id = 1661;
+
+/*
+Japanese Citis' Attributes
+
+Query all attributes of every
+Japanese city in the CITY table.
+The CountryCode for Japan is JPN
+*/
+SELECT * FROM City
+WHERE CountryCode = 'JPN';
