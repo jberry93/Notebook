@@ -21,3 +21,11 @@ USA
 SELECT Name FROM City
 WHERE Population > 120000
 AND CountryCode = 'USA';
+
+/*
+Select All
+
+Query all columns (attributes) for
+every row in the CITY table
+*/
+SELECT * FROM City;
