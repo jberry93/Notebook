@@ -29,3 +29,12 @@ Query all columns (attributes) for
 every row in the CITY table
 */
 SELECT * FROM City;
+
+/*
+Select By Id
+
+Query all columns for a city in
+CITY with the Id 1661
+*/
+SELECT * FROM City
+WHERE Id = 1661;
