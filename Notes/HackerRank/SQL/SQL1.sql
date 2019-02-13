@@ -56,3 +56,14 @@ Query a list of City and State
 from the Station table
 */
 SELECT City, State FROM Station;
+
+/*
+Weather Observation Station 3
+
+Query a list of City names from
+Station with even Id numbers only.
+You may print the results in any
+order, but must exclude duplicates
+*/
+SELECT DISTINCT City FROM Station
+WHERE Id % 2 = 0;
