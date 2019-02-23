@@ -1,5 +1,4 @@
-// "Hello World!" in C
-int helloWorld()
+int main()
 {
     char s[100];
     scanf("%[^\n]%*c", &s);
