@@ -48,7 +48,7 @@ int main()
 
     printf("%c\n", ch);
     printf("%s\n", s);
-    print("%s", sen);
+    printf("%s", sen);
 
     return 0;
 }
