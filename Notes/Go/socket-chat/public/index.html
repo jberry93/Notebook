@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Go Chat</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/emojione/2.2.6/assets/css/emojione.min.css">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="">
+          <a href="/" class="">Go Chat</a>
+        </div>
+      </nav>
+    </header>
+    <main id="app">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div id="chat-messages" class="card-block" v-html="chatContent"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row" v-if="joined">
+        <div class="col-8">
+          <input type="text" v-model="newMsg" @keyup.enter="send">
+        </div>
+        <div class="col-4">
+          <button class="btn btn-primary" @click="send">Send</button>
+        </div>
+      </div>
+      <div class="row" v-if="!joined">
+        <div class="col-8">
+          <input type="email" v-model.trip="email" placeholder="Email">
+        </div>
+        <div class="col-8">
+          <input type="text" v-model.trip="username" placeholder="Username">
+        </div>
+        <div class="col-4">
+          <button class="btn btn-primary" @click="join()">Join</button>
+        </div>
+      </div>
+    </main>
+    <footer class=""></footer>
+    <script src="https://unpkg.com/vue@2.1.3/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/emojione/2.2.6/lib/js/emojione.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/md5.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
